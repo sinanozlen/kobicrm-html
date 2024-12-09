@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>KobiCRM</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+    
+            <!-- Logo -->
+            <div class="pt-2">
+                <img src="img/logo.svg" alt="" />
+            </div>
+            <!-- Menu Items -->
+            <div class="hidden space-x-6 md:flex">
+                <button class="lg:hidden text-white" type="button" aria-label="Toggle navigation" id="menu-toggle">
+                    <span class="text-2xl">&#9776;</span>
+                </button>
+    
+                <!-- Menu -->
+                <div class="hidden lg:flex space-x-4" id="menu">
+                    <a href="#" class="hover:text-blue-300 px-3 py-2">Ana Sayfa</a>
+                    <a href="#" class="hover:text-blue-300 px-3 py-2">Hakkımızda</a>
+    
+                    <!-- Uygulamalar Dropdown -->
+                    <div class="relative group">
+                        <button class="hover:text-blue-300 px-3 py-2">Uygulamalar</button>
+                        <div class="absolute hidden group-hover:block bg-transparent text-sm shadow-lg rounded">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bulut Hizmeti</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-300">Masaüstü Hizmeti</a>
+                        </div>
+                    </div>
+    
+                    <!-- Kaynaklar Dropdown -->
+                    <div class="relative group">
+                        <button class="hover:text-blue-300 px-3 py-2">Kaynaklar</button>
+                        <div class="absolute hidden group-hover:block bg-transparent text-sm shadow-lg rounded">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-300">CRM Nedir?</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bilgi 2</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bilgi 3</a>
+                        </div>
+                    </div>
+    
+                    <a href="#" class="hover:text-gray-200 px-3 py-2">SSS</a>
+                </div>
+            </div>
+            <!-- Button -->
+            <a href="#"
+                class="hidden p-3 px-6 pt-2 text-white bg-blue-900 rounded-full baseline hover:bg-blue-600 md:block">Başlayalım!</a>
+        </div>
+    </nav>
+    
+    
+</body>
+
+</html>

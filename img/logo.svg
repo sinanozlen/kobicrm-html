@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="50" viewBox="20 10 200 70">
+  <g fill="none" font-family="Arial, sans-serif" font-size="40" font-weight="bold">
+    <!-- Kobi -->
+    <text x="0" y="40" fill="#1e3a8a">K</text>
+    <text x="30" y="40" fill="#1e3a8a">o</text>
+    <text x="55" y="40" fill="#1e3a8a">b</text>
+    <text x="80" y="40" fill="#1e3a8a">i</text>
+    <!-- C -->
+    <text x="90" y="40" fill="#b91c1c">C</text>
+    <!-- R -->
+    <text x="120" y="40" fill="#047857">R</text>
+    <!-- M -->
+    <text x="150" y="40" fill="#b91c1c">M</text>
+  </g>
+</svg>
