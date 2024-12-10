@@ -9,92 +9,86 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="relative container mx-auto p-6">
-        <!-- Flex container -->
-        <div class="flex items-center justify-between">
-
-            <!-- Logo -->
-            <div class="pt-2">
-                <img src="img/logo.svg" alt="" />
-            </div>
-            <!-- Menu Items -->
-            <div class="hidden space-x-6 md:flex">
-                <button class="lg:hidden text-white" type="button" aria-label="Toggle navigation" id="menu-toggle">
-                    <span class="text-2xl">&#9776;</span>
-                </button>
-
-                <!-- Menu -->
-                <div class="hidden lg:flex space-x-4" id="menu">
-                    <a href="#" class="hover:text-blue-300 px-3 py-2">Ana Sayfa</a>
-                    <a href="#" class="hover:text-blue-300 px-3 py-2">Hakkımızda</a>
-
-                    <!-- Uygulamalar Dropdown -->
-                    <div class="relative group">
-                        <button class="hover:text-blue-300 px-3 py-2">Uygulamalar</button>
-                        <div class="absolute hidden group-hover:block bg-transparent text-sm shadow-lg rounded">
-                            <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bulut Hizmeti</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-blue-300">Masaüstü Hizmeti</a>
-                        </div>
-                    </div>
-
-                    <!-- Kaynaklar Dropdown -->
-                    <div class="relative group">
-                        <button class="hover:text-blue-300 px-3 py-2">Kaynaklar</button>
-                        <div class="absolute hidden group-hover:block bg-transparent text-sm shadow-lg rounded">
-                            <a href="#" class="block px-4 py-2 hover:bg-blue-300">CRM Nedir?</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bilgi 2</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bilgi 3</a>
-                        </div>
-                    </div>
-
-                    <a href="#" class="hover:text-blue-300 px-3 py-2">SSS</a>
-                </div>
-            </div>
-            <!-- Button -->
-            <a href="#"
-                class="hidden p-3 px-6 pt-2 text-white bg-blue-900 rounded-full baseline hover:bg-blue-600 md:block">Başlayalım!</a>
-
-
-            <!-- Hamburger Icon -->
-
-            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-                <span class="hamburger-top"></span>
-                <span class="hamburger-middle"></span>
-                <span class="hamburger-bottom"></span>
-            </button>
+   <!-- Navbar -->
+<nav class="relative container mx-auto p-6">
+    <!-- Flex Container -->
+    <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="pt-2">
+            <img src="img/logo.svg" alt="Logo" />
         </div>
-        <!-- Mobile Menu -->
-        <div class="md:hidden">
-            <div id="menu"
-                class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                class="hidden lg:flex space-x-4" id="menu">
-                <a href="#" class="hover:text-blue-300 px-3 py-2">Ana Sayfa</a>
-                <a href="#" class="hover:text-blue-300 px-3 py-2">Hakkımızda</a>
 
-                <!-- Uygulamalar Dropdown -->
-                <div class="relative group">
-                    <button class="hover:text-blue-300 px-3 py-2">Uygulamalar</button>
-                    <div class="absolute hidden group-hover:block bg-transparent text-sm shadow-lg rounded">
-                        <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bulut Hizmeti</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-blue-300">Masaüstü Hizmeti</a>
-                    </div>
+        <!-- Menu Items (Desktop) -->
+        <div class="hidden space-x-6 md:flex">
+            <a href="#" class="hover:text-blue-300 px-3 py-2">Ana Sayfa</a>
+            <a href="#" class="hover:text-blue-300 px-3 py-2">Hakkımızda</a>
+
+            <!-- Uygulamalar Dropdown -->
+            <div class="relative group">
+                <button class="hover:text-blue-300 px-3 py-2">Uygulamalar</button>
+                <div
+                    class="absolute hidden group-hover:block bg-white text-sm shadow-lg rounded mt-2 z-1">
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bulut Hizmeti</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-300">Masaüstü Hizmeti</a>
                 </div>
+            </div>
 
-                <!-- Kaynaklar Dropdown -->
-                <div class="relative group">
-                    <button class="hover:text-blue-300 px-3 py-2">Kaynaklar</button>
-                    <div class="absolute hidden group-hover:block bg-transparent text-sm shadow-lg rounded">
-                        <a href="#" class="block px-4 py-2 hover:bg-blue-300">CRM Nedir?</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bilgi 2</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bilgi 3</a>
-                    </div>
+            <!-- Kaynaklar Dropdown -->
+            <div class="relative group">
+                <button class="hover:text-blue-300 px-3 py-2">Kaynaklar</button>
+                <div
+                    class="absolute hidden group-hover:block bg-white text-sm shadow-lg rounded mt-2 z-1">
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-300">CRM Nedir?</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bilgi 2</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bilgi 3</a>
                 </div>
+            </div>
 
-                <a href="#" class="hover:text-blue-300 px-3 py-2">SSS</a>
+            <a href="#" class="hover:text-blue-300 px-3 py-2">SSS</a>
+        </div>
+
+        <!-- Başlayalım Button -->
+        <a href="#"
+            class="hidden p-3 px-6 pt-2 text-white bg-blue-900 rounded-full baseline hover:bg-blue-600 md:block">Başlayalım!</a>
+
+        <!-- Hamburger Icon (Mobile) -->
+        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu"
+        class="absolute hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md md:hidden">
+        <a href="#" class="hover:text-blue-300 px-3 py-2">Ana Sayfa</a>
+        <a href="#" class="hover:text-blue-300 px-3 py-2">Hakkımızda</a>
+
+        <!-- Uygulamalar Dropdown -->
+        <div class="relative group">
+            <button class="hover:text-blue-300 px-3 py-2">Uygulamalar</button>
+            <div
+                class="absolute hidden group-hover:block bg-white text-sm shadow-lg rounded mt-2 z-1">
+                <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bulut Hizmeti</a>
+                <a href="#" class="block px-4 py-2 hover:bg-blue-300">Masaüstü Hizmeti</a>
             </div>
         </div>
-    </nav>
+
+        <!-- Kaynaklar Dropdown -->
+        <div class="relative group">
+            <button class="hover:text-blue-300 px-3 py-2">Kaynaklar</button>
+            <div
+                class="absolute hidden group-hover:block bg-white text-sm shadow-lg rounded mt-2 z-1">
+                <a href="#" class="block px-4 py-2 hover:bg-blue-300">CRM Nedir?</a>
+                <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bilgi 2</a>
+                <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bilgi 3</a>
+            </div>
+        </div>
+
+        <a href="#" class="hover:text-blue-300 px-3 py-2">SSS</a>
+    </div>
+</nav>
 
     <!-- Hero Section -->
     <section id="hero">
@@ -262,9 +256,105 @@
                 </div>
             </div>
             <!-- Button -->
-            <div class="my-16">
+            <div class="my-16 flex justify-center">
                 <a href="#"
-                    class="hidden p-3 px-6 pt-2 text-white bg-blue-900 rounded-full baseline hover:bg-blue-600 md:block">Başlayalım!</a>
+                    class="inline-block w-auto max-w-xs p-3 px-6 pt-2 text-white bg-blue-900 rounded-full baseline hover:bg-blue-600">
+                    Başlayalım!
+                </a>
             </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section id="cta" class="bg-brightRed">
+        <!-- Flex Container -->
+        <div
+            class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+            <!-- Heading -->
+            <h2 class="text-5xl font-bold text-center text-white md:text-4xl md:max-w-xl md:text-left">
+                Simplify how your team works today
+            </h2>
+            <!-- Button -->
+            <div>
+                <a href="#"
+                    class="p-3 px-6 pt-2 text-white bg-blue-900 rounded-full baseline hover:bg-blue-600 md:block">Başlayalım!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-veryDarkBlue">
+        <!-- Flex Container -->
+        <div
+            class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <!-- Logo and social links container -->
+            <div
+                class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+                <div class="mx-auto my-6 text-center text-white md:hidden">
+                    Copyright &copy; 2024, All Rights Reserved
+                </div>
+                <!-- Logo -->
+                <div class="pt-2">
+                    <img src="img/logo.svg" alt="" />
+                </div>
+                <!-- Social Links Container -->
+                <div class="flex justify-center space-x-4">
+                    <!-- Link 1 -->
+                    <a href="#">
+                        <img src="img/icon-facebook.svg" alt="" class="h-8" />
+                    </a>
+                    <!-- Link 2 -->
+                    <a href="#">
+                        <img src="img/icon-youtube.svg" alt="" class="h-8" />
+                    </a>
+                    <!-- Link 3 -->
+                    <a href="#">
+                        <img src="img/icon-twitter.svg" alt="" class="h-8" />
+                    </a>
+                    <!-- Link 4 -->
+                    <a href="#">
+                        <img src="img/icon-pinterest.svg" alt="" class="h-8" />
+                    </a>
+                    <!-- Link 5 -->
+                    <a href="#">
+                        <img src="img/icon-instagram.svg" alt="" class="h-8" />
+                    </a>
+                </div>
+            </div>
+            <!-- List Container -->
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="#" class="hover:text-brightRed">Home</a>
+                    <a href="#" class="hover:text-brightRed">Pricing</a>
+                    <a href="#" class="hover:text-brightRed">Products</a>
+                    <a href="#" class="hover:text-brightRed">About</a>
+                </div>
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="#" class="hover:text-brightRed">Careers</a>
+                    <a href="#" class="hover:text-brightRed">Community</a>
+                    <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+                </div>
+            </div>
+
+            <!-- Input Container -->
+            <div class="flex flex-col justify-between">
+                <form>
+                    <div class="flex space-x-3">
+                        <input type="text" class="flex-1 px-4 rounded-full focus:outline-none"
+                            placeholder="Updated in your inbox" />
+                        <button
+                            class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
+                            Go
+                        </button>
+                    </div>
+                </form>
+                <div class="hidden text-white md:block">
+                    Copyright &copy; 2025, All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
