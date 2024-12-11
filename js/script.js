@@ -15,16 +15,19 @@ function handleMenuHover(menuButtonId, dropdownId) {
     });
   });
 
+    // Fare butondan ayrıldığında
   menuButton.addEventListener("mouseleave", () => {
     timeoutId = setTimeout(() => {
       dropdownMenu.classList.add("hidden");
     }, 300); // Menü 300ms sonra kapanır
   });
 
+  // Fare menü üzerine geldiğinde
   dropdownMenu.addEventListener("mouseenter", () => {
     clearTimeout(timeoutId);
   });
 
+  // Fare menüden ayrıldığında
   dropdownMenu.addEventListener("mouseleave", () => {
     timeoutId = setTimeout(() => {
       dropdownMenu.classList.add("hidden");
@@ -37,3 +40,4 @@ handleMenuHover('menuKurumsal', 'dropdownKurumsal');
 handleMenuHover('menuHizmetler', 'dropdownHizmetler');
 handleMenuHover('menuUygulamalar', 'dropdownUygulamalar');
 handleMenuHover('doubleDropdownButton', 'doubleDropdown'); // Yeni menü için
+

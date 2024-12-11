@@ -1501,3 +1501,17 @@ video {
     }
   }
 }
+
+#dropdownKurumsal a,
+#dropdownHizmetler a,
+#dropdownUygulamalar a {
+  pointer-events: auto; /* Linkler aktif hale gelir */
+  z-index: 10; /* Linkler üstte kalır */
+}
+
+#dropdownKurumsal,
+#dropdownHizmetler,
+#dropdownUygulamalar {
+  position: absolute;
+  z-index: 50; /* Menü en üstte */
+}
