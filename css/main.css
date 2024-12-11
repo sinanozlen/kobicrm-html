@@ -1577,3 +1577,459 @@ video {
     }
   }
 }
+
+/* Navbar Genel Tasarımı */
+nav {
+  background-color: #1a202c; /* Koyu renk arka plan */
+  padding: 1rem;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  max-height: 50px; /* Logo boyutu */
+}
+
+nav button {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+nav button:hover {
+  color: #63b3ed; /* Mavi ton hover efekti */
+}
+
+nav .relative ul {
+  background-color: #2d3748;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Dropdown gölgesi */
+  display: none;
+  margin-top: 0.5rem;
+  position: absolute;
+  list-style: none;
+  padding: 0.5rem 0;
+  z-index: 1000;
+}
+
+nav .relative:hover ul {
+  display: block;
+}
+
+nav .relative ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+nav .relative ul li a:hover {
+  background-color: #63b3ed;
+  color: #1a202c;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  nav div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav button {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  nav .relative ul {
+    position: relative;
+    width: 100%;
+  }
+}
+
+/* Genel Navbar */
+nav {
+  background-color: #1a202c; /* Koyu arka plan */
+  padding: 1rem;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .max-w-screen-xl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  max-height: 50px;
+}
+
+/* Dropdown Menüler */
+nav .relative {
+  position: relative;
+}
+
+nav .relative button {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+nav .relative button:hover {
+  color: #63b3ed;
+}
+
+/* Dropdown Liste */
+nav .relative ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #2d3748;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: none; /* Varsayılan olarak gizle */
+  list-style: none;
+  padding: 0.5rem 0;
+  z-index: 1000;
+  min-width: 200px; /* Menü genişliği */
+}
+
+nav .relative:hover ul {
+  display: block; /* Hover ile göster */
+}
+
+/* Dropdown Elemanlar */
+nav .relative ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 0.8rem 1rem; /* Dengeli boşluk */
+  font-size: 14px;
+  transition: background 0.3s ease-in-out;
+}
+
+nav .relative ul li a:hover {
+  background-color: #63b3ed;
+  color: #1a202c;
+  border-radius: 5px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  nav .max-w-screen-xl {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .relative ul {
+    position: relative;
+    width: 100%; /* Küçük ekranlarda tam genişlik */
+    box-shadow: none; /* Gölgeyi kaldır */
+  }
+
+  nav .relative ul li a {
+    padding: 1rem; /* Daha fazla boşluk */
+  }
+}
+
+
+/* Navbar Arka Plan Gradyanı */
+nav {
+  background: linear-gradient(135deg, #1a202c, #2d3748); /* Gradyan renk geçişi */
+  padding: 1rem;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  border-bottom: 2px solid #4a5568; /* Alt kenar belirginliği */
+}
+
+/* Navbar'a Hafif Desen Eklemek İçin */
+nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.transparenttextures.com/patterns/hexellence.png'); /* Doku deseni */
+  opacity: 0.1; /* Hafif doku görünümü */
+  z-index: 0;
+}
+
+nav .max-w-screen-xl {
+  position: relative;
+  z-index: 1; /* İçerik, desenin üzerinde kalır */
+}
+
+/* Navbar Buton Hover Efekti */
+nav .relative button {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+nav .relative button:hover {
+  color: #63b3ed;
+  transform: scale(1.1); /* Hover büyütme efekti */
+}
+
+/* Dropdown Liste Hover */
+nav .relative ul li a:hover {
+  background: linear-gradient(90deg, #63b3ed, #4299e1); /* Gradyan hover */
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+/* Logo Kutusu Genel Stili */
+nav .logo-container {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background: linear-gradient(135deg, #ffffff, #e2e8f0); /* Yazıyı belirginleştiren açık renkli arka plan */
+  border-radius: 12px; /* Hafif yuvarlak köşeler */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+  border: 2px solid #63b3ed; /* Renkli bir dış çerçeve */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Efekti */
+nav .logo-container:hover {
+  background: linear-gradient(135deg, #e2e8f0, #ffffff); /* Hover sırasında arka plan geçişi */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Daha belirgin gölge efekti */
+  transform: scale(1.05); /* Hafif büyütme efekti */
+  border-color: #4299e1; /* Çerçeve rengini değiştir */
+}
+
+/* Logo Görseli */
+nav img {
+  max-height: 70px; /* Logonun yeterince büyük olması */
+  display: block;
+}
+
+/* Navbar Hareketli Gradyan */
+nav {
+  background: linear-gradient(45deg, #1a202c, #2d3748, #1a202c);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s ease infinite;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif bir gölge */
+}
+
+/* Gradyan Animasyonu */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Menü Öğeleri */
+nav button {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+nav button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #63b3ed; /* Mavi alt çizgi */
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+nav button:hover {
+  color: #63b3ed; /* Hover rengi */
+}
+
+nav button:hover::after {
+  width: 100%; /* Alt çizgi genişler */
+}
+
+
+/* Dropdown Stili */
+nav .relative ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #2d3748; /* Koyu renk arka plan */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0.5rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+
+nav .relative:hover ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* Açılma hareketi */
+}
+
+/* Dropdown Öğeleri */
+nav .relative ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  display: block;
+  transition: background 0.3s ease-in-out;
+}
+
+nav .relative ul li a:hover {
+  background: #63b3ed; /* Hover arka plan */
+  color: #1a202c;
+}
+
+nav button::before {
+  content: "\2022"; /* İkon yerine Unicode sembol veya SVG eklenebilir */
+  margin-right: 0.5rem;
+  color: #63b3ed; /* İkon rengi */
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+/* Mobil Navbar */
+@media (max-width: 768px) {
+  nav .max-w-screen-xl {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .relative ul {
+    position: relative;
+    width: 100%;
+    transform: translateY(0);
+    box-shadow: none;
+  }
+
+  nav button {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+  }
+}
+
+/* Call to Action Butonu */
+nav .cta {
+  padding: 0.5rem 1rem;
+  background: #63b3ed;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+nav .cta:hover {
+  background: #4299e1;
+}
+
+nav .max-w-screen-xl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .menu-items {
+  display: flex;
+  gap: 2rem; /* Menü öğeleri arasında boşluk */
+}
+
+nav .logo-container {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background: #ffffff; /* Beyaz arka plan */
+  border-radius: 12px; /* Hafif yuvarlak köşeler */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+}
+
+nav .logo-container::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(99, 179, 237, 0.4), transparent);
+  border-radius: 50%;
+  z-index: -1; /* Logonun arkasında */
+  animation: pulseEffect 3s infinite; /* Hafif bir nabız efekti */
+}
+
+@keyframes pulseEffect {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}
+
+nav .logo-container {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  background: #ffffff;
+  border: 3px solid transparent;
+  border-image: linear-gradient(45deg, #63b3ed, #4299e1);
+  border-image-slice: 1;
+  animation: borderMove 2s linear infinite;
+}
+
+@keyframes borderMove {
+  0% {
+    border-image-source: linear-gradient(45deg, #63b3ed, #4299e1);
+  }
+  100% {
+    border-image-source: linear-gradient(405deg, #63b3ed, #4299e1);
+  }
+}
+
+nav {
+  background: linear-gradient(135deg, #242d52, #565d7a); /* Açık tonlu gradyan */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  position: relative;
+}
