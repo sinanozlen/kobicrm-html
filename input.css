@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .dark\:hover\:bg-gray-600:hover {
   background-color: hsl(210, 88%, 59%); /* Canlı Mavi */
   color: white;
