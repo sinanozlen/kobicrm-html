@@ -3,70 +3,33 @@
 @tailwind utilities;
 
 
-body {
-    background-image: url('../img/bg-tablet-pattern.svg');
-    background-repeat: no-repeat;
-    background-size: 800px;
-    background-position: 90% -25%;
-  }
-  
-  #cta {
-    background-image: url('../img/bg-simplify-section-desktop.svg');
-    background-repeat: no-repeat;
-  }
-  
-  @media (max-width: 576px) {
-    body {
-      background-position: 50px -50px;
-      background-size: 500px;
-    }
-  
-    #cta {
-      background-image: url('../img/bg-simplify-section-mobile.svg');
-    }
-  }
-  
-  .hamburger {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    position: relative;
-    transition: all 0.3s ease-in-out;
+.dark\:hover\:bg-gray-600:hover {
+  background-color: hsl(210, 88%, 59%); /* Canlı Mavi */
+  color: white;
 }
 
-.hamburger-top,
-.hamburger-middle,
-.hamburger-bottom {
-    position: absolute;
-    background-color: #000;
-    height: 2px;
-    width: 100%;
-    left: 0;
-    transition: all 0.3s ease-in-out;
+.hover\:bg-gray-100:hover {
+  background-color: hsl(210, 88%, 95%); /* Çok Açık Mavi */
 }
 
-.hamburger-top {
-    top: 0;
+.dark\:text-gray-200 {
+  color: hsl(210, 88%, 69%); /* Açık Mavi */
 }
 
-.hamburger-middle {
-    top: 50%;
-    transform: translateY(-50%);
+/* Hover durumunda alt menüde gölgelendirme */
+.group:hover .group-hover\:block {
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.hamburger-bottom {
-    bottom: 0;
+/* Alt Menü için geçiş efekti */
+.group-hover\:block {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.open .hamburger-top {
-    transform: rotate(45deg) translate(5px, 5px);
+/* Alt menüler için yumuşak geçiş efekti */
+.group:hover .group-hover\:block {
+  opacity: 1;
 }
-
-.open .hamburger-middle {
-    opacity: 0;
-}
-
-.open .hamburger-bottom {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
-

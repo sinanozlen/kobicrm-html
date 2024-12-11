@@ -5,91 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.js"></script>
+
     <title>KobiCRM</title>
 </head>
 
 <body>
-   <!-- Navbar -->
-<nav class="relative container mx-auto p-6">
-    <!-- Flex Container -->
-    <div class="flex items-center justify-between">
-        <!-- Logo -->
-        <div class="pt-2">
-            <img src="img/logo.svg" alt="Logo" />
-        </div>
+    <!-- Navbar -->
 
-        <!-- Menu Items (Desktop) -->
-        <div class="hidden space-x-6 md:flex">
-            <a href="#" class="hover:text-blue-300 px-3 py-2">Ana Sayfa</a>
-            <a href="#" class="hover:text-blue-300 px-3 py-2">Hakkımızda</a>
-
-            <!-- Uygulamalar Dropdown -->
-            <div class="relative group">
-                <button class="hover:text-blue-300 px-3 py-2">Uygulamalar</button>
-                <div
-                    class="absolute hidden group-hover:block bg-white text-sm shadow-lg rounded mt-2 z-1">
-                    <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bulut Hizmeti</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-blue-300">Masaüstü Hizmeti</a>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <!-- Logo -->
+          <div class="pt-2">
+            <img src="img/logo.svg" alt="" />
+          </div>
+      
+          <!-- Kurumsal Menüsü -->
+          <div class="relative">
+            <button id="menuKurumsal" class="py-2 px-4 text-gray-900 hover:bg-blue-600 md:hover:bg-transparent md:border-0 md:hover:text-brightBlue md:p-0 md:w-auto dark:text-white md:dark:hover:text-brightBlue dark:hover:bg-brightBlueSupLight md:dark:hover:bg-transparent">
+              Kurumsal
+            </button>
+            <div id="dropdownKurumsal" class="absolute left-0 mt-2 hidden w-44 bg-white rounded-lg shadow-lg dark:bg-gray-700">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Dashboard</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Settings</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Log out</a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <!-- Hizmetler Menüsü -->
+          <div class="relative">
+            <button id="menuHizmetler" class="py-2 px-4 text-gray-900 hover:bg-blue-600 md:hover:bg-transparent md:border-0 md:hover:text-brightBlue md:p-0 md:w-auto dark:text-white md:dark:hover:text-brightBlue dark:hover:bg-brightBlueSupLight md:dark:hover:bg-transparent">
+              Hizmetler
+            </button>
+            <div id="dropdownHizmetler" class="absolute left-0 mt-2 hidden w-44 bg-white rounded-lg shadow-lg dark:bg-gray-700">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Bulut Hizmeti</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Masaüstü Hizmeti</a></li>
+          
+                <!-- Yeni Dropdown (Test) -->
+                <div class="relative">
+                  <button id="doubleDropdownButton" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-blue-600 dark:hover:bg-gray-600 dark:hover:text-white">
+                    Dropdown
+                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                    </svg>
+                  </button>
+                  <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                      <li><a href="#" class="block px-4 py-2 hover:bg-blue-300 dark:hover:bg-blue-600 dark:text-blue-600 dark:hover:text-blue-600">Overview</a></li>
+                      <li><a href="#" class="block px-4 py-2 hover:bg-blue-300 dark:hover:bg-blue-600 dark:text-blue-600 dark:hover:text-blue-600">My downloads</a></li>
+                      <li><a href="#" class="block px-4 py-2 hover:bg-blue-300 dark:hover:bg-blue-600 dark:text-blue-600 dark:hover:text-blue-600">Billing</a></li>
+                      <li><a href="#" class="block px-4 py-2 hover:bg-blue-300 dark:hover:bg-blue-600 dark:text-blue-600 dark:hover:text-blue-600">Rewards</a></li>
+                    </ul>
+                  </div>
                 </div>
+              </ul>
             </div>
-
-            <!-- Kaynaklar Dropdown -->
-            <div class="relative group">
-                <button class="hover:text-blue-300 px-3 py-2">Kaynaklar</button>
-                <div
-                    class="absolute hidden group-hover:block bg-white text-sm shadow-lg rounded mt-2 z-1">
-                    <a href="#" class="block px-4 py-2 hover:bg-blue-300">CRM Nedir?</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bilgi 2</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bilgi 3</a>
-                </div>
+          </div>
+      
+         
+      
+          <!-- Uygulamalar Menüsü -->
+          <div class="relative">
+            <button id="menuUygulamalar" class="py-2 px-4 text-gray-900 hover:bg-blue-600 md:hover:bg-transparent md:border-0 md:hover:text-brightBlue md:p-0 md:w-auto dark:text-white md:dark:hover:text-brightBlue dark:hover:bg-brightBlueSupLight md:dark:hover:bg-transparent">
+              Uygulamalar
+            </button>
+            <div id="dropdownUygulamalar" class="absolute left-0 mt-2 hidden w-44 bg-white rounded-lg shadow-lg dark:bg-gray-700">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">CRM</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Web Tasarım</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Fatura</a></li>
+                
+              </ul>
             </div>
-
-            <a href="#" class="hover:text-blue-300 px-3 py-2">SSS</a>
+          </div>
         </div>
-
-        <!-- Başlayalım Button -->
-        <a href="#"
-            class="hidden p-3 px-6 pt-2 text-white bg-blue-900 rounded-full baseline hover:bg-blue-600 md:block">Başlayalım!</a>
-
-        <!-- Hamburger Icon (Mobile) -->
-        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-        </button>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="menu"
-        class="absolute hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md md:hidden">
-        <a href="#" class="hover:text-blue-300 px-3 py-2">Ana Sayfa</a>
-        <a href="#" class="hover:text-blue-300 px-3 py-2">Hakkımızda</a>
-
-        <!-- Uygulamalar Dropdown -->
-        <div class="relative group">
-            <button class="hover:text-blue-300 px-3 py-2">Uygulamalar</button>
-            <div
-                class="absolute hidden group-hover:block bg-white text-sm shadow-lg rounded mt-2 z-1">
-                <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bulut Hizmeti</a>
-                <a href="#" class="block px-4 py-2 hover:bg-blue-300">Masaüstü Hizmeti</a>
-            </div>
-        </div>
-
-        <!-- Kaynaklar Dropdown -->
-        <div class="relative group">
-            <button class="hover:text-blue-300 px-3 py-2">Kaynaklar</button>
-            <div
-                class="absolute hidden group-hover:block bg-white text-sm shadow-lg rounded mt-2 z-1">
-                <a href="#" class="block px-4 py-2 hover:bg-blue-300">CRM Nedir?</a>
-                <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bilgi 2</a>
-                <a href="#" class="block px-4 py-2 hover:bg-blue-300">Bilgi 3</a>
-            </div>
-        </div>
-
-        <a href="#" class="hover:text-blue-300 px-3 py-2">SSS</a>
-    </div>
-</nav>
-
+      </nav>
+      
     <!-- Hero Section -->
     <section id="hero">
         <!-- Flex Container -->
@@ -230,25 +228,35 @@
                         <p class="mt-3 leading-relaxed text-blue-600">Etiam ac convallis enim, eget euismod dolor.</p>
                         <ul class="flex-1 mb-6 text-blue-600">
                             <li class="flex mb-2 space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6 text-blue-600">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="flex-shrink-0 w-6 h-6 text-blue-600">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                                 <span>Aenean quis</span>
                             </li>
                             <li class="flex mb-2 space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6 text-blue-600">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="flex-shrink-0 w-6 h-6 text-blue-600">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                                 <span>Morbi semper</span>
                             </li>
                             <li class="flex mb-2 space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6 text-blue-600">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="flex-shrink-0 w-6 h-6 text-blue-600">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                                 <span>Tristique enim nec</span>
                             </li>
                         </ul>
-                        <button type="button" class="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded bg-blue-600 text-white">Başlayın</button>
+                        <button type="button"
+                            class="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded bg-blue-600 text-white">Başlayın</button>
                     </div>
                 </div>
                 <!-- Pro Planı -->
@@ -263,31 +271,44 @@
                         <p class="leading-relaxed">Morbi cursus ut sapien sit amet consectetur.</p>
                         <ul class="flex-1 space-y-2">
                             <li class="flex items-center space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6 text-white">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="flex-shrink-0 w-6 h-6 text-white">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                                 <span>Her şey Ücretsizdeki gibi</span>
                             </li>
                             <li class="flex items-center space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6 text-white">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="flex-shrink-0 w-6 h-6 text-white">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                                 <span>Phasellus tellus</span>
                             </li>
                             <li class="flex items-center space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6 text-white">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="flex-shrink-0 w-6 h-6 text-white">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                                 <span>Praesent faucibus</span>
                             </li>
                             <li class="flex items-center space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6 text-white">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="flex-shrink-0 w-6 h-6 text-white">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                                 <span>Aenean et lectus blandit</span>
                             </li>
                         </ul>
-                        <a rel="noopener noreferrer" href="#" class="inline-block w-full px-5 py-3 font-bold tracking-wider text-center rounded bg-white text-blue-600">Başlayın</a>
+                        <a rel="noopener noreferrer" href="#"
+                            class="inline-block w-full px-5 py-3 font-bold tracking-wider text-center rounded bg-white text-blue-600">Başlayın</a>
                     </div>
                 </div>
                 <!-- Takım Planı -->
@@ -299,36 +320,47 @@
                                 <span class="text-sm tracking-wide">/ay</span>
                             </span>
                         </div>
-                        <p class="leading-relaxed text-blue-600">Integer sollicitudin mauris ut est viverra malesuada.</p>
+                        <p class="leading-relaxed text-blue-600">Integer sollicitudin mauris ut est viverra malesuada.
+                        </p>
                         <ul class="flex-1 space-y-2 text-blue-600">
                             <li class="flex items-center space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6 text-blue-600">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="flex-shrink-0 w-6 h-6 text-blue-600">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                                 <span>Fusce maximus</span>
                             </li>
                             <li class="flex items-center space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6 text-blue-600">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="flex-shrink-0 w-6 h-6 text-blue-600">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                                 <span>Aliquam erat volutpat</span>
                             </li>
                             <li class="flex items-center space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6 text-blue-600">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="flex-shrink-0 w-6 h-6 text-blue-600">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                                 <span>Ut placerat felis</span>
                             </li>
                         </ul>
-                        <a rel="noopener noreferrer" href="#" class="inline-block w-full px-5 py-3 font-bold tracking-wider text-center rounded bg-blue-600 text-white">Başlayın</a>
+                        <a rel="noopener noreferrer" href="#"
+                            class="inline-block w-full px-5 py-3 font-bold tracking-wider text-center rounded bg-blue-600 text-white">Başlayın</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    
-    
+
+
+
     <!-- Testimonials -->
     <section id="testimonials">
         <!-- Container to heading and testm blocks -->
