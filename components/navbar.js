@@ -15,8 +15,8 @@ const NavbarHtml = `
       <div id="dropdownKurumsal" class="absolute left-0 mt-2 hidden w-44 bg-white rounded-lg shadow-lg dark:bg-gray-700">
         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
           <li><a href="about.html" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Hakkımızda</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Misyonumuz</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Vizyonumuz</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Misyonumuz ve Vizyonumuz</a></li>
+          
           <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">İletişim</a></li>
         </ul>
       </div>
