@@ -4,7 +4,8 @@ const NavbarHtml = `
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2"> 
     <!-- Logo -->
     <div class="pt-2">
-      <img src="img/logo.svg" alt="" />
+      <img src="img/kobicrm-logo.png" alt="Logo" style="width: 100px; height: 35px;" />
+
     </div>
 <!-- Anasayfa Menüsü -->
 <div class="relative">
