@@ -40,4 +40,3 @@ handleMenuHover('menuKurumsal', 'dropdownKurumsal');
 handleMenuHover('menuHizmetler', 'dropdownHizmetler');
 handleMenuHover('menuUygulamalar', 'dropdownUygulamalar');
 handleMenuHover('doubleDropdownButton', 'doubleDropdown'); // Yeni menü için
-

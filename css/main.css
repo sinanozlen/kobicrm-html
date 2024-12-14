@@ -1286,6 +1286,8 @@ video {
   opacity: 1;
 }
 
+/* Menü öğeleri için ortalama */
+
 .hover\:bg-blue-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(147 197 253 / var(--tw-bg-opacity, 1));

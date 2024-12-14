@@ -1,79 +1,62 @@
 const NavbarHtml = `
-        <!-- Navbar -->
-<nav class="bg-blue-300 border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 left-0 w-full z-50 shadow-lg" style="padding: 0.00005rem 0;"> <!-- Yükseklik yarıya düşürüldü, padding ayarlandı -->
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2"> 
-    <!-- Logo -->
-    <div class="pt-2">
-      <img src="img/kobicrm-logo.png" alt="Logo" style="width: 100px; height: 35px;" />
-
-    </div>
-<!-- Anasayfa Menüsü -->
-<div class="relative">
-  <a href="/index.html" class="py-2 px-4 text-gray-900 hover:bg-blue-600 md:hover:bg-transparent md:border-0 md:hover:text-brightBlue md:p-0 md:w-auto dark:text-white md:dark:hover:text-brightBlue dark:hover:bg-brightBlueSupLight md:dark:hover:bg-transparent">
-    Anasayfa
-  </a>      
-</div>
-
-
-    <!-- Kurumsal Menüsü -->
-    <div class="relative">
-      <button id="menuKurumsal" class="py-2 px-4 text-gray-900 hover:bg-blue-600 md:hover:bg-transparent md:border-0 md:hover:text-brightBlue md:p-0 md:w-auto dark:text-white md:dark:hover:text-brightBlue dark:hover:bg-brightBlueSupLight md:dark:hover:bg-transparent">
-        Kurumsal
-      </button>
-      <div id="dropdownKurumsal" class="absolute left-0 mt-2 hidden w-44 bg-white rounded-lg shadow-lg dark:bg-gray-700">
-        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-          <li><a href="about.html" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Hakkımızda</a></li>
-          <li><a href="/misyon_vizyon.html" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Misyonumuz ve Vizyonumuz</a></li>
-          
-          <li><a href="/contact.html" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">İletişim</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Hizmetler Menüsü -->
-    <div class="relative">
-      <button id="menuHizmetler" class="py-2 px-4 text-gray-900 hover:bg-blue-600 md:hover:bg-transparent md:border-0 md:hover:text-brightBlue md:p-0 md:w-auto dark:text-white md:dark:hover:text-brightBlue dark:hover:bg-brightBlueSupLight md:dark:hover:bg-transparent">
-        Hizmetler
-      </button>
-      <div id="dropdownHizmetler" class="absolute left-0 mt-2 hidden w-44 bg-white rounded-lg shadow-lg dark:bg-gray-700">
-        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-          <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Bulut Hizmeti</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Masaüstü Hizmeti</a></li>
-          <li>
-            <!-- Yeni Dropdown -->
-            <div class="relative">
-              <button id="doubleDropdownButton" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-blue-600 dark:hover:bg-black dark:hover:text-black">
-                Tanıtım Hizmetleri
-                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
-                </svg>
-              </button>
-              <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-                  <li><a href="#" class="block px-4 py-2 hover:bg-blue-300 dark:hover:bg-blue-600 dark:text-blue-600 dark:hover:text-blue-600">Reklam</a></li>
-                  <li><a href="#" class="block px-4 py-2 hover:bg-blue-300 dark:hover:bg-blue-600 dark:text-blue-600 dark:hover:text-blue-600">Web Sitesi</a></li>
-   
-                </ul>
-              </div>
+<div id="root" class="mx-0 px-0 w-full">
+    <!-- Yazılar ve indirim bilgileri alt kısmı -->
+    <div class="bg-blue-900 py-2 w-full">
+        <div class="flex justify-between items-center px-4">
+            <h6 class="text-white text-lg font-bold">İLK GÖNDERİNİZİ 10 TL İNDİRİMLİ OLUŞTURUN! İNDİRİM KODUNUZ: NUA2781</h6>
+            <div class="flex space-x-4">
+                <a class="text-white hover:underline" href="#">English</a>
+                <a class="text-white hover:underline" href="#"><i class="fa fa-sign-in"></i> Giriş Yap</a>
             </div>
-          </li>
-        </ul>
-      </div>
+        </div>
     </div>
 
-    <!-- Uygulamalar Menüsü -->
-    <div class="relative">
-      <button id="menuUygulamalar" class="py-2 px-4 text-gray-900 hover:bg-blue-600 md:hover:bg-transparent md:border-0 md:hover:text-brightBlue md:p-0 md:w-auto dark:text-white md:dark:hover:text-brightBlue dark:hover:bg-brightBlueSupLight md:dark:hover:bg-transparent">
-        Uygulamalar
-      </button>
-      <div id="dropdownUygulamalar" class="absolute left-0 mt-2 hidden w-44 bg-white rounded-lg shadow-lg dark:bg-gray-700">
-        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-          <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">CRM</a></li>        
-          <li><a href="#" class="block px-4 py-2 hover:bg-blue-600 dark:hover:bg-blue-600 dark:hover:text-white">Fatura</a></li>
-        </ul>
-      </div>
+    <!-- Ana içerik (Logo) -->
+    <div class="header my-5 flex justify-between items-center px-4">
+        <a href="/">
+            <img src="/img/kobicrm-logo.png" alt="KobiCRM Logo" class="w-45 h-10">
+        </a>
     </div>
-  </div>
+
+   <!-- Menü kısmı -->
+<nav id="menu" class="bg-gray-100 border-t border-gray-300 w-full">
+    <div class="flex justify-between items-center px-4 w-full">
+        <!-- Ev simgesi sol tarafta -->
+        <div class="flex items-center">
+            <a href="/" class="text-blue-600 hover:text-blue-800">
+                <i class="fa fa-home mr-2"></i>
+            </a>
+        </div>
+
+        <!-- Menü öğeleri ortada -->
+        <div class="flex space-x-8 flex-grow justify-center">
+            <a class="text-black hover:underline" href="/about.html">Hakkımızda</a>
+            <a class="text-black hover:underline" href="/contact.html">İletişim</a>
+            <a class="text-black hover:underline" href="/misyon_vizyon">Misyonumuz ve Vizyonumuz</a>
+            <a class="text-black hover:underline" href="/pricing.html">Fiyatlar</a>
+        </div>
+
+        <!-- Kullanıcı Menüsü sağ tarafta -->
+        <div class="flex items-center space-x-4 ml-auto relative">
+            <a href="#" class="text-black hover:underline flex items-center" id="userMenuToggle">
+                <i class="fa fa-user mr-2"></i> Kullanıcı Adı
+            </a>
+            <!-- Hesabım ve Çıkış Yap Menüsü (Başlangıçta gizli) -->
+            <ul id="userMenu" class="absolute right-0 bg-white shadow-md mt-2 hidden">
+                <li><a class="block px-4 py-2 text-blue-900 hover:bg-blue-100" href="#">Hesabım</a></li>
+                <li><hr class="border-gray-300"></li>
+                <li><a class="block px-4 py-2 text-blue-900 hover:bg-blue-100" href="#">Çıkış Yap</a></li>
+            </ul>
+        </div>
+
+        <!-- Kayıt Ol kısmı -->
+        <a class="text-black hover:underline" href="#"><i class="fa fa-user-plus"></i> Kayıt Ol</a>
+    </div>
 </nav>
 
-      `;
+
+    </nav>
+</div>
+
+`;
+
