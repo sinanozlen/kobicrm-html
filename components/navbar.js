@@ -14,7 +14,7 @@ const NavbarHtml = `
     <!-- Ana içerik (Logo) -->
     <div class="header my-5 flex justify-between items-center px-4">
         <a href="/">
-            <img src="/img/kobicrm-logo.png" alt="KobiCRM Logo" class="w-45 h-10">
+            <img src="./img/kobicrm-logo.png" alt="KobiCRM Logo" class="w-45 h-10">
         </a>
     </div>
 
@@ -23,17 +23,17 @@ const NavbarHtml = `
     <div class="flex justify-between items-center px-4 w-full">
         <!-- Ev simgesi sol tarafta -->
         <div class="flex items-center">
-            <a href="/" class="text-blue-600 hover:text-blue-800">
+            <a href="./" class="text-blue-600 hover:text-blue-800">
                 <i class="fa fa-home mr-2"></i>
             </a>
         </div>
 
         <!-- Menü öğeleri ortada -->
         <div class="flex space-x-8 flex-grow justify-center">
-            <a class="text-black hover:underline" href="/about.html">Hakkımızda</a>
-            <a class="text-black hover:underline" href="/contact.html">İletişim</a>
-            <a class="text-black hover:underline" href="/misyon_vizyon.html">Misyonumuz ve Vizyonumuz</a>
-            <a class="text-black hover:underline" href="/pricing.html">Fiyatlar</a>
+            <a class="text-black hover:underline" href="./about.html">Hakkımızda</a>
+            <a class="text-black hover:underline" href="./contact.html">İletişim</a>
+            <a class="text-black hover:underline" href="./misyon_vizyon.html">Misyonumuz ve Vizyonumuz</a>
+            <a class="text-black hover:underline" href="./pricing.html">Fiyatlar</a>
         </div>
 
         <!-- Kullanıcı Menüsü sağ tarafta -->
