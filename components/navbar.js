@@ -32,7 +32,7 @@ const NavbarHtml = `
         <div class="flex space-x-8 flex-grow justify-center">
             <a class="text-black hover:underline" href="/about.html">Hakkımızda</a>
             <a class="text-black hover:underline" href="/contact.html">İletişim</a>
-            <a class="text-black hover:underline" href="/misyon_vizyon">Misyonumuz ve Vizyonumuz</a>
+            <a class="text-black hover:underline" href="/misyon_vizyon.html">Misyonumuz ve Vizyonumuz</a>
             <a class="text-black hover:underline" href="/pricing.html">Fiyatlar</a>
         </div>
 
