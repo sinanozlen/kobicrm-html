@@ -6,7 +6,7 @@ const NavbarHtml = `
             <h6 class="text-white text-lg font-bold">İLK GÖNDERİNİZİ 10 TL İNDİRİMLİ OLUŞTURUN! İNDİRİM KODUNUZ: NUA2781</h6>
             <div class="flex space-x-4">
                 <a class="text-white hover:underline" href="#">English</a>
-                <a class="text-white hover:underline" href="#"><i class="fa fa-sign-in"></i> Giriş Yap</a>
+                <a class="text-white hover:underline" href="/login.html"><i class="fa fa-sign-in"></i> Giriş Yap</a>
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@ const NavbarHtml = `
         </div>
 
         <!-- Kayıt Ol kısmı -->
-        <a class="text-black hover:underline" href="#"><i class="fa fa-user-plus"></i> Kayıt Ol</a>
+        <a class="text-black hover:underline" href="/register.html"><i class="fa fa-user-plus"></i> Kayıt Ol</a>
     </div>
 </nav>
 
