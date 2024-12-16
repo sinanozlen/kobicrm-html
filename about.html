@@ -4,167 +4,196 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hakkımızda</title>
-  <link rel="stylesheet" href="css/main.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-  
-    <!-- Flowbite JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.js"></script>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
   <!-- Navbar -->
   <div id="navbar-container"></div>
-
-  <script src="components/navbar.js"></script> <!-- Navbar JS -->
+  <script src="components/navbar.js"></script>
   <script>
-      // Navbar'ı yükle
-      document.getElementById('navbar-container').innerHTML = `
-          <!-- Navbar İçeriği -->
-          ${NavbarHtml}
-      `;
+    document.getElementById('navbar-container').innerHTML = NavbarHtml;
   </script>
- 
 
   <!-- Header Section -->
   <header class="relative bg-cover bg-center h-[400px]" style="background-image: url('./img/pexels-anntarazevich-5425602.jpg');">
-    <div class="absolute inset-0 bg-blue-900 bg-opacity-60"></div>
-    <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
-      <h1 class="text-4xl font-bold">Hakkımızda</h1>
-      <p class="mt-4 text-lg">
+    <!-- Gradyan Katmanı -->
+    <div class="absolute inset-0 bg-gradient-to-r from-teal-600 via-blue-500 to-indigo-600 opacity-50"></div>
+    <!-- İçerik -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
+      <h1 class="text-5xl font-extrabold text-white drop-shadow-md hover:text-gray-100 transition duration-300">
+        Hakkımızda
+      </h1>
+      <p class="mt-4 text-xl text-gray-200 max-w-2xl hover:text-gray-100 transition duration-300">
         CRM Sektöründe Yenilikçi ve Güvenilir Çözümlerle Müşterilerimizin Yanında Olmaya Devam Ediyoruz.
       </p>
     </div>
   </header>
+  
+  
 
-  
-  <section class="bg-gray-50 py-16">
-    <!-- Biz Kimiz Bölümü -->
-    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <!-- Metin Bölümü -->
-      <div>
-        <h2 class="text-3xl font-bold text-gray-800 mb-6">Biz Kimiz?</h2>
-        <p class="text-lg text-gray-600 leading-relaxed">
-          Şirketimiz, Sektördeki Tecrübemizle Müşterilerimize Yenilikçi CRM Çözümleri Sunmaktadır. 
-          İş Süreçlerini Optimize Etmek ve Müşteri Memnuniyetini Artırmak İçin Teknolojiye Dayalı Hizmetler Sağlıyoruz.
-        </p>
-        <p class="mt-4 text-lg text-gray-600 leading-relaxed">
-          Müşteri Odaklı Yaklaşımımızla, Uzun Vadeli İş Birlikleri Kurmayı Hedefliyoruz. 
-          Modern Altyapımız ve Güçlü Ekibimizle Başarınızı Destekliyoruz.
-        </p>
-      </div>
-      <!-- Görsel Bölümü -->
-      <div>
-        <img src="https://www.erm.com.tr/wp-content/uploads/2023/04/yapayzeka-3.jpg" 
-             alt="Biz Kimiz Görseli" 
-             class="rounded-lg shadow-lg">
-      </div>
-    </div>
-  
-    <!-- Sektördeki Liderliğimiz Bölümü -->
-<div class="mt-16 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 py-12">
-  <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold text-gray-800 mb-6">Sektördeki Liderliğimiz</h2>
-    <p class="text-lg text-gray-700 mb-12">
-      Sektör Standartlarını Yükselten Çözümlerimizle İş Ortaklarımızın Başarısına Katkıda Bulunuyoruz.
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Kart 1 -->
-      <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <div class="flex justify-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-2">500+ Proje</h3>
-        <p class="text-gray-600">
-          Yıllardır Başarılı Projelere İmza Attık ve Müşterilerimizin Güvenini Kazandık.
-        </p>
-      </div>
-      <!-- Kart 2 -->
-      <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <div class="flex justify-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l-4-4m0 0l4-4m-4 4h16" />
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-2">250+ Müşteri</h3>
-        <p class="text-gray-600">
-          Sadık Müşterilerimizle Uzun Vadeli İş Birlikleri Kurmaya Devam Ediyoruz.
-        </p>
-      </div>
-      <!-- Kart 3 -->
-      <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <div class="flex justify-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.886 0 3.428-1.114 3.857-2.667M15.857 5.333A4.001 4.001 0 0012 2a4.001 4.001 0 00-3.857 3.333m3.857 5.334v2m0 4h.01m-6.526-4.02a7.99 7.99 0 1113.032 0" />
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-2">20+ Yıllık Tecrübe</h3>
-        <p class="text-gray-600">
-          Sektörde Uzun Yıllara Dayanan Bir Deneyimle Kaliteli Hizmet Sunuyoruz.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-  </section>
-  
-  <section class="py-5 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <!-- Başlık -->
-      <h2 class="text-3xl font-bold text-gray-800 text-center md:w-4/2 h-auto text-left mb-10">Değerlerimiz</h2>
-      <!-- İçerik -->
+  <!-- Content Section -->
+  <section class="bg-gray-50 py-20" style="background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/symphony.png'); background-repeat: repeat;">
+    <div class="container mx-auto px-6">
+      <!-- Biz Kimiz Section -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <!-- Görsel Bölümü -->
-        <div class="flex justify-center">
-          <img 
-            src="img/pexels-mizunokozuki-12902985.jpg" 
-            alt="Değerlerimiz Görseli" 
-            class="rounded-lg shadow-lg w-3/4 h-auto md:w-2/3"
-          />
+        <div class="bg-white rounded-xl shadow-lg p-8 hover:bg-blue-50 transition duration-300">
+          <h2 class="text-3xl font-bold text-gray-800 mb-6 hover:text-blue-600 transition duration-300">Biz Kimiz?</h2>
+          <p class="text-lg text-gray-600 leading-relaxed hover:text-gray-800 transition duration-300">
+            Şirketimiz, sektördeki tecrübemizle müşterilerimize yenilikçi CRM çözümleri sunmaktadır. İş süreçlerini optimize etmek ve müşteri memnuniyetini artırmak için teknolojiye dayalı hizmetler sağlıyoruz.
+          </p>
+          <p class="mt-4 text-lg text-gray-600 leading-relaxed hover:text-gray-800 transition duration-300">
+            Müşteri odaklı yaklaşımımızla, uzun vadeli iş birlikleri kurmayı hedefliyoruz. Modern altyapımız ve güçlü ekibimizle başarınızı destekliyoruz.
+          </p>
         </div>
-        <!-- Liste Bölümü -->
-        <div class="bg-white rounded-lg shadow-lg p-6">
-          <ul class="space-y-4">
-            <li class="flex items-start">
-              <span class="text-blue-600 text-lg mr-3">•</span>
-              <p class="text-gray-700 text-lg">CRM Bizim İşimiz.</p>
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 text-lg mr-3">•</span>
-              <p class="text-gray-700 text-lg">Çözüm Odaklıyız.</p>
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 text-lg mr-3">•</span>
-              <p class="text-gray-700 text-lg">Müşterimizi Destekleriz.</p>
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 text-lg mr-3">•</span>
-              <p class="text-gray-700 text-lg">Yenilikçi ve Çeviğiz.</p>
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 text-lg mr-3">•</span>
-              <p class="text-gray-700 text-lg">İlişkilere Değer Veririz.</p>
-            </li>
-          </ul>
+        <div>
+          <img src="https://www.erm.com.tr/wp-content/uploads/2023/04/yapayzeka-3.jpg" 
+               alt="Biz Kimiz Görseli" 
+               class="rounded-lg shadow-xl ml-20 max-w-[350px]">
         </div>
       </div>
-    </div>
+
+      <div class="mt-20 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 py-16">
+        <div class="container mx-auto px-6 lg:px-20 text-center">
+          <h2 class="text-3xl font-bold text-gray-800 mb-10 hover:text-blue-600 transition duration-300">Sektördeki Liderliğimiz</h2>
+          <p class="text-lg text-gray-700 mb-12 hover:text-gray-800 transition duration-300">
+            Sektör standartlarını yükselten çözümlerimizle iş ortaklarımızın başarısına katkıda bulunuyoruz.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Kart 1 -->
+            <div class="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold text-gray-800 mb-4 hover:text-blue-600 transition duration-300">500+ Proje</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Yıllardır başarılı projelere imza attık ve müşterilerimizin güvenini kazandık.
+              </p>
+            </div>
+            <!-- Kart 2 -->
+            <div class="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold text-gray-800 mb-4 hover:text-blue-600 transition duration-300">250+ Müşteri</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Sadık müşterilerimizle uzun vadeli iş birlikleri kurmaya devam ediyoruz.
+              </p>
+            </div>
+            <!-- Kart 3 -->
+            <div class="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold text-gray-800 mb-4 hover:text-blue-600 transition duration-300">20+ Yıllık Tecrübe</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Sektörde uzun yıllara dayanan bir deneyimle kaliteli hizmet sunuyoruz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- Mission Section -->
+      <div class="mt-20">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-10 hover:text-blue-600 transition duration-300">
+          <i class="fas fa-bullseye text-blue-600 mr-2"></i>Misyonumuz
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:bg-blue-50 transition duration-300">
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Her sektörden her büyüklükte firmaya, her türlü ihtiyaçlarına uygun son teknolojilerle uyumlu #1 CRM çözümleri sunmaktayız.
+            </p>
+            <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+              Hepsi bir arada ve bütünleşik CRM platformumuz ile müşterilerimizin hayatını kolaylaştırmak, işlerini büyütmek ve müşteri ilişkilerini güçlendirmek temel misyonumuzdur.
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <img 
+              src="img/mission.jpg" 
+              alt="Misyonumuz Görseli" 
+              class="rounded-lg shadow-xl max-w-[300px]">
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Vision Section -->
+      <div class="mt-20">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-10 hover:text-blue-600 transition duration-300">
+          <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>Vizyonumuz
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div class="flex justify-center">
+            <img 
+              src="img/vision.jpg" 
+              alt="Vizyonumuz Görseli" 
+              class="rounded-lg shadow-xl max-w-[300px]">
+          </div>
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:bg-blue-50 transition duration-300">
+            <p class="text-lg text-gray-700 leading-relaxed">
+              ERM Bilişim Teknolojileri olarak 5 yıl içinde Türkiye’de CRM programı dendiğinde ilk akla gelen firma olmayı ve Türkiye’nin CRM ihtiyaçlarına en uygun, en çok aranan ve tercih edilen çözüm olmayı amaçlıyoruz.
+            </p>
+            <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+              10 yıl içinde amacımız, ilişki yönetimi alanında, yeni kavramlar ve yeni teknolojiler ortaya koyan uluslararası bir teknoloji şirketi olmak ve özellikle Avrupa ve ABD’de satış ağını genişleterek büyümektir.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <br><br>
+
+      <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">Şirketimizi Daha Yakından Tanıyın</h3>
+            <div class="relative w-full max-w-3xl mx-auto">
+                <iframe class="w-full h-64 rounded-lg shadow-lg" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    
+
+      <!-- !-- Values Section -- -->
+      <div class="mt-20">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-10 hover:text-blue-600 transition duration-300">
+          <i class="fas fa-star text-yellow-500 mr-3"></i>Değerlerimiz
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:bg-blue-50 transition duration-300">
+            <ul class="space-y-6">
+              <li class="flex items-start">
+                <span class="text-blue-600 text-2xl mr-4">✓</span>
+                <p class="text-gray-700 text-lg hover:text-gray-800 transition duration-300">CRM Bizim İşimiz.</p>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-600 text-2xl mr-4">✓</span>
+                <p class="text-gray-700 text-lg hover:text-gray-800 transition duration-300">Çözüm Odaklıyız.</p>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-600 text-2xl mr-4">✓</span>
+                <p class="text-gray-700 text-lg hover:text-gray-800 transition duration-300">Müşterimizi Destekleriz.</p>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-600 text-2xl mr-4">✓</span>
+                <p class="text-gray-700 text-lg hover:text-gray-800 transition duration-300">Yenilikçi ve Çeviğiz.</p>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-600 text-2xl mr-4">✓</span>
+                <p class="text-gray-700 text-lg hover:text-gray-800 transition duration-300">İlişkilere Değer Veririz.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center">
+            <img 
+              src="img/pexels-mizunokozuki-12902985.jpg" 
+              alt="Değerlerimiz Görseli" 
+              class="rounded-lg shadow-xl max-w-[400px]">
+          </div>
+        </div>
+      </div>
+      
   </section>
-  
-  
 
   <!-- Footer -->
-     
-      <div id="footer-container"></div>
-      <script src="components/footer.js"></script>
-      <script>
-        document.getElementById('footer-container').innerHTML = FooterHtml;
-      </script>
+  <div id="footer-container"></div>
+  <script src="components/footer.js"></script>
+  <script>
+    document.getElementById('footer-container').innerHTML = FooterHtml;
+  </script>
 
-<script src="./js/script.js"></script>
 </body>
 </html>

@@ -26,6 +26,15 @@ const FooterHtml = `
         </div>
     </div>
 
+    <!-- İletişim Sayfası Erişim Alanı -->
+    <div class="mt-8 bg-gray-800 text-white p-4 rounded-lg shadow-lg text-center">
+        <h3 class="text-lg font-semibold">Bizimle İletişime Geçin</h3>
+        <p class="mt-2">Sorularınız mı var? Size yardımcı olmak için buradayız!</p>
+        <a href="./contact.html" class="inline-block mt-4 bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">
+            İletişim Sayfasına Git
+        </a>
+    </div>
+
     <!-- Alt Menü -->
     <div class="mt-12 border-t border-gray-700 pt-8">
         <div class="container mx-auto flex flex-wrap justify-between items-start space-y-8 md:space-y-0">
