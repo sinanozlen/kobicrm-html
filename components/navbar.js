@@ -1,7 +1,7 @@
 const NavbarHtml = `
 <div id="root" class="mx-0 px-0 w-full">
     <!-- Yazılar ve indirim bilgileri alt kısmı -->
-    <div class="bg-blue-900 py-2 w-full">
+    <div class="bg-blue-600 py-2 w-full">
         <div class="flex justify-between items-center px-4">
             <h6 class="text-white text-lg font-bold">İLK GÖNDERİNİZİ 10 TL İNDİRİMLİ OLUŞTURUN! İNDİRİM KODUNUZ: NUA2781</h6>
             <div class="flex space-x-4">

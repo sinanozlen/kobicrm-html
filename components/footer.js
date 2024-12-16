@@ -1,5 +1,5 @@
 const FooterHtml = `
-       <footer class="bg-gray-900 text-white py-12">
+       <footer class="bg-gray-950 text-white py-12">
     <div class="container mx-auto flex flex-wrap justify-between items-center">
         <!-- Sol Kısım - QR Kod ve Uygulama İndirme -->
         <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-6">
