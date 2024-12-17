@@ -13,12 +13,12 @@ const NavbarHtml = `
         </div>
     </div>
 
-    <!-- Logo ve Ara Boşluk -->
-    <div class="header py-5 flex justify-between items-center px-6">
-        <a href="/">
-            <img src="./img/kobicrm-logo.png" alt="KobiCRM Logo" class="w-45 h-12">
-        </a>
-    </div>
+  <div class="header my-5 flex justify-between items-center px-4">
+            <a href="/">
+                <img src="./img/kobicrm-logo.png" alt="KobiCRM Logo" class="w-45 h-10">
+            </a>
+        </div>
+    
 
     <!-- Menü Çubuğu -->
     <nav id="menu" class="bg-gray-100 border-t border-gray-300 w-full py-2">

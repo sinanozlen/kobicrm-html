@@ -69,5 +69,27 @@ const FooterHtml = `
             </div>
         </div>
     </div>
+    <body>
+      <!-- Canlı Destek Sohbet Kutusu -->
+<div class="fixed bottom-8 left-8">
+  <button id="chat-toggle" class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-blue-700 transition">
+      <i class="fas fa-comments mr-2"></i> Canlı Destek
+  </button>
+  <div id="chat-box" class="hidden mt-4 bg-white border border-gray-300 rounded-lg shadow-lg w-80">
+      <div class="bg-blue-600 text-white p-3 rounded-t-lg">Canlı Destek</div>
+      <div class="p-4 h-40 overflow-y-auto text-gray-600">
+          <p>Merhaba! Size nasıl yardımcı olabiliriz?</p>
+      </div>
+      <input type="text" placeholder="Mesajınızı yazın..." class="w-full p-2 border-t border-gray-300 focus:outline-none">
+  </div>
+</div>
+
+<script>
+  const chatToggle = document.getElementById('chat-toggle');
+  const chatBox = document.getElementById('chat-box');
+  chatToggle.addEventListener('click', () => {
+      chatBox.classList.toggle('hidden');
+  });
+</script></body>
 </footer>
 `;
