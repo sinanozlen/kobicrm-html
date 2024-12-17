@@ -3,15 +3,20 @@ const NavbarHtml = `
     <!-- Üst bilgi çubuğu -->
     <div class="bg-blue-600 py-2 w-full">
         <div class="flex justify-between items-center px-6">
-            <h6 class="text-white text-lg font-bold">İLK GÖNDERİNİZİ 10 TL İNDİRİMLİ OLUŞTURUN! İNDİRİM KODUNUZ: NUA2781</h6>
+            <!-- Tıklanabilir Mobile Uygulama Metni -->
+            <a href="/" class="text-white text-base font-normal hover:underline">
+                Mobile uygulamamızı şimdi indirin %20 indirim kazanın
+            </a>
             <div class="flex space-x-6">
-                <a class="text-white hover:underline" href="#">English</a>
-                <a class="text-white hover:underline flex items-center" href="/login.html">
-                    <i class="fa fa-sign-in mr-2"></i> Giriş Yap
+                <a class="text-white hover:underline text-sm" href="#">English</a>
+                <a class="text-white hover:underline flex items-center text-sm" href="/login.html">
+                    Giriş Yap
                 </a>
             </div>
         </div>
     </div>
+</div>
+
 
   <div class="header my-5 flex justify-between items-center px-4">
             <a href="/">

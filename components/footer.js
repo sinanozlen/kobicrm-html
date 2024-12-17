@@ -3,7 +3,7 @@ const FooterHtml = `
     <div class="container mx-auto flex flex-wrap justify-between items-center">
         <!-- Sol Kısım - QR Kod ve Uygulama İndirme -->
         <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-6">
-            <h1 class="text-xl font-semibold">Uygulamayı İndirin ve Şirketinizi Her Yerden Takip Edin</h1>
+            <h1 class="text-xl font-semibold">Uygulamayı indirin ve şirketinizi her yerden yönetin!</h1>
             <div class="flex flex-col md:flex-row items-center md:items-start md:space-x-8">
                 <!-- QR Kod -->
                 <div class="bg-gray-800 p-4 rounded-lg shadow-md">
@@ -28,10 +28,10 @@ const FooterHtml = `
 
     <!-- İletişim Sayfası Erişim Alanı -->
     <div class="mt-8 bg-gray-800 text-white p-4 rounded-lg shadow-lg text-center">
-        <h3 class="text-lg font-semibold">Bizimle İletişime Geçin</h3>
+        <h3 class="text-lg font-semibold">Bizimle iletişime geçin</h3>
         <p class="mt-2">Sorularınız mı var? Size yardımcı olmak için buradayız!</p>
         <a href="./contact.html" class="inline-block mt-4 bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">
-            İletişim Sayfasına Git
+            İletişim sayfasına git
         </a>
     </div>
 
@@ -71,7 +71,7 @@ const FooterHtml = `
     </div>
     <body>
       <!-- Canlı Destek Sohbet Kutusu -->
-<div class="fixed bottom-8 left-8">
+<div class="fixed bottom-8 right-8">
   <button id="chat-toggle" class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-blue-700 transition">
       <i class="fas fa-comments mr-2"></i> Canlı Destek
   </button>
