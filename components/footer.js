@@ -1,46 +1,38 @@
 const FooterHtml = `
-       <footer class="bg-gray-950 text-white py-12">
-    <div class="container mx-auto flex flex-wrap justify-between items-center">
+    <footer class="bg-gray-950 text-white py-0.75">
+    <div class="container mx-auto flex flex-wrap justify-between items-center space-y-8 md:space-y-0">
         <!-- Sol Kısım - QR Kod ve Uygulama İndirme -->
         <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-6">
-            <h1 class="text-xl font-semibold">Uygulamayı indirin ve şirketinizi her yerden yönetin!</h1>
+            <h1 class="text-lg md:text-xl font-semibold">
+                Uygulamayı indirin ve şirketinizi her yerden yönetin!
+            </h1>
             <div class="flex flex-col md:flex-row items-center md:items-start md:space-x-8">
                 <!-- QR Kod -->
-                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-                    <img src="./img/qr.svg" alt="QR Code" class="w-32 h-32 object-contain" />
+                <div class="bg-gray-800 p-3 rounded-lg shadow-md">
+                    <img src="./img/qr.svg" alt="QR Code" class="max-w-[100px] h-auto object-contain" />
                 </div>
                 <!-- App Store ve Play Store -->
                 <div class="flex flex-col items-center md:items-start space-y-4">
-                    <a href="#"><img src="./img/appstore.svg" alt="App Store" class="w-36 h-auto" /></a>
-                    <a href="#"><img src="./img/playstore.svg" alt="Play Store" class="w-36 h-auto" /></a>
+                    <a href="#"><img src="./img/appstore.svg" alt="App Store" class="max-w-[140px] h-auto" /></a>
+                    <a href="#"><img src="./img/playstore.svg" alt="Play Store" class="max-w-[140px] h-auto" /></a>
                 </div>
             </div>
         </div>
 
         <!-- Sağ Kısım - CRM ile İlgili Görsel -->
-        <div class="w-full md:w-1/2 flex justify-center items-center relative">
-            <!-- Arka Plan Degrade -->
-            <div class="absolute w-80 h-80 bg-gradient-to-br from-blue-500 to-purple-500 opacity-20 rounded-full -z-10"></div>
-            <!-- CRM Görseli -->
-            <img src="./img/crm-illustration.webp" alt="CRM Illustration" class="w-64 h-64 object-cover rounded-full shadow-lg" />
+        <div class="w-full md:w-1/2 flex justify-end">
+            <img src="./img/footerokey.png" alt="CRM Illustration" class="max-w-[800px] rounded-lg shadow-md" style="margin-left: 4180px;" />
         </div>
     </div>
 
-    <!-- İletişim Sayfası Erişim Alanı -->
-    <div class="mt-8 bg-gray-800 text-white p-4 rounded-lg shadow-lg text-center">
-        <h3 class="text-lg font-semibold">Bizimle iletişime geçin</h3>
-        <p class="mt-2">Sorularınız mı var? Size yardımcı olmak için buradayız!</p>
-        <a href="./contact.html" class="inline-block mt-4 bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">
-            İletişim sayfasına git
-        </a>
-    </div>
-
     <!-- Alt Menü -->
-    <div class="mt-12 border-t border-gray-700 pt-8">
-        <div class="container mx-auto flex flex-wrap justify-between items-start space-y-8 md:space-y-0">
+    <div class="mt-12 border-t border-gray-700 pt-6">
+        <div class="container mx-auto flex flex-wrap justify-between items-start space-y-6 md:space-y-0">
             <!-- Sol Kısım - KobiCRM ve Sosyal Medya -->
             <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-                <a href="/"> <img src="./img/kobicrm-logo.png" alt="KobiCRM Logo" class="w-45 h-10"> </a>
+                <a href="/">
+                    <img src="./img/kobicrm-logo.png" alt="KobiCRM Logo" class="max-w-[120px] h-auto">
+                </a>
                 <ul class="flex space-x-4 mt-4">
                     <li><a href="#" class="text-blue-400 hover:text-blue-500"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="#" class="text-pink-400 hover:text-pink-500"><i class="fab fa-instagram"></i></a></li>
@@ -50,7 +42,7 @@ const FooterHtml = `
             </div>
 
             <!-- Sağ Kısım - Menü -->
-            <div class="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+            <div class="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                 <ul>
                     <li><a href="#" class="text-gray-400 hover:text-white">Hizmetlerimiz</a></li>
                     <li><a href="./pricing.html" class="text-gray-400 hover:text-white">Fiyatlar</a></li>
@@ -69,27 +61,5 @@ const FooterHtml = `
             </div>
         </div>
     </div>
-    <body>
-      <!-- Canlı Destek Sohbet Kutusu -->
-<div class="fixed bottom-8 right-8">
-  <button id="chat-toggle" class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-blue-700 transition">
-      <i class="fas fa-comments mr-2"></i> Canlı Destek
-  </button>
-  <div id="chat-box" class="hidden mt-4 bg-white border border-gray-300 rounded-lg shadow-lg w-80">
-      <div class="bg-blue-600 text-white p-3 rounded-t-lg">Canlı Destek</div>
-      <div class="p-4 h-40 overflow-y-auto text-gray-600">
-          <p>Merhaba! Size nasıl yardımcı olabiliriz?</p>
-      </div>
-      <input type="text" placeholder="Mesajınızı yazın..." class="w-full p-2 border-t border-gray-300 focus:outline-none">
-  </div>
-</div>
-
-<script>
-  const chatToggle = document.getElementById('chat-toggle');
-  const chatBox = document.getElementById('chat-box');
-  chatToggle.addEventListener('click', () => {
-      chatBox.classList.toggle('hidden');
-  });
-</script></body>
 </footer>
 `;

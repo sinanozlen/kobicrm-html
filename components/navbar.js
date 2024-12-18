@@ -1,4 +1,5 @@
 const NavbarHtml = `
+
 <div id="root" class="mx-0 px-0 w-full">
     <!-- Üst bilgi çubuğu -->
     <div class="bg-blue-600 py-2 w-full">
