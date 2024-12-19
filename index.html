@@ -4,29 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    
 
     <!-- Fontawesome Pro-->
     <link rel="stylesheet" href="/css/fontawesome.css">
 
-     <!-- Famfamfam-flags -->
-     <link rel="stylesheet" href="/flags/css/famfamfam-flags.css" />
+    <link rel="stylesheet" href="css/main.css">
 
+    <!-- Tailwind -->
 
-    <!-- Flowbite JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Head Component -->
+
+    <script type="module">
+        import { createHead } from './components/head.js';
+
+        createHead();
+    </script>
+
+    <!-- Famfamfam-flags -->
+    <link rel="stylesheet" href="/flags/css/famfamfam-flags.css" />
+
+    <!-- Title -->
     <title>KobiCRM</title>
-    <link rel="icon" href="./img/favicon.png" type="image/png">
-       
-   
-    
-</head>
 
+</head>
 
 <body>
     <!-- Navbar -->
@@ -40,164 +42,169 @@
             ${NavbarHtml}
         `;
     </script>
-   
-      
+
     <!-- Hero Section -->
     <section id="hero">
         <!-- Flex Container -->
         <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
             <!-- Left item -->
             <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-              <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
-                  CRM ile İşlerinizi Daha Kolay Yönetin
-              </h1>
-              <p class="max-w-sm text-center text-darkblueishBlue md:text-left">
-                  CRM sistemimiz sayesinde müşteri ilişkilerinizi kolayca yönetin. Ekibiniz arasındaki iletişimi güçlendirin ve 
-                  satış süreçlerini daha verimli hale getirin. Zaman kazanın ve işlerinizi optimize edin!
-              </p>
-              <div class="flex justify-center md:justify-start">
-                  <!-- Button -->
-                  <a href="#"
-                      class="p-3 px-6 pt-2 text-white bg-blue-600 hover:bg-blue-700 rounded-full baseline md:block">Başlayalım!</a>
-              </div>
-          </div>
-          
+                <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+                    CRM ile İşlerinizi Daha Kolay Yönetin
+                </h1>
+                <p class="max-w-sm text-center text-darkblueishBlue md:text-left">
+                    CRM sistemimiz sayesinde müşteri ilişkilerinizi kolayca yönetin. Ekibiniz arasındaki iletişimi
+                    güçlendirin ve
+                    satış süreçlerini daha verimli hale getirin. Zaman kazanın ve işlerinizi optimize edin!
+                </p>
+                <div class="flex justify-center md:justify-start">
+                    <!-- Button -->
+                    <a href="#"
+                        class="p-3 px-6 pt-2 text-white bg-blue-600 hover:bg-blue-700 rounded-full baseline md:block">Başlayalım!</a>
+                </div>
+            </div>
+
             <!-- Image -->
             <div class="md:w-1/2 flex justify-center items-center">
-              <div class="rounded-full p-1 bg-gradient-to-r from-blue-500 via-blue-500 to-orange-500">
-                  <img src="./img/front.jpeg" alt=""/>
-              </div>
-          </div>
-          
+                <div class="rounded-full p-1 bg-gradient-to-r from-blue-500 via-blue-500 to-orange-500">
+                    <img src="./img/front.jpeg" alt="" />
+                </div>
+            </div>
     </section>
 
-  <!-- Features Section -->
-<section id="features">
-  <!-- Flex container -->
-  <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
-      <!-- What's Different -->
-      <div class="flex flex-col space-y-12 md:w-1/2">
-          <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
-              CRM ile İşlerinizi Kolaylaştırın
-          </h2>
-          <p class="max-w-sm text-center text-darkblueishBlue md:text-left">
-              Müşteri ilişkilerinde profesyonelliği artırın, satış süreçlerinizi optimize edin ve iş akışınızı verimli hale getirin. CRM sistemimizle hedeflerinize daha hızlı ulaşın.
-          </p>
-      </div>
+    <!-- Features Section -->
+    <section id="features">
+        <!-- Flex container -->
+        <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+            <!-- What's Different -->
+            <div class="flex flex-col space-y-12 md:w-1/2">
+                <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+                    CRM ile İşlerinizi Kolaylaştırın
+                </h2>
+                <p class="max-w-sm text-center text-darkblueishBlue md:text-left">
+                    Müşteri ilişkilerinde profesyonelliği artırın, satış süreçlerinizi optimize edin ve iş akışınızı
+                    verimli hale getirin. CRM sistemimizle hedeflerinize daha hızlı ulaşın.
+                </p>
+            </div>
 
-      <!-- Numbered List -->
-      <div class="flex flex-col space-y-8 md:w-1/2">
-          <!-- List Item 1 -->
-          <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
-              <!-- Heading -->
-              <div class="rounded-l-full bg-brightBlueSupLight md:bg-transparent">
-                  <div class="flex items-center space-x-2">
-                      <div class="px-4 py-2 text-white bg-blue-600 rounded-full md:py-1 bg-blue-600">
-                          01
-                      </div>
-                      <h3 class="text-base font-bold md:mb-4 md:hidden">
-                          Verilere Kolay Erişim
-                      </h3>
-                  </div>
-              </div>
+            <!-- Numbered List -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+                <!-- List Item 1 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- Heading -->
+                    <div class="rounded-l-full bg-brightBlueSupLight md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white bg-blue-600 rounded-full md:py-1 bg-blue-600">
+                                01
+                            </div>
+                            <h3 class="text-base font-bold md:mb-4 md:hidden">
+                                Verilere Kolay Erişim
+                            </h3>
+                        </div>
+                    </div>
 
-              <div>
-                  <h3 class="hidden mb-4 text-lg font-bold md:block">
-                      Verilere Kolay Erişim
-                  </h3>
-                  <p class="text-darkblueishBlue">
-                      CRM sistemimiz sayesinde tüm müşteri bilgilerine hızlıca ulaşabilir, zamandan tasarruf edebilirsiniz.
-                  </p>
-              </div>
-          </div>
+                    <div>
+                        <h3 class="hidden mb-4 text-lg font-bold md:block">
+                            Verilere Kolay Erişim
+                        </h3>
+                        <p class="text-darkblueishBlue">
+                            CRM sistemimiz sayesinde tüm müşteri bilgilerine hızlıca ulaşabilir, zamandan tasarruf
+                            edebilirsiniz.
+                        </p>
+                    </div>
+                </div>
 
-          <!-- List Item 2 -->
-          <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
-              <!-- Heading -->
-              <div class="rounded-l-full bg-brightBlueSupLight md:bg-transparent">
-                  <div class="flex items-center space-x-2">
-                      <div class="px-4 py-2 text-white bg-blue-600 rounded-full md:py-1 bg-blue-600">
-                          02
-                      </div>
-                      <h3 class="text-base font-bold md:mb-4 md:hidden">
-                          Daha Güçlü İletişim
-                      </h3>
-                  </div>
-              </div>
+                <!-- List Item 2 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- Heading -->
+                    <div class="rounded-l-full bg-brightBlueSupLight md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white bg-blue-600 rounded-full md:py-1 bg-blue-600">
+                                02
+                            </div>
+                            <h3 class="text-base font-bold md:mb-4 md:hidden">
+                                Daha Güçlü İletişim
+                            </h3>
+                        </div>
+                    </div>
 
-              <div>
-                  <h3 class="hidden mb-4 text-lg font-bold md:block">
-                      Daha Güçlü İletişim
-                  </h3>
-                  <p class="text-darkblueishBlue">
-                      Ekibinizin iletişim süreçlerini güçlendirin ve iş birliğini kolaylaştırarak daha etkili bir çalışma ortamı yaratın.
-                  </p>
-              </div>
-          </div>
+                    <div>
+                        <h3 class="hidden mb-4 text-lg font-bold md:block">
+                            Daha Güçlü İletişim
+                        </h3>
+                        <p class="text-darkblueishBlue">
+                            Ekibinizin iletişim süreçlerini güçlendirin ve iş birliğini kolaylaştırarak daha etkili bir
+                            çalışma ortamı yaratın.
+                        </p>
+                    </div>
+                </div>
 
-          <!-- List Item 3 -->
-          <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
-              <!-- Heading -->
-              <div class="rounded-l-full bg-brightBlueSupLight md:bg-transparent">
-                  <div class="flex items-center space-x-2">
-                      <div class="px-4 py-2 text-white bg-blue-600 rounded-full md:py-1 bg-blue-600">
-                          03
-                      </div>
-                      <h3 class="text-base font-bold md:mb-4 md:hidden">
-                          Satış Süreçlerinde Verimlilik
-                      </h3>
-                  </div>
-              </div>
+                <!-- List Item 3 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- Heading -->
+                    <div class="rounded-l-full bg-brightBlueSupLight md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white bg-blue-600 rounded-full md:py-1 bg-blue-600">
+                                03
+                            </div>
+                            <h3 class="text-base font-bold md:mb-4 md:hidden">
+                                Satış Süreçlerinde Verimlilik
+                            </h3>
+                        </div>
+                    </div>
 
-              <div>
-                  <h3 class="hidden mb-4 text-lg font-bold md:block">
-                      Satış Süreçlerinde Verimlilik
-                  </h3>
-                  <p class="text-darkblueishBlue">
-                      Satış ekibinizin performansını artırarak daha hızlı ve etkili sonuçlar elde edin.
-                  </p>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
+                    <div>
+                        <h3 class="hidden mb-4 text-lg font-bold md:block">
+                            Satış Süreçlerinde Verimlilik
+                        </h3>
+                        <p class="text-darkblueishBlue">
+                            Satış ekibinizin performansını artırarak daha hızlı ve etkili sonuçlar elde edin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Testimonials -->
     <section id="testimonials">
-<!-- Container to heading and testm blocks -->
-<div class="max-w-6xl px-5 mx-auto mt-32 text-center">
-    <!-- Heading -->
-    <h3 class="text-4xl font-bold text-center">
-        Yönetimi Farklı Kılan Nedir?
-    </h3>
-    <!-- Testimonials Container -->
-    <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
-        <!-- Testimonial 1 -->
-        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightblue md:w-1/3">
-            <img src="img/avatar-anisha.png" class="w-16 -mt-14" alt="" />
-            <h5 class="text-lg font-bold">Ayşe Yılmaz</h5>
-            <p class="text-sm text-darkblueishBlue">
-                “CRM sistemini kullanmaya başladığımızdan beri işlerimizi çok daha verimli bir şekilde yönetiyoruz. Müşterilerimizin ihtiyaçlarına hızlı yanıt verebiliyoruz. Harika bir çözüm!”
-            </p>
-        </div>
+        <!-- Container to heading and testm blocks -->
+        <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+            <!-- Heading -->
+            <h3 class="text-4xl font-bold text-center">
+                Yönetimi Farklı Kılan Nedir?
+            </h3>
+            <!-- Testimonials Container -->
+            <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+                <!-- Testimonial 1 -->
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightblue md:w-1/3">
+                    <img src="img/avatar-anisha.png" class="w-16 -mt-14" alt="" />
+                    <h5 class="text-lg font-bold">Ayşe Yılmaz</h5>
+                    <p class="text-sm text-darkblueishBlue">
+                        “CRM sistemini kullanmaya başladığımızdan beri işlerimizi çok daha verimli bir şekilde
+                        yönetiyoruz. Müşterilerimizin ihtiyaçlarına hızlı yanıt verebiliyoruz. Harika bir çözüm!”
+                    </p>
+                </div>
 
-        <!-- Testimonial 2 -->
-        <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightblue md:flex md:w-1/3">
-            <img src="img/avatar-ali.png" class="w-16 -mt-14" alt="" />
-            <h5 class="text-lg font-bold">Nilay Solmaz</h5>
-            <p class="text-sm text-darkblueishBlue">
-                “Bu CRM platformu sayesinde ekibimiz arasındaki iletişim çok daha güçlü hale geldi. Verilere anında ulaşabiliyor ve karar süreçlerimizi hızlandırıyoruz.”
-            </p>
-        </div>
+                <!-- Testimonial 2 -->
+                <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightblue md:flex md:w-1/3">
+                    <img src="img/avatar-ali.png" class="w-16 -mt-14" alt="" />
+                    <h5 class="text-lg font-bold">Nilay Solmaz</h5>
+                    <p class="text-sm text-darkblueishBlue">
+                        “Bu CRM platformu sayesinde ekibimiz arasındaki iletişim çok daha güçlü hale geldi. Verilere
+                        anında ulaşabiliyor ve karar süreçlerimizi hızlandırıyoruz.”
+                    </p>
+                </div>
 
-        <!-- Testimonial 3 -->
-        <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightblue md:flex md:w-1/3">
-            <img src="img/avatar-richard.png" class="w-16 -mt-14" alt="" />
-            <h5 class="text-lg font-bold">Mehmet Kaya</h5>
-            <p class="text-sm text-darkblueishBlue">
-                “Satış ekibimiz için mükemmel bir araç! Potansiyel müşterilerimizi daha iyi takip edebiliyor, satış süreçlerini optimize ediyor ve kârlılığımızı artırıyoruz.”
-            </p>
-        </div>
+                <!-- Testimonial 3 -->
+                <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightblue md:flex md:w-1/3">
+                    <img src="img/avatar-richard.png" class="w-16 -mt-14" alt="" />
+                    <h5 class="text-lg font-bold">Mehmet Kaya</h5>
+                    <p class="text-sm text-darkblueishBlue">
+                        “Satış ekibimiz için mükemmel bir araç! Potansiyel müşterilerimizi daha iyi takip edebiliyor,
+                        satış süreçlerini optimize ediyor ve kârlılığımızı artırıyoruz.”
+                    </p>
+                </div>
             </div>
             <!-- Button -->
             <div class="my-16 flex justify-center">
@@ -219,18 +226,14 @@
             </h2>
         </div>
     </section>
-   
-    
-   
 
-     <!-- Footer -->
-  <div id="footer-container"></div>
-  <script src="components/footer.js"></script>
-  <script>
-    document.getElementById('footer-container').innerHTML = FooterHtml;
-  </script>
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    <script src="components/footer.js"></script>
+    <script>
+        document.getElementById('footer-container').innerHTML = FooterHtml;
+    </script>
 
     <script src="./js/script.js"></script>
 </body>
-
 </html>
