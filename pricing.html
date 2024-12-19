@@ -1,518 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-  
-    <!-- Flowbite JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Fontawesome Pro-->
+  <link rel="stylesheet" href="/css/fontawesome.css">
+
+  <!-- Title -->
+  <title>Pricing</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+
+  <!-- Tailwind -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- Head Component -->
+
+  <script type="module">
+    import { createHead } from './components/head.js';
+
+    createHead();
+  </script>
+
 </head>
+
 <body class="bg-gray-100 text-gray-800">
 
-    <!-- Navbar -->
-    <div id="navbar-container"></div>
-  
-    <script src="components/navbar.js"></script> <!-- Navbar JS -->
-    <script>
-        // Navbar'ı yükle
-        document.getElementById('navbar-container').innerHTML = `
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
+
+  <script src="components/navbar.js"></script> <!-- Navbar JS -->
+  <script>
+    // Navbar'ı yükle
+    document.getElementById('navbar-container').innerHTML = `
             <!-- Navbar İçeriği -->
             ${NavbarHtml}
         `;
-    </script>
+  </script>
 
-    <!-- Başlık -->
-    <header class="bg-green-500 text-white py-12">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold">Neden CRM Kullanmalısınız?</h1>
-            <p class="mt-4 text-lg">İş Süreçlerinizi Kolaylaştırmak ve Satışlarınızı Artırmak İçin En Uygun Çözümler.</p>
-        </div>
-    </header>
-
-    <!-- CRM Avantajları -->
-    <section class="container mx-auto py-16">
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Avantaj 1 -->
-            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                <img src="./img/müsteri-yonetimi.webp" alt="CRM Advantage" class="w-28 h-28 mx-auto mb-4">
-                <h3 class="text-xl font-semibold">Müşteri Yönetimi</h3>
-                <p class="mt-2 text-gray-600">Tüm müşteri bilgilerini tek bir platformda yönetin.</p>
-            </div>
-            <!-- Avantaj 2 -->
-            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                <img src="./img/satıs-takibi.webp" alt="CRM Benefit" class="w-28 h-28 mx-auto mb-4">
-                <h3 class="text-xl font-semibold">Satış Takibi</h3>
-                <p class="mt-2 text-gray-600">Satış süreçlerinizi optimize ddin ve başarıyı artırın.</p>
-            </div>
-            <!-- Avantaj 3 -->
-            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                <img src="./img/is-büyümesi.webp" alt="CRM Growth" class="w-28 h-28 mx-auto mb-4">
-                <h3 class="text-xl font-semibold">İş Büyümesi</h3>
-                <p class="mt-2 text-gray-600">İş verimliliğinizi artırarak büyümeye odaklanın.</p>
-            </div>
-        </div>
-    </section>
-
- 
-    <h3 class="text-4xl font-bold text-center">
-        Tekliflerimiz
-     </h3>
-     <br><br>
-     <hr>
-  
-     <section class="text-gray-700 body-font overflow-hidden border-t border-gray-200">
-         <div class="container px-5 py-24 mx-auto flex flex-wrap">
-           <div class="lg:w-1/4 mt-48 hidden lg:block">
-             <div class="mt-px border-t border-gray-300 border-b border-l rounded-tl-lg rounded-bl-lg overflow-hidden">
-               <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start -mt-px">Temel Program</p>
-               <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Planlama Menüsü</p>
-               <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Admin Paneli</p>
-               <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Mail Sistemi</p>
-               <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Web Tasarım</p>
-               <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Sosyal Medya Yönetimi</p>
-               <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Telefon Uygulaması</p>
-               <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Mağaza Entegrasyonu</p>
-               <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Faturalandırma</p>
-             </div>
-           </div>
-           <div class="flex lg:w-3/4 w-full flex-wrap lg:border border-gray-300 rounded-lg">
-             <div class="lg:w-1/3 lg:mt-px w-full mb-10 lg:mb-0 border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
-               <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
-                 <h3 class="tracking-widest">Başlangıç</h3>
-                 <h2 class="text-5xl text-gray-900 font-medium leading-none mb-4 mt-2">Ücretsiz</h2>
-                 <span class="text-sm text-gray-600">20 Gün Kullanım</span>
-               </div>
-               <p class="bg-gray-100 text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-300">Temel Arayüz</p>
-               <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-                 <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                     <path d="M20 6L9 17l-5-5"></path>
-                   </svg>
-                 </span>
-               </p>
-               <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-                 <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                     <path d="M20 6L9 17l-5-5"></path>
-                   </svg>
-                 </span>
-               </p>
-               <p class="h-12 text-gray-600 px-6 text-center leading-relaxed flex items-center justify-center">
-                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-                   <path d="M18 6L6 18M6 6l12 12"></path>
-                 </svg>
-               </p>
-               <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-                 <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                     <path d="M20 6L9 17l-5-5"></path>
-                   </svg>
-                 </span>
-               </p>
-               <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-                   <path d="M18 6L6 18M6 6l12 12"></path>
-                 </svg>
-               </p>
-               <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-                   <path d="M18 6L6 18M6 6l12 12"></path>
-                 </svg>
-               </p>
-               <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-                   <path d="M18 6L6 18M6 6l12 12"></path>
-                 </svg>
-               </p>
-               <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-                   <path d="M18 6L6 18M6 6l12 12"></path>
-                 </svg>
-               </p>
-               <div class="border-t border-gray-300 p-6 text-center rounded-bl-lg">
-                 <button class="flex items-center mt-auto text-white bg-green-600 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-700 rounded">Kullanmaya Başla!
-                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                     <path d="M5 12h14M12 5l7 7-7 7"></path>
-                   </svg>
-                 </button>
-                 <p class="text-xs text-gray-500 mt-3">Destek ekibimiz tüm geliştirmelere sizinle karar verir.</p>
-               </div>
-             </div>
-             <div class="lg:w-1/3 lg:-mt-px w-full mb-10 lg:mb-0 border-2 rounded-lg border-green-500 relative">
-               <span class="bg-green-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPÜLER</span>
-               <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
-                 <h3 class="tracking-widest">Profesyonel</h3>
-                 <h2 class="text-5xl text-gray-900 font-medium flex items-center justify-center leading-none mb-4 mt-2">2500₺
-                   <span class="text-gray-600 text-base ml-1">/Ay</span>
-                 </h2>
-                 <span class="text-sm text-gray-600">Yıllık 25000₺</span>
-               </div>
-               <p class="bg-gray-100 text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-300">Kişisel Arayüz</p>
-               <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-                 <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                     <path d="M20 6L9 17l-5-5"></path>
-                   </svg>
-                 </span>
-               </p>
-               <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-                 <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                     <path d="M20 6L9 17l-5-5"></path>
-                   </svg>
-                 </span>
-               </p>
-               <p class="h-12 text-gray-600 text-center leading-relaxed flex items-center justify-center">5 Kurumsal Mail</p>
-               <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-                 <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                     <path d="M20 6L9 17l-5-5"></path>
-                   </svg>
-                 </span>
-               </p>
-               <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-                 <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                     <path d="M20 6L9 17l-5-5"></path>
-                   </svg>
-                 </span>
-               </p>
-               <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-                   <path d="M18 6L6 18M6 6l12 12"></path>
-                 </svg>
-               </p>
-               <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-                   <path d="M18 6L6 18M6 6l12 12"></path>
-                 </svg>
-               </p>
-               <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-                   <path d="M18 6L6 18M6 6l12 12"></path>
-                 </svg>
-               </p>
-               <div class="p-6 text-center border-t border-gray-300">
-                 <button class="flex items-center mt-auto text-white bg-green-600 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-700 rounded">Kullanmaya Başla!
-                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                     <path d="M5 12h14M12 5l7 7-7 7"></path>
-                   </svg>
-                 </button>
-                 <p class="text-xs text-gray-500 mt-3">Destek ekibimiz tüm geliştirmelere sizinle karar verir.</p>
-               </div>
-             </div>
-             <div class="lg:w-1/3 w-full lg:mt-px border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
-               <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
-                 <h3 class="tracking-widest">İş Dünyası</h3>
-                 <h2 class="text-5xl text-gray-900 font-medium flex items-center justify-center leading-none mb-4 mt-2">4500₺
-                   <span class="text-gray-600 text-base ml-1">/Ay</span>
-                 </h2>
-                 <span class="text-sm text-gray-600">Yıllık 40000₺</span>
-               </div>
-               <p class="bg-gray-100 text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-300">İşletme Uyumlu Arayüz</p>
-  <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-   <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-       <path d="M20 6L9 17l-5-5"></path>
-     </svg>
-   </span>
-  </p>
-  <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-   <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-       <path d="M20 6L9 17l-5-5"></path>
-     </svg>
-   </span>
-  </p>
-  <p class="h-12 text-gray-600 text-center leading-relaxed flex items-center justify-center">10 Kurumsal Mail</p>
-  <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-   <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-       <path d="M20 6L9 17l-5-5"></path>
-     </svg>
-   </span>
-  </p>
-  <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-   <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-       <path d="M20 6L9 17l-5-5"></path>
-     </svg>
-   </span>
-  </p>
-  <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-   <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-       <path d="M20 6L9 17l-5-5"></path>
-     </svg>
-   </span>
-  </p>
-  <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-   <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-       <path d="M20 6L9 17l-5-5"></path>
-     </svg>
-   </span>
-  </p>
-  <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-   <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-       <path d="M20 6L9 17l-5-5"></path>
-     </svg>
-   </span>
-  </p>
-  
-               <div class="p-6 text-center border-t border-gray-300">
-                 <button class="flex items-center mt-auto text-white bg-green-600 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-700 rounded">Kullanmaya Başla!
-                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                     <path d="M5 12h14M12 5l7 7-7 7"></path>
-                   </svg>
-                 </button>
-                 <p class="text-xs text-gray-500 mt-3">Destek ekibimiz tüm geliştirmelere sizinle karar verir.</p>
-               </div>
-             </div>
-           </div>
-         </div>
-       </section>
-  
-       <br><br>
-       <hr>
-
-    <!-- Pricing Tablosu 
-    <section class="container mx-auto py-16">
-        <h2 class="text-3xl font-bold text-center mb-12">Tekliflerimiz</h2>
-        <div class="grid lg:grid-cols-3 gap-8">
-            Plan 1 
-            <div class="bg-white rounded-lg shadow-lg border border-gray-200">
-                <div class="p-6 text-center">
-                    <h3 class="text-xl font-semibold">Başlangıç</h3>
-                    <p class="text-5xl font-bold text-gray-900 mt-4">Ücretsiz</p>
-                    <p class="text-gray-600 mt-2">20 Günlük Kullanım</p>
-                </div>
-                <ul class="border-t border-gray-200 p-6 space-y-2">
-                    <li class="flex items-center justify-between">
-                        <span>Temel Arayüz</span>
-                        <span class="text-green-500">✔</span>
-                    </li>
-                    <li class="flex items-center justify-between">
-                        <span>Planlama Menüsü</span>
-                        <span class="text-green-500">✔</span>
-                    </li>
-                    <li class="flex items-center justify-between">
-                        <span>Admin Paneli</span>
-                        <span class="text-red-500">✘</span>
-                    </li>
-                </ul>
-                <div class="p-6 text-center">
-                    <button class="w-full bg-blue-900 text-white py-2 rounded-lg hover:bg-blue-700">Kullanmaya Başla</button>
-                </div>
-            </div>
-             Plan 2 
-            <div class="bg-white rounded-lg shadow-lg border border-blue-900">
-                <div class="p-6 text-center relative">
-                    <span class="bg-blue-900 text-white text-xs uppercase px-3 py-1 rounded absolute top-4 right-4">Popüler</span>
-                    <h3 class="text-xl font-semibold">Profesyonel</h3>
-                    <p class="text-5xl font-bold text-gray-900 mt-4">2500₺</p>
-                    <p class="text-gray-600 mt-2">Yıllık 25000₺</p>
-                </div>
-                <ul class="border-t border-gray-200 p-6 space-y-2">
-                    <li class="flex items-center justify-between">
-                        <span>Kişisel Arayüz</span>
-                        <span class="text-green-500">✔</span>
-                    </li>
-                    <li class="flex items-center justify-between">
-                        <span>5 Kurumsal Mail</span>
-                        <span class="text-green-500">✔</span>
-                    </li>
-                    <li class="flex items-center justify-between">
-                        <span>Telefon Uygulaması</span>
-                        <span class="text-red-500">✘</span>
-                    </li>
-                </ul>
-                <div class="p-6 text-center">
-                    <button class="w-full bg-blue-900 text-white py-2 rounded-lg hover:bg-blue-700">Kullanmaya Başla</button>
-                </div>
-            </div>
-             Plan 3 
-            <div class="bg-white rounded-lg shadow-lg border border-gray-200">
-                <div class="p-6 text-center">
-                    <h3 class="text-xl font-semibold">İş Dünyası</h3>
-                    <p class="text-5xl font-bold text-gray-900 mt-4">4500₺</p>
-                    <p class="text-gray-600 mt-2">Yıllık 40000₺</p>
-                </div>
-                <ul class="border-t border-gray-200 p-6 space-y-2">
-                    <li class="flex items-center justify-between">
-                        <span>İşletme Uyumlu Arayüz</span>
-                        <span class="text-green-500">✔</span>
-                    </li>
-                    <li class="flex items-center justify-between">
-                        <span>10 Kurumsal Mail</span>
-                        <span class="text-green-500">✔</span>
-                    </li>
-                    <li class="flex items-center justify-between">
-                        <span>Faturalandırma</span>
-                        <span class="text-green-500">✔</span>
-                    </li>
-                </ul>
-                <div class="p-6 text-center">
-                    <button class="w-full bg-blue-900 text-white py-2 rounded-lg hover:bg-blue-700">Kullanmaya Başla</button>
-                </div>
-            </div>
-        </div>
-    </section> -->
-<!--
-    Entegrasyon Bölümü 
-<section id="integration" class="bg-gray-50 py-16">
-    <div class="container mx-auto px-6 lg:px-12">
-        <div class="grid md:grid-cols-2 gap-8 items-center">
-             Sol Kısım - Logolar 
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
-                 Google Logo 
-<div class="bg-white shadow-md rounded-lg flex items-center justify-center p-4">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="h-10">
-</div>
-
- Microsoft Logo 
-<div class="bg-white shadow-md rounded-lg flex items-center justify-center p-4">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="h-10">
-</div>
-
-IBM Logo 
-<div class="bg-white shadow-md rounded-lg flex items-center justify-center p-4">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo" class="h-10">
-</div>
-
-
-Oracle Logo 
-<div class="bg-white shadow-md rounded-lg flex items-center justify-center p-4">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" alt="Oracle Logo" class="h-10">
-</div>
-
-
- SAP Logo 
-<div class="bg-white shadow-md rounded-lg flex items-center justify-center p-4">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg" alt="SAP" class="h-10">
-</div>
-
-Google Drive Logo 
-<div class="bg-white shadow-md rounded-lg flex items-center justify-center p-4">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png" alt="Google Drive Logo" class="h-10">
-</div>
-
-            </div>
-             Sağ Kısım - Açıklama 
-            <div>
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Günlük Uygulamalarınıza Hızlıca Entegre Olun</h2>
-                <p class="text-lg text-gray-600 mt-4">
-                    Kod Gerektirmeyen Güçlü Entegrasyon Motorumuzla Şu An Kullandığınız Uygulamalarınızı 1 Gün İçinde ERM CRM Platformuna Bağlayın.
-                    Türkiye'nin En Yaygın ERP Uygulamalarına Çift Yönlü ve Uçtan Uca Entegre Olun. İşlerinizi Tek Bir Yerden Hızlı ve Kolay Yönetin. 
-                    Sinerjinin Gücünü Ortaya Çıkarın.
-                </p>
-                <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-                    Tüm Entegrasyonlar
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
--->
-
-    <!-- CRM Özellikleri -->
-    <section id="features" class="bg-gray-50 py-16">
-        <div class="container mx-auto px-6 lg:px-12">
-            <!-- Başlık -->
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Hemen Bağlan, Kullanmayı Başla!</h2>
-                <p class="text-lg text-gray-600 mt-4">
-                    ERM CRM yazılımının hazır, modüler ve bütünleşik yapısıyla sınıfının en profesyonel CRM çözümlerinin konforunu yaşayın.
-                </p>
-            </div>
-            <!-- Özellik Listesi -->
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-center">
-                <div class="flex items-center justify-left">
-                    <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-                    <p class="text-gray-700 text-lg">Kullanımı Kolay</p>
-                </div>
-                <div class="flex items-left justify-left">
-                    <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-                    <p class="text-gray-700 text-lg">Görsel Arayüzler</p>
-                </div>
-                <div class="flex items-center justify-left">
-                    <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-                    <p class="text-gray-700 text-lg">Kullanıcıya Özel Menüler</p>
-                </div>
-                <div class="flex items-center justify-left">
-                    <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-                    <p class="text-gray-700 text-lg">Web ve Mobil Tabanlı</p>
-                </div>
-                <div class="flex items-center justify-left">
-                    <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-                    <p class="text-gray-700 text-lg">Esnek ve Özelleştirilebilir</p>
-                </div>
-                <div class="flex items-center justify-left">
-                    <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-                    <p class="text-gray-700 text-lg">Büyümek için Ölçeklenebilir</p>
-                </div>
-                <div class="flex items-center justify-left">
-                    <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-                    <p class="text-gray-700 text-lg">Güvenilir ve Sağlam</p>
-                </div>
-                <div class="flex items-center justify-left">
-                    <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-                    <p class="text-gray-700 text-lg">Özel Dashboard ve Raporlar</p>
-                </div>
-                <div class="flex items-center justify-left">
-                    <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-                    <p class="text-gray-700 text-lg">Çoklu Dil Desteği</p>
-                </div>
-                <div class="flex items-center justify-left">
-                    <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-                    <p class="text-gray-700 text-lg">Tüm Cihazlara Uyumlu</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-
-<!-- Demo Talebi -->
-<section id="demo" class="bg-green-500 text-white py-16">
+  <!-- Başlık -->
+  <header class="bg-green-500 text-white py-12">
     <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6">CRM Uygulamamızı Denemek İster Misiniz?</h2>
-        <p class="mb-8 text-gray-200 text-lg">
-            Demo talep ederek iş süreçlerinizi dönüştürmek için bir adım atın. CRM ileiİşinizi büyütmek şimdi daha kolay.
-        </p>
-        <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0">
-            <!-- İkon Alanı -->
-            <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg">
-                <i class="fas fa-chart-line text-blue-800 text-3xl"></i>
-            </div>
-            <!-- Buton ve Açıklama -->
-            <div class="ml-0 md:ml-6 text-center md:text-left">
-                <button class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition-transform transform hover:scale-105">
-                    Demo Talep Et
-                </button>
-                <p class="mt-4 text-sm text-gray-300">Hemen kayıt olun, CRM uygulamamızı ücretsiz deneyin.</p>
-            </div>
-        </div>
+      <h1 class="text-4xl font-bold">Neden CRM Kullanmalısınız?</h1>
+      <p class="mt-4 text-lg">İş süreçlerinizi kolaylaştırmak ve satışlarınızı artırmak için en uygun çözümler.</p>
     </div>
+  </header>
+
+ <!-- Business -->
+ <section class="bg-gray-100 py-16">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">CRM ile İş Hayatında Fark Yaratın</h2>
+    <p class="text-lg text-gray-700">
+      CRM, işletmenize müşteri ilişkilerini yönetmekten daha fazlasını sunar. 
+      Verimliliği artırır, ekip işbirliğini güçlendirir ve sürdürülebilir büyümeyi sağlar.
+    </p>
+    <img src="./img/business.jpeg" alt="Business Growth" class="mx-auto mb-6 w-4/5 md:w-3/5 lg:w-2/5 rounded-lg shadow-lg">
+   
+  </div>
 </section>
 
+  <!-- CRM Avantajları -->
+  <section class="container mx-auto py-16">
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Avantaj 1 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+        <img src="./img/müsteri-yonetimi.webp" alt="CRM Advantage" class="w-28 h-28 mx-auto mb-4">
+        <h3 class="text-xl font-semibold">Müşteri Yönetimi</h3>
+        <p class="mt-2 text-gray-600">Tüm müşteri bilgilerini tek bir platformda yönetin.</p>
+      </div>
+      <!-- Avantaj 2 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+        <img src="./img/satıs-takibi.webp" alt="CRM Benefit" class="w-28 h-28 mx-auto mb-4">
+        <h3 class="text-xl font-semibold">Satış Takibi</h3>
+        <p class="mt-2 text-gray-600">Satış süreçlerinizi optimize ddin ve başarıyı artırın.</p>
+      </div>
+      <!-- Avantaj 3 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+        <img src="./img/is-büyümesi.webp" alt="CRM Growth" class="w-28 h-28 mx-auto mb-4">
+        <h3 class="text-xl font-semibold">İş Büyümesi</h3>
+        <p class="mt-2 text-gray-600">İş verimliliğinizi artırarak büyümeye odaklanın.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Table -->
 
 
-      <!-- Footer -->
-     
-      <div id="footer-container"></div>
-      <script src="components/footer.js"></script>
-      <script>
-        document.getElementById('footer-container').innerHTML = FooterHtml;
-      </script>
+  <h3 class="text-4xl font-bold text-center">
+    Tekliflerimiz
+  </h3>
+  <br><br>
+  <hr>
 
-<script src="./js/script.js"></script>
+  <section class="text-gray-700 body-font overflow-hidden border-t border-gray-200">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="lg:w-1/4 mt-48 hidden lg:block">
+        <div class="mt-px border-t border-gray-300 border-b border-l rounded-tl-lg rounded-bl-lg overflow-hidden">
+          <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start -mt-px">Temel
+            Program</p>
+          <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Planlama Menüsü</p>
+          <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Admin Paneli</p>
+          <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Mail Sistemi</p>
+          <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Web Tasarım</p>
+          <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Sosyal Medya Yönetimi</p>
+          <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Telefon Uygulaması
+          </p>
+          <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Mağaza Entegrasyonu</p>
+          <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Faturalandırma</p>
+        </div>
+      </div>
+      <div class="flex lg:w-3/4 w-full flex-wrap lg:border border-gray-300 rounded-lg">
+        <div
+          class="lg:w-1/3 lg:mt-px w-full mb-10 lg:mb-0 border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
+          <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+            <h3 class="tracking-widest">Başlangıç</h3>
+            <h2 class="text-5xl text-gray-900 font-medium leading-none mb-4 mt-2">Ücretsiz</h2>
+            <span class="text-sm text-gray-600">20 Gün Kullanım</span>
+          </div>
+          <p
+            class="bg-gray-100 text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-300">
+            Temel Arayüz</p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="h-12 text-gray-600 px-6 text-center leading-relaxed flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <div class="border-t border-gray-300 p-6 text-center rounded-bl-lg">
+            <button
+              class="flex items-center mt-auto text-white bg-green-600 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-700 rounded">Kullanmaya
+              Başla!
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Destek ekibimiz tüm geliştirmelere sizinle karar verir.</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:-mt-px w-full mb-10 lg:mb-0 border-2 rounded-lg border-green-500 relative">
+          <span
+            class="bg-green-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPÜLER</span>
+          <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+            <h3 class="tracking-widest">Profesyonel</h3>
+            <h2 class="text-5xl text-gray-900 font-medium flex items-center justify-center leading-none mb-4 mt-2">2500₺
+              <span class="text-gray-600 text-base ml-1">/Ay</span>
+            </h2>
+            <span class="text-sm text-gray-600">Yıllık 25000₺</span>
+          </div>
+          <p
+            class="bg-gray-100 text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-300">
+            Kişisel Arayüz</p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="h-12 text-gray-600 text-center leading-relaxed flex items-center justify-center">5 Kurumsal Mail</p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <div class="p-6 text-center border-t border-gray-300">
+            <button
+              class="flex items-center mt-auto text-white bg-green-600 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-700 rounded">Kullanmaya
+              Başla!
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Destek ekibimiz tüm geliştirmelere sizinle karar verir.</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 w-full lg:mt-px border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
+          <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+            <h3 class="tracking-widest">İş Dünyası</h3>
+            <h2 class="text-5xl text-gray-900 font-medium flex items-center justify-center leading-none mb-4 mt-2">4500₺
+              <span class="text-gray-600 text-base ml-1">/Ay</span>
+            </h2>
+            <span class="text-sm text-gray-600">Yıllık 40000₺</span>
+          </div>
+          <p
+            class="bg-gray-100 text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-300">
+            İşletme Uyumlu Arayüz</p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="h-12 text-gray-600 text-center leading-relaxed flex items-center justify-center">10 Kurumsal Mail
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+
+          <div class="p-6 text-center border-t border-gray-300">
+            <button
+              class="flex items-center mt-auto text-white bg-green-600 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-700 rounded">Kullanmaya
+              Başla!
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Destek ekibimiz tüm geliştirmelere sizinle karar verir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+  <hr>
+
+  <!-- CRM Özellikleri -->
+  <section id="features" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6 lg:px-12">
+      <!-- Başlık -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Hemen Bağlan, Kullanmayı Başla!</h2>
+        <p class="text-lg text-gray-600 mt-4">
+          ERM CRM yazılımının hazır, modüler ve bütünleşik yapısıyla sınıfının en profesyonel CRM çözümlerinin konforunu
+          yaşayın.
+        </p>
+      </div>
+      <!-- Özellik Listesi -->
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-center">
+        <div class="flex items-center justify-left">
+          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
+          <p class="text-gray-700 text-lg">Kullanımı Kolay</p>
+        </div>
+        <div class="flex items-left justify-left">
+          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
+          <p class="text-gray-700 text-lg">Görsel Arayüzler</p>
+        </div>
+        <div class="flex items-center justify-left">
+          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
+          <p class="text-gray-700 text-lg">Kullanıcıya Özel Menüler</p>
+        </div>
+        <div class="flex items-center justify-left">
+          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
+          <p class="text-gray-700 text-lg">Web ve Mobil Tabanlı</p>
+        </div>
+        <div class="flex items-center justify-left">
+          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
+          <p class="text-gray-700 text-lg">Esnek ve Özelleştirilebilir</p>
+        </div>
+        <div class="flex items-center justify-left">
+          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
+          <p class="text-gray-700 text-lg">Büyümek için Ölçeklenebilir</p>
+        </div>
+        <div class="flex items-center justify-left">
+          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
+          <p class="text-gray-700 text-lg">Güvenilir ve Sağlam</p>
+        </div>
+        <div class="flex items-center justify-left">
+          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
+          <p class="text-gray-700 text-lg">Özel Dashboard ve Raporlar</p>
+        </div>
+        <div class="flex items-center justify-left">
+          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
+          <p class="text-gray-700 text-lg">Çoklu Dil Desteği</p>
+        </div>
+        <div class="flex items-center justify-left">
+          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
+          <p class="text-gray-700 text-lg">Tüm Cihazlara Uyumlu</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Talebi -->
+  <section id="demo" class="bg-green-500 text-white py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">CRM Uygulamamızı Denemek İster Misiniz?</h2>
+      <p class="mb-8 text-gray-200 text-lg">
+        Demo talep ederek iş süreçlerinizi dönüştürmek için bir adım atın. CRM ileiİşinizi büyütmek şimdi daha kolay.
+      </p>
+      <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0">
+        <!-- İkon Alanı -->
+        <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg">
+          <i class="fas fa-chart-line text-blue-800 text-3xl"></i>
+        </div>
+        <!-- Buton ve Açıklama -->
+        <div class="ml-0 md:ml-6 text-center md:text-left">
+          <button
+            class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition-transform transform hover:scale-105">
+            Demo Talep Et
+          </button>
+          <p class="mt-4 text-sm text-gray-300">Hemen kayıt olun, CRM uygulamamızı ücretsiz deneyin.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <div id="footer-container"></div>
+  <script src="components/footer.js"></script>
+  <script>
+    document.getElementById('footer-container').innerHTML = FooterHtml;
+  </script>
+
+  <script src="./js/script.js"></script>
 
 </body>
 </html>

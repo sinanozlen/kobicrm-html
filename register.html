@@ -4,30 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- Fontawesome Pro-->
+    <link rel="stylesheet" href="/css/fontawesome.css">
+    <!-- Title -->
     <title>Kayıt Ol!</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Tailwind -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Head Component -->
+
+    <script type="module">
+        import { createHead } from './components/head.js';
+
+        createHead();
+    </script>
+
 </head>
 
 <body>
-    <div id="root" class="mx-0 px-0 w-full">
-        <!-- Yazılar ve indirim bilgileri alt kısmı -->
-        <div class="bg-blue-600 py-2 w-full">
-            <div class="flex justify-between items-center px-4">
-                <h6 class="text-white text-lg font-bold">İLK GÖNDERİNİZİ 10 TL İNDİRİMLİ OLUŞTURUN! İNDİRİM KODUNUZ: NUA2781</h6>
-                <div class="flex space-x-4">
-                    <a class="text-white hover:underline" href="#">English</a>
-                    
-                </div>
-            </div>
-        </div>
-     <!-- Ana içerik (Logo) -->
-     <div class="header my-5 flex justify-between items-center px-4">
-        <a href="/">
-            <img src="./img/kobicrm-logo.png" alt="KobiCRM Logo" class="w-45 h-10">
-        </a>
-        
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <script src="components/navbar.js"></script> <!-- Navbar JS -->
+    <script>
+        // Navbar'ı yükle
+        document.getElementById('navbar-container').innerHTML = `
+            <!-- Navbar İçeriği -->
+            ${NavbarHtml}
+        `;
+    </script>
+
     </div>
     <div class="font-[sans-serif]">
         <div class="text-center bg-gradient-to-r from-blue-800 to-blue-400 min-h-[160px] sm:p-6 p-4">
@@ -104,25 +120,23 @@
                 </div>
                 <!-- Butonlar Yanyana -->
                 <div class="mt-8 flex space-x-4">
-                 <!-- Kayıt Ol Butonu -->
-<div>
-    <button type="button"
-        class="py-3 px-6 text-sm tracking-wider font-semibold rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none">
-        Kayıt Ol!
-    </button>
-</div>
+                    <!-- Kayıt Ol Butonu -->
+                    <div>
+                        <button type="button"
+                            class="py-3 px-6 text-sm tracking-wider font-semibold rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none">
+                            Kayıt Ol!
+                        </button>
+                    </div>
 
-<!-- Giriş Yap Butonu -->
-<div>
-    <a href="/login.html">
-        <button type="button"
-            class="py-3 px-6 text-sm tracking-wider font-semibold rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none">
-            Hesabınız Varsa Giriş Yapın!
-        </button>
-    </a>
-</div>
-
-
+                    <!-- Giriş Yap Butonu -->
+                    <div>
+                        <a href="/login.html">
+                            <button type="button"
+                                class="py-3 px-6 text-sm tracking-wider font-semibold rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none">
+                                Hesabınız Varsa Giriş Yapın!
+                            </button>
+                        </a>
+                    </div>
             </form>
         </div>
     </div>
@@ -130,5 +144,4 @@
 
     <script src="./js/script.js"></script>
 </body>
-
 </html>
