@@ -33,3 +33,28 @@
   opacity: 1;
 }
 /* Menü öğeleri için ortalama */
+/* Genel arka plan rengi */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #3b82f6, #f97316, #111827); /* blue-500, orange-500, black-500 */
+  background-size: 300% 300%; /* Daha geniş bir geçiş alanı */
+  background-position: center;
+  animation: backgroundAnimation 10s ease-in-out infinite; /* Arka planın hareket etmesi için animasyon */
+}
+.pricing-table {
+  background-color: white;
+}
+/* Arka planın animasyonla hareket etmesini sağlıyoruz */
+@keyframes backgroundAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}

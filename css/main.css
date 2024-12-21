@@ -1764,6 +1764,41 @@ video {
 
 /* Menü öğeleri için ortalama */
 
+/* Genel arka plan rengi */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #3b82f6, #f97316, #111827);
+  /* blue-500, orange-500, black-500 */
+  background-size: 300% 300%;
+  /* Daha geniş bir geçiş alanı */
+  background-position: center;
+  animation: backgroundAnimation 10s ease-in-out infinite;
+  /* Arka planın hareket etmesi için animasyon */
+}
+
+.pricing-table {
+  background-color: white;
+}
+
+/* Arka planın animasyonla hareket etmesini sağlıyoruz */
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .before\:mt-0\.5::before {
   content: var(--tw-content);
   margin-top: 0.125rem;
@@ -2000,10 +2035,6 @@ video {
     width: 60%;
   }
 
-  .md\:max-w-xl {
-    max-width: 36rem;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2043,11 +2074,6 @@ video {
   .md\:py-1 {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
-  }
-
-  .md\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
   }
 
   .md\:text-left {
