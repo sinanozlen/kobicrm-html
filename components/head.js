@@ -8,7 +8,30 @@ export function createHead() {
     favicon.href = "./img/favicon.png";
     favicon.type = "image/png";
     head.appendChild(favicon);
-  
 
   }
-  
+
+ // Menü ve buton referansları
+ const userMenuToggle = document.getElementById('user-menu-toggle');
+ const userMenu = document.getElementById('user-menu');
+
+ // Menü başlangıçta gizli
+ userMenu.classList.add('hidden');
+
+ // Menü butonuna tıklama olayı
+ userMenuToggle.addEventListener('click', (e) => {
+     e.stopPropagation();
+     userMenu.classList.toggle('hidden');
+ });
+
+ // Sayfa genelinde başka bir yere tıklanınca menüyü kapatma
+ document.addEventListener('click', () => {
+     if (!userMenu.classList.contains('hidden')) {
+         userMenu.classList.add('hidden');
+     }
+ });
+
+ // Menü üzerinde tıklama olayını engelleme
+ userMenu.addEventListener('click', (e) => {
+     e.stopPropagation();
+ });

@@ -1,10 +1,7 @@
 const NavbarHtml = `
-
 <div id="root" class="mx-0 px-0 w-full">
-    <!-- Üst bilgi çubuğu -->
     <div class="bg-blue-600 py-2 w-full">
         <div class="flex justify-between items-center px-6">
-            <!-- Tıklanabilir Mobile Uygulama Metni -->
             <a href="/" class="text-white text-base font-normal hover:underline">
                 Mobile uygulamamızı şimdi indirin %20 indirim kazanın
             </a>
@@ -17,49 +14,55 @@ const NavbarHtml = `
         </div>
     </div>
 </div>
+<!-- Menü Çubuğu -->
+<nav class="flex items-center justify-between gap-4 px-6 py-4" aria-label="penguin ui menu">
+    <a href="/">
+        <img src="./img/kobicrm-logo.png" alt="KobiCRM Logo" class="w-45 h-10">
+    </a>
 
-
-  <div class="header my-5 flex justify-between items-center px-4">
-            <a href="/">
-                <img src="./img/kobicrm-logo.png" alt="KobiCRM Logo" class="w-45 h-10">
+    <!-- Desktop Menu -->
+    <ul class="hidden items-center gap-4 flex-shrink-0 sm:flex">
+        <li>
+            <a href="/about.html" class="font-medium text-neutral-600 underline-offset-2 hover:text-black focus:outline-none focus:underline dark:text-neutral-300 dark:hover:text-white">
+                Hakkımızda
             </a>
-        </div>
-    
-
-    <!-- Menü Çubuğu -->
-    <nav id="menu" class="bg-gray-100 border-t border-gray-300 w-full py-2">
-        <div class="flex justify-between items-center px-6">
-            <!-- Sol: Ana Sayfa -->
-            <a href="./" class="text-blue-600 hover:text-blue-800 flex items-center">
-                <i class="fa fa-home"></i>
+        </li>
+        <li>
+            <a href="/pricing.html" class="font-medium text-neutral-600 underline-offset-2 hover:text-black focus:outline-none focus:underline dark:text-neutral-300 dark:hover:text-white">
+                Fiyatlar
             </a>
+        </li>
 
-            <!-- Ortada Menü Öğeleri -->
-<div class="flex items-center space-x-4">
-    <a href="./about.html" class="text-gray-700 hover:text-blue-600">Hakkımızda</a>
-    <div class="w-px h-5 bg-gray-300"></div>
-    <a href="./pricing.html" class="text-gray-700 hover:text-blue-600">Fiyatlar</a>
-</div>
+        <!-- Kullanıcı Fotoğrafı -->
+        <li class="relative flex items-center">
+            <button id="user-menu-toggle" class="rounded-full">
+                <img src="https://penguinui.s3.amazonaws.com/component-assets/avatar-8.webp" alt="User Profile" class="size-10 rounded-full object-cover">
+            </button>
 
-            <!-- Sağ: Kullanıcı Menüsü -->
-            <div class="relative flex items-center space-x-6">
-                <a href="#" class="text-black hover:text-blue-600 flex items-center" id="userMenuToggle">
-                    <i class="fa fa-user mr-2"></i> Kullanıcı Adı
-                </a>
+           <!-- Kullanıcı Menüsü -->
+<ul id="user-menu" class="hidden absolute right-0 top-16 w-48 flex-col overflow-hidden rounded-md border border-neutral-300 bg-white shadow-lg z-50">
+  <li class="border-b border-neutral-300">
+    <div class="flex flex-col px-4 py-2">
+      <span class="text-sm font-medium text-neutral-900">Alice Brown</span>
+      <p class="text-xs text-neutral-600">alice.brown@gmail.com</p>
+    </div>
+  </li>
+  <li>
+    <a href="#" class="block px-4 py-2 text-sm text-neutral-600 hover:bg-gray-100">Dashboard</a>
+  </li>
+  <li>
+    <a href="#" class="block px-4 py-2 text-sm text-neutral-600 hover:bg-gray-100">Subscription</a>
+  </li>
+  <li>
+    <a href="#" class="block px-4 py-2 text-sm text-neutral-600 hover:bg-gray-100">Settings</a>
+  </li>
+  <li>
+    <a href="#" class="block px-4 py-2 text-sm text-neutral-600 hover:bg-gray-100">Sign Out</a>
+  </li>
+</ul>
+        </li>
+    </ul>
+</nav>
 
-                <!-- Kullanıcı Alt Menüsü -->
-                <ul id="userMenu" class="absolute right-0 bg-white shadow-lg mt-2 hidden rounded-md">
-                    <li><a class="block px-4 py-2 text-blue-900 hover:bg-blue-100" href="#">Hesabım</a></li>
-                    <li><hr class="border-gray-300"></li>
-                    <li><a class="block px-4 py-2 text-blue-900 hover:bg-blue-100" href="#">Çıkış Yap</a></li>
-                </ul>
 
-                <!-- Kayıt Ol Butonu -->
-                <a href="/register.html" class="text-black hover:text-blue-600 flex items-center">
-                    <i class="fa fa-user-plus mr-2"></i> Kayıt Ol
-                </a>
-            </div>
-        </div>
-    </nav>
-</div>
 `;
