@@ -2,23 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <link rel="stylesheet" href="css/main.css">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 
   <!-- Fontawesome Pro-->
   <link rel="stylesheet" href="/css/fontawesome.css">
 
-  <!-- Title -->
-  <title>Pricing</title>
+  <link rel="stylesheet" href="css/main.css">
 
+  <script src="components/slider.js"></script>
 
   <!-- Tailwind -->
 
@@ -27,14 +19,17 @@
   <!-- Head Component -->
 
   <script type="module">
-    import { createHead } from './components/head.js';
+      import { createHead } from './components/head.js';
 
-    createHead();
+      createHead();
   </script>
+
+  <!-- Famfamfam-flags -->
+  <link rel="stylesheet" href="/flags/css/famfamfam-flags.css" />
 
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body>
 
   <!-- Navbar -->
   <div id="navbar-container"></div>
@@ -52,303 +47,233 @@
 <!-- Başlık -->
 <header class="py-12">
   <div class="container mx-auto text-center">
-    <h1 class="text-5xl font-semibold text-black drop-shadow-md">Fiyatlar</h1>
-    <p class="mt-4 text-lg font-medium text-black drop-shadow-md">
+    <h1 class="text-5xl font-semibold text-primaryText-light dark:text-primaryText-dark drop-shadow-md">
+      Fiyatlar
+    </h1>
+    <p class="mt-4 text-lg font-medium text-primaryText-light dark:text-primaryText-dark drop-shadow-md">
       CRM Programımız Sektörde En Uygun Fiyatlarla Hizmet Sunarken Üstün Hizmet Garantisi Verir.
     </p>
   </div>
 </header>
 
   <!-- Pricing Table -->
-<!-- source:https://play.tailwindcss.com/plOt8FuTGU -->
-<section class="py-6 leading-7 text-gray-900 sm:py-12 md:py-16">
-  <div class="box-border px-4 mx-auto border-solid sm:px-6 md:px-6 lg:px-0 max-w-7xl">
+  <section class="py-6 leading-7 text-primaryText-light dark:text-primaryText-dark sm:py-12 md:py-16">
+    <div class="box-border px-4 mx-auto border-solid sm:px-6 md:px-6 lg:px-0 max-w-7xl">
+  
+        <div class="flex flex-col items-center leading-7 text-center text-primaryText-light dark:text-primaryText-dark border-0 border-gray-200">
+            <h2 id="pricing"
+                class="box-border m-0 text-3xl font-semibold leading-tight tracking-tight text-primaryText-light dark:text-primaryText-dark border-solid sm:text-4xl md:text-5xl">
+                Simple, Transparent Pricing
+            </h2>
+            <p class="box-border mt-2 text-xl text-primaryText-light dark:text-primaryText-dark border-solid sm:text-2xl">
+            </p>
+        </div>
+    </div>
+  </section>
+  <div id="pricing"
+    class="grid grid-cols-1 gap-4 mt-4 leading-7 text-gray-900 border-0 border-gray-200 sm:mt-6 sm:gap-6 md:mt-8 md:gap-0 lg:grid-cols-3">
+<!-- Price 1 -->
 
-      <div class="flex flex-col items-center leading-7 text-center text-gray-900 border-0 border-gray-200">
-          <h2 id="pricing"
-              class="box-border m-0 text-3xl font-semibold leading-tight tracking-tight text-black border-solid sm:text-4xl md:text-5xl">
-              Simple, Transparent Pricing
-          </h2>
-          <p class="box-border mt-2 text-xl text-gray-900 border-solid sm:text-2xl">
-          </p>
+<div class="relative z-10 flex flex-col items-center max-w-md p-4 mx-auto my-0 border border-orange-600 rounded-lg sm:p-6 md:px-8 md:py-16 shadow-lg">
+  <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-4xl">
+      Starter
+  </h3>
+  <div class="flex items-end mt-6 leading-7 text-gray-900 dark:text-gray-100">
+      <p class="box-border m-0 text-6xl font-semibold leading-none">
+          $1
+      </p>
+      <p class="box-border m-0"> / month </p>
+  </div>
+  <ul class="flex-1 p-0 mt-4 ml-5 leading-7 text-gray-900 dark:text-gray-200">
+      <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left">
+          <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          1 Website
+      </li>
+      <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left">
+          <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          SSL (HTTPS)
+      </li>
+      <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left">
+          <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          SiteFast Domain
+      </li>
+  </ul>
+  <a href="#" class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-orange-600 border rounded-md cursor-pointer hover:bg-orange-700 hover:border-orange-700 hover:text-white focus-within:bg-orange-700 focus-within:border-orange-700 focus-within:text-white sm:text-base md:text-lg">
+      Start Now
+  </a>
+</div>
+
+  <!-- Price 2 -->
+<div class="relative z-10 flex flex-col items-center max-w-md p-4 mx-auto my-0 border border-blue-600 rounded-lg sm:p-6 md:px-8 md:py-16 shadow-lg">
+  <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-gray-900 dark:text-gray-100 border-0 border-gray-200 sm:text-3xl md:text-4xl">
+      Basic
+  </h3>
+  <div class="flex items-end mt-6 leading-7 text-gray-900 dark:text-gray-100 border-0 border-gray-200">
+      <p class="box-border m-0 text-6xl font-semibold leading-none border-solid">
+          $29
+      </p>
+      <p class="box-border m-0 border-solid"> / month </p>
+  </div>
+  <ul class="flex-1 p-0 mt-4 ml-5 leading-7 text-gray-900 dark:text-gray-200 border-0 border-gray-200">
+      <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+          <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          15 Websites
+      </li>
+      <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+          <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          SSL (HTTPS)
+      </li>
+      <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+          <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Custom Domain
+      </li>
+      <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+          <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          SiteFast Branding Removal
+      </li>
+  </ul>
+  <a href="#" class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-blue-600 border rounded-md cursor-pointer hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700 focus-within:text-white sm:text-base md:text-lg">
+      Start Now
+  </a>
+</div>
+
+
+    <!-- Price 3 -->
+    <div class="relative z-10 flex flex-col items-center max-w-md p-4 mx-auto my-0 border border-green-600 rounded-lg sm:p-6 md:px-8 md:py-16 shadow-lg">
+        <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-gray-900 dark:text-gray-100 border-0 border-gray-200 sm:text-3xl md:text-4xl">
+            Premium
+        </h3>
+        <div class="flex items-end mt-6 leading-7 text-gray-900 dark:text-gray-100 border-0 border-gray-200">
+            <p class="box-border m-0 text-6xl font-semibold leading-none border-solid">
+                $49
+            </p>
+            <p class="box-border m-0 border-solid"> / month </p>
+        </div>
+        <ul class="flex-1 p-0 mt-4 ml-5 leading-7 text-gray-900 dark:text-gray-200 border-0 border-gray-200">
+            <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                30 Websites
+            </li>
+            <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                SSL (HTTPS)
+            </li>
+            <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Custom Branding
+            </li>
+            <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                SiteFast Branding Removal
+            </li>
+        </ul>
+        <a href="#" class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-green-600 border rounded-md cursor-pointer hover:bg-green-700 hover:border-green-700 hover:text-white focus-within:bg-green-700 focus-within:border-green-700 focus-within:text-white sm:text-base md:text-lg">
+            Start Now
+        </a>
+    </div>
+</div>
+
+<!-- CRM Özellikleri -->
+<section class="pt-12">
+  <div class="container mx-auto px-6 lg:px-12">
+    <!-- Başlık -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 dark:text-blue-400">Hemen Bağlan, Kullanmayı Başla!</h2>
+      <p class="text-lg text-black-600 mt-4 dark:text-black-300">
+        CRM yazılımının hazır, modüler ve bütünleşik yapısıyla sınıfının en profesyonel CRM çözümlerinin konforunu
+        yaşayın.
+      </p>
+    </div>
+    <!-- Özellik Listesi -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-center">
+      <div class="flex items-center justify-left">
+        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
+        <p class="text-black-700 text-lg dark:text-black-300">Kullanımı kolay</p>
       </div>
-
-      
-      <div id="pricing"
-          class="grid grid-cols-1 gap-4 mt-4 leading-7 text-gray-900 border-0 border-gray-200 sm:mt-6 sm:gap-6 md:mt-8 md:gap-0 lg:grid-cols-3">
-          <!-- Price 1 -->
-          <div
-              class="relative z-10 flex flex-col items-center max-w-md p-4 mx-auto my-0 border-4 border-yellow-600 border-solid rounded-lg sm:p-6 md:px-8 md:py-16">
-              <h3
-                  class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-gray-200 sm:text-3xl md:text-4xl">
-                  Starter
-              </h3>
-              <div class="flex items-end mt-6 leading-7 text-gray-900 border-0 border-gray-200">
-                  <p class="box-border m-0 text-6xl font-semibold leading-none border-solid">
-                      $1
-                  </p>
-                  <p class="box-border m-0 border-solid" style="border-image: initial;">
-                      / month
-                  </p>
-              </div>
-              <ul class="flex-1 p-0 mt-4 ml-5 leading-7 text-gray-900 border-0 border-gray-200">
-                  <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
-                      <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
-                          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                          </path>
-                      </svg>
-                      1 Website
-                  </li>
-
-                  <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
-                      <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
-                          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                          </path>
-                      </svg>
-                      SSL (HTTPS)
-                  </li>
-
-                  <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
-                      <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
-                          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                          </path>
-                      </svg>
-                      SiteFast Domain
-                  </li>
-
-              </ul>
-              <a href="#"
-                  class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-orange-600 border rounded-md cursor-pointer hover:bg-orange-700 hover:border-orange-700 hover:text-white focus-within:bg-orange-700 focus-within:border-orange-700 focus-within:text-white sm:text-base md:text-lg">
-                  Start Now
-              </a>
-          </div>
-          <!-- Price 2 -->
-          <div
-              class="relative z-20 flex flex-col items-center max-w-md p-4 mx-auto my-0 border-4 border-blue-600 border-solid rounded-lg sm:p-6 md:px-8 md:py-16">
-              <h3
-                  class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-gray-200 sm:text-3xl md:text-4xl">
-                  Basic
-              </h3>
-              <div class="flex items-end mt-6 leading-7 text-gray-900 border-0 border-gray-200">
-                  <p class="box-border m-0 text-6xl font-semibold leading-none border-solid">
-                      $29
-                  </p>
-                  <p class="box-border m-0 border-solid" style="border-image: initial;">
-                      / month
-                  </p>
-              </div>
-              <ul class="flex-1 p-0 mt-4 ml-5 leading-7 text-gray-900 border-0 border-gray-200">
-                  <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
-                      <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
-                          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                          </path>
-                      </svg>
-                      15 Websites
-                  </li>
-
-                  <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
-                      <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
-                          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                          </path>
-                      </svg>
-                      SSL (HTTPS)
-                  </li>
-
-                  <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
-                      <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
-                          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                          </path>
-                      </svg>
-                      Custom Domain
-                  </li>
-
-                  <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
-                      <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
-                          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                          </path>
-                      </svg>
-                      SiteFast Branding Removal
-                  </li>
-              </ul>
-
-              <a href="#"
-                  class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-blue-600 border rounded-md cursor-pointer hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700 focus-within:text-white sm:text-base md:text-lg">
-                  Start Now
-              </a>
-          </div>
-          <!-- Price 3 -->
-          <div
-              class="relative z-20 flex flex-col items-center max-w-md p-4 mx-auto my-0 border-4 border-green-600 border-solid rounded-lg sm:p-6 md:px-8 md:py-16">
-              <h3
-                  class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-gray-200 sm:text-3xl md:text-4xl">
-                  Plus
-              </h3>
-              <div class="flex items-end mt-6 leading-7 text-gray-900 border-0 border-gray-200">
-                  <p class="box-border m-0 text-6xl font-semibold leading-none border-solid">
-                      $49
-                  </p>
-                  <p class="box-border m-0 border-solid" style="border-image: initial;">
-                      / month
-                  </p>
-              </div>
-
-              <ul class="flex-1 p-0 mt-4 leading-7 text-gray-900 border-0 border-gray-200">
-                  <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
-                      <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
-                          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                          </path>
-                      </svg>
-                      50 Websites
-                  </li>
-
-                  <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
-                      <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
-                          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                          </path>
-                      </svg>
-                      SSL (HTTPS)
-                  </li>
-
-                  <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
-                      <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
-                          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                          </path>
-                      </svg>
-                      Custom Domain
-                  </li>
-
-
-                  <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
-                      <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
-                          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                          </path>
-                      </svg>
-                      SiteFast Branding Removal
-                  </li>
-
-
-                  <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
-                      <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
-                          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                          </path>
-                      </svg>
-                      Google Analytics
-                  </li>
-
-                  <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
-                      <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
-                          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                          </path>
-                      </svg>
-                      Email Integration
-                  </li>
-
-              </ul>
-              <a href="#"
-                  class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-green-600 border rounded-md cursor-pointer hover:bg-green-700 hover:border-green-700 hover:text-white focus-within:bg-green-700 focus-within:border-green-700 focus-within:text-white sm:text-base md:text-lg">
-                  Start Now
-              </a>
-
-          </div>
+      <div class="flex items-left justify-left">
+        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
+        <p class="text-black-700 text-lg dark:text-black-300">Görsel arayüzler</p>
       </div>
+      <div class="flex items-center justify-left">
+        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
+        <p class="text-black-700 text-lg dark:text-black-300">Kullanıcıya özel menüler</p>
+      </div>
+      <div class="flex items-center justify-left">
+        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
+        <p class="text-black-700 text-lg dark:text-black-300">Web ve mobil tabanlı</p>
+      </div>
+      <div class="flex items-center justify-left">
+        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
+        <p class="text-black-700 text-lg dark:text-black-300">Esnek ve özelleştirilebilir</p>
+      </div>
+      <div class="flex items-center justify-left">
+        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
+        <p class="text-black-700 text-lg dark:text-black-300">Büyümek için ölçeklenebilir</p>
+      </div>
+      <div class="flex items-center justify-left">
+        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
+        <p class="text-black-700 text-lg dark:text-black-300">Güvenilir ve sağlam</p>
+      </div>
+      <div class="flex items-center justify-left">
+        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
+        <p class="text-black-700 text-lg dark:text-black-300">Özel dashboard ve raporlar</p>
+      </div>
+      <div class="flex items-center justify-left">
+        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
+        <p class="text-black-700 text-lg dark:text-black-300">Çoklu dil desteği</p>
+      </div>
+      <div class="flex items-center justify-left">
+        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
+        <p class="text-black-700 text-lg dark:text-black-300">Tüm cihazlara uyumlu</p>
+      </div>
+    </div>
   </div>
 </section>
-  <br><br>
-  <hr>
-
-  <!-- CRM Özellikleri -->
-  <section>
-    <div class="container mx-auto px-6 lg:px-12">
-      <!-- Başlık -->
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Hemen Bağlan, Kullanmayı Başla!</h2>
-        <p class="text-lg text-gray-600 mt-4">
-          CRM yazılımının hazır, modüler ve bütünleşik yapısıyla sınıfının en profesyonel CRM çözümlerinin konforunu
-          yaşayın.
-        </p>
+<!-- Demo Talebi -->
+<section id="demo" class="py-16">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 dark:text-blue-400 mb-6">CRM Uygulamamızı Denemek İster Misiniz?</h2>
+    <p class="text-black-700 text-lg mb-6 dark:text-black-300">
+      Demo talep ederek iş süreçlerinizi dönüştürmek için bir adım atın. CRM ile işinizi büyütmek şimdi daha kolay.
+    </p>
+    <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0">
+      <!-- İkon Alanı -->
+      <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg">
+        <i class="fas fa-chart-line text-blue-800 dark:text-blue-400 text-3xl"></i>
       </div>
-      <!-- Özellik Listesi -->
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-center">
-        <div class="flex items-center justify-left">
-          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-          <p class="text-gray-700 text-lg">Kullanımı kolay</p>
-        </div>
-        <div class="flex items-left justify-left">
-          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-          <p class="text-gray-700 text-lg">Görsel arayüzler</p>
-        </div>
-        <div class="flex items-center justify-left">
-          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-          <p class="text-gray-700 text-lg">Kullanıcıya özel menüler</p>
-        </div>
-        <div class="flex items-center justify-left">
-          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-          <p class="text-gray-700 text-lg">Web ve mobil tabanlı</p>
-        </div>
-        <div class="flex items-center justify-left">
-          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-          <p class="text-gray-700 text-lg">Esnek ve özelleştirilebilir</p>
-        </div>
-        <div class="flex items-center justify-left">
-          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-          <p class="text-gray-700 text-lg">Büyümek için ölçeklenebilir</p>
-        </div>
-        <div class="flex items-center justify-left">
-          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-          <p class="text-gray-700 text-lg">Güvenilir ve sağlam</p>
-        </div>
-        <div class="flex items-center justify-left">
-          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-          <p class="text-gray-700 text-lg">Özel dashboard ve raporlar</p>
-        </div>
-        <div class="flex items-center justify-left">
-          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-          <p class="text-gray-700 text-lg">Çoklu dil desteği</p>
-        </div>
-        <div class="flex items-center justify-left">
-          <i class="fas fa-check text-blue-600 text-xl mr-4"></i>
-          <p class="text-gray-700 text-lg">Tüm cihazlara uyumlu</p>
-        </div>
+      <!-- Buton ve Açıklama -->
+      <div class="ml-0 md:ml-6 text-center md:text-left">
+        <button
+          class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition-transform transform hover:scale-105">
+          Demo Talep Et
+        </button>
+        <p class="mt-4 text-sm text-blue-600 dark:text-blue-400">Hemen kayıt olun, CRM uygulamamızı ücretsiz deneyin.</p>
       </div>
     </div>
-  </section>
-
-  <!-- Demo Talebi -->
-  <section id="demo" class="text-white py-16">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">CRM Uygulamamızı Denemek İster Misiniz?</h2>
-      <p class="text-gray-700 text-lg mb-6">
-        Demo talep ederek iş süreçlerinizi dönüştürmek için bir adım atın. CRM ile işinizi büyütmek şimdi daha kolay.
-      </p>
-      <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0">
-        <!-- İkon Alanı -->
-        <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg">
-          <i class="fas fa-chart-line text-blue-800 text-3xl"></i>
-        </div>
-        <!-- Buton ve Açıklama -->
-        <div class="ml-0 md:ml-6 text-center md:text-left">
-          <button
-            class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition-transform transform hover:scale-105">
-            Demo Talep Et
-          </button>
-          <p class="mt-4 text-sm text-blue-600">Hemen kayıt olun, CRM uygulamamızı ücretsiz deneyin.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
   <!-- Footer -->
 

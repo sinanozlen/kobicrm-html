@@ -2,12 +2,12 @@ const NavbarHtml = `
 <div id="root" class="mx-0 px-0 w-full">
     <div class="bg-blue-600 py-2 w-full">
         <div class="flex justify-between items-center px-6">
-            <a href="/" class="text-white text-base font-normal hover:underline">
+            <a href="/" class="text-white text-base font-normal hover:underline text-xl">
                 Mobile uygulamamızı şimdi indirin %20 indirim kazanın
             </a>
             <div class="flex space-x-6">
-                <a class="text-white hover:underline text-sm" href="#">English</a>
-                <a class="text-white hover:underline flex items-center text-sm" href="/login.html">
+                <a class="text-white hover:underline flex items-center text-xl" href="#">English</a>
+                <a class="text-white hover:underline flex items-center text-xl" href="/login.html">
                     Giriş Yap
                 </a>
             </div>
@@ -20,18 +20,21 @@ const NavbarHtml = `
         <img src="./img/kobicrm-logo.png" alt="KobiCRM Logo" class="w-45 h-10">
     </a>
 
-    <!-- Desktop Menu -->
-    <ul class="hidden items-center gap-4 flex-shrink-0 sm:flex">
-        <li>
-            <a href="/about.html" class="font-medium text-neutral-600 underline-offset-2 hover:text-black focus:outline-none focus:underline dark:text-neutral-300 dark:hover:text-white">
-                Hakkımızda
-            </a>
-        </li>
-        <li>
-            <a href="/pricing.html" class="font-medium text-neutral-600 underline-offset-2 hover:text-black focus:outline-none focus:underline dark:text-neutral-300 dark:hover:text-white">
-                Fiyatlar
-            </a>
-        </li>
+  <!-- Desktop Menu -->
+<ul class="hidden items-center gap-4 flex-shrink-0 sm:flex">
+    <li>
+        <a href="/about.html" 
+           class="text-lg font-medium hover:text-gray-200 text-black dark:text-white dark:hover:text-gray-400">
+            Hakkımızda
+        </a>
+    </li>
+    <li>
+        <a href="/pricing.html" 
+           class="text-lg font-medium hover:text-gray-200 text-black dark:text-white dark:hover:text-gray-400">
+            Fiyatlar
+        </a>
+    </li>
+</ul>
 
         <!-- Kullanıcı Fotoğrafı -->
         <li class="relative flex items-center">
