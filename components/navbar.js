@@ -6,66 +6,64 @@ const NavbarHtml = `
                 Mobile uygulamamızı şimdi indirin %20 indirim kazanın
             </a>
             <div class="flex space-x-6">
-                <a class="text-white hover:underline flex items-center text-xl" href="#">English</a>
-                <a class="text-white hover:underline flex items-center text-xl" href="/login.html">
+                <a class="text-white hover:underline flex items-center text-sm" href="#">English</a>
+                <a class="text-white hover:underline flex items-center text-sm" href="/login.html">
                     Giriş Yap
                 </a>
             </div>
         </div>
     </div>
 </div>
-<!-- Menü Çubuğu -->
-<nav class="flex items-center justify-between gap-4 px-6 py-4" aria-label="penguin ui menu">
-    <a href="/">
-        <img src="./img/kobicrm-logo.png" alt="KobiCRM Logo" class="w-45 h-10">
-    </a>
+<style>
+  #menu-toggle:checked + #menu {
+    display: block;
+  }
+</style>
 
-  <!-- Desktop Menu -->
-<ul class="hidden items-center gap-4 flex-shrink-0 sm:flex">
-    <li>
-        <a href="/about.html" 
+<nav class="lg:px-16 px-6 shadow-md flex flex-wrap items-center lg:py-0 py-2 bg-white text-black dark:bg-gray-900 dark:text-white">
+  <!-- Logo ve Başlık -->
+  <div class="flex-1 flex justify-between items-center">
+    <a href="/">
+      <img src="./img/kobicrm-logo.png" alt="KobiCRM Logo" class="w-45 h-10">
+    </a>
+  </div>
+
+  <!-- Menü Toggle -->
+  <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+    <svg
+      class="fill-current text-black dark:text-white"
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+    >
+      <title>menu</title>
+      <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+    </svg>
+  </label>
+  <input class="hidden" type="checkbox" id="menu-toggle" />
+
+  <!-- Menü -->
+  <div class="hidden lg:flex lg:items-center lg:w-auto w-full justify-center" id="menu">
+    <nav>
+      <ul class="text-center items-center gap-x-5 pt-4 lg:text-lg lg:flex lg:pt-0">
+        <li class="py-2 lg:py-0">
+          <a href="/about.html" 
            class="text-lg font-medium hover:text-gray-200 text-black dark:text-white dark:hover:text-gray-400">
             Hakkımızda
         </a>
-    </li>
-    <li>
-        <a href="/pricing.html" 
+        </li>
+        <li class="py-2 lg:py-0">
+         <a href="/pricing.html" 
            class="text-lg font-medium hover:text-gray-200 text-black dark:text-white dark:hover:text-gray-400">
             Fiyatlar
         </a>
-    </li>
-</ul>
-
-        <!-- Kullanıcı Fotoğrafı -->
-        <li class="relative flex items-center">
-            <button id="user-menu-toggle" class="rounded-full">
-                <img src="https://penguinui.s3.amazonaws.com/component-assets/avatar-8.webp" alt="User Profile" class="size-10 rounded-full object-cover">
-            </button>
-
-           <!-- Kullanıcı Menüsü -->
-<ul id="user-menu" class="hidden absolute right-0 top-16 w-48 flex-col overflow-hidden rounded-md border border-neutral-300 bg-white shadow-lg z-50">
-  <li class="border-b border-neutral-300">
-    <div class="flex flex-col px-4 py-2">
-      <span class="text-sm font-medium text-neutral-900">Alice Brown</span>
-      <p class="text-xs text-neutral-600">alice.brown@gmail.com</p>
-    </div>
-  </li>
-  <li>
-    <a href="#" class="block px-4 py-2 text-sm text-neutral-600 hover:bg-gray-100">Dashboard</a>
-  </li>
-  <li>
-    <a href="#" class="block px-4 py-2 text-sm text-neutral-600 hover:bg-gray-100">Subscription</a>
-  </li>
-  <li>
-    <a href="#" class="block px-4 py-2 text-sm text-neutral-600 hover:bg-gray-100">Settings</a>
-  </li>
-  <li>
-    <a href="#" class="block px-4 py-2 text-sm text-neutral-600 hover:bg-gray-100">Sign Out</a>
-  </li>
-</ul>
         </li>
-    </ul>
+      </ul>
+    </nav>
+  </div>
 </nav>
+
 
 
 `;
