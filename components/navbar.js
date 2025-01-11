@@ -8,10 +8,10 @@ const NavbarHtml = `
         Mobil uygulamamızı şimdi indirin %20 indirim kazanın
       </span>
       <div class="flex items-center space-x-4">
-        <a href="#" class="hover:underline">English</a>
+        <a href="#" class="hover:text-blue-700 dark:hover:text-blue-400">English</a>
         <!-- Dikey Çizgi -->
         <span class="border-l border-white h-4 mx-2"></span>
-        <a href="/login.html" class="hover:underline">Giriş Yap</a>
+        <a href="/login.html" class="hover:text-blue-700 dark:hover:text-blue-400">Giriş Yap</a>
       </div>
     </div>
   </div>
@@ -30,35 +30,40 @@ const NavbarHtml = `
 
 
 <!-- Navbar -->
-<div class="bg-gray-100 w-full shadow-sm">
+<div class="bg-gray-100 dark:bg-gray-800 w-full shadow-sm">
   <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-    <!-- Sol: Anasayfa İkonu -->
-    <div class="flex items-center space-x-4">
-      <a href="/" class="flex items-center text-gray-900 font-medium hover:text-blue-700 transition duration-300">
-        <i class="fa fa-home text-lg"></i> <span class="ml-2"></span>
+    <!-- Sol: Anasayfa ve Diğer Bağlantılar -->
+    <div class="flex items-center space-x-6">
+      <!-- Anasayfa -->
+      <a href="/" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
+        <i class="fa fa-home text-lg"></i>
       </a>
-    </div>
 
-    <!-- Orta: Hakkımızda ve Fiyatlar -->
-    <div class="hidden lg:flex items-center space-x-4">
-      <a href="/about.html" class="flex items-center text-gray-900 font-semibold hover:text-blue-700 transition duration-300">
-        Hakkımızda
+      <!-- Hakkımızda -->
+      <a href="/about.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
+       <span class="ml-2">Hakkımızda</span>
       </a>
-      <!-- Dikey Çizgi -->
-      <span class="border-l border-gray-400 h-5 mx-2"></span>
-      <a href="/pricing.html" class="flex items-center text-gray-900 font-semibold hover:text-blue-700 transition duration-300">
-        Fiyatlar
+
+      <!-- Fiyatlar ve Hizmetlerimiz -->
+      <a href="/pricing.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
+        
+        <span class="ml-2">Fiyatlar</span>
+      </a>
+
+      <!-- Hizmetlerimiz -->
+      <a href="/services.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
+      <span class="ml-2">Hizmetlerimiz</span>
       </a>
     </div>
 
     <!-- Sağ: Giriş Yap ve Hesap Oluştur -->
-    <div class="flex space-x-4">
-      <a href="/login.html" class="flex items-center text-gray-900 font-semibold hover:text-blue-700 transition duration-300">
-        Giriş Yap
+    <div class="flex items-center space-x-8">
+      <a href="/login.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
+        <i class="fas fa-sign-in-alt text-lg"></i> Giriş Yap
       </a>
-      <span class="border-l border-gray-400 h-5 mx-2"></span>
-      <a href="/register.html" class="flex items-center text-gray-900 font-semibold hover:text-blue-700 transition duration-300">
-        Hesap Oluştur
+      
+      <a href="/register.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
+        <i class="fas fa-user-plus text-lg"></i> Hesap Oluştur
       </a>
     </div>
   </div>
