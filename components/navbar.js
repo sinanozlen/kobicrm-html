@@ -1,7 +1,7 @@
 const NavbarHtml = `
 <div id="root" class="mx-0 px-0 w-full">
   <!-- Mobil Uygulama Mesajı -->
-  <div id="mobile-app-banner" class="bg-blue-600 py-2 w-full fixed top-0 left-0 right-0 z-50" style="backdrop-filter: blur(10px);">
+  <div id="mobile-app-banner" class="bg-blue-600 py-2 w-full fixed top-0 left-0 right-0 z-50">
     <div class="flex justify-between items-center px-6">
       <a href="/" class="text-white text-base font-normal hover:underline text-xl">
         Mobile uygulamamızı şimdi indirin %20 indirim kazanın
@@ -13,11 +13,28 @@ const NavbarHtml = `
     </div>
   </div>
 
-  <!-- Logo -->
-  <div id="logo-section" class="bg-white py-2 w-full fixed left-0 right-0 z-40" style="backdrop-filter: blur(10px);">
-    <a href="/">
-      <img src="./img/kobicrm-logo.png" alt="KobiCRM Logo" class="w-45 h-8 ml-4">
-    </a>
+<!-- Logo ve Bağlantılar -->
+  <div id="logo-section" class="bg-white py-2 w-full fixed left-0 right-0 z-40">
+    <div class="flex justify-between items-center px-6">
+      <!-- Sol tarafta Home ikonu ve logo -->
+      <div class="flex items-center space-x-4">
+        <a href="/" class="flex items-center text-gray-800 hover:text-blue-600">
+       <a href="/" class="flex justify-center items-center text-gray-800 hover:text-blue-600 hover:border-b-2 hover:border-blue-600">
+  <img src="./img/home-button.png" alt="Home Button" class="h-6 w-6">
+</a>
+
+
+         
+        <a href="/">
+          <img src="./img/kobicrm-logo.png" alt="KobiCRM Logo" class="w-45 h-8">
+        </a>
+      </div>
+      <!-- Sağda "Kayıt Ol" bağlantısı -->
+     <a href="/login" class="text-lg font-bold text-blue-600 hover:border-b-2 hover:border-blue-600">
+  Kayıt Ol
+</a>
+
+    </div>
   </div>
 
   <!-- Telefon ve Mail Bilgileri -->
