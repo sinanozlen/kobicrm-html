@@ -30,7 +30,7 @@ const NavbarHtml = `
         </a>
       </div>
       <!-- Sağda "Kayıt Ol" bağlantısı -->
-     <a href="/login" class="text-lg font-bold text-blue-600 hover:border-b-2 hover:border-blue-600">
+     <a href="/register.html" class="text-lg font-bold text-blue-600 hover:border-b-2 hover:border-blue-600">
   Kayıt Ol
 </a>
 
