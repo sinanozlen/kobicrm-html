@@ -43,29 +43,32 @@ const NavbarHtml = `
       <a href="/about.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
        <span class="ml-2">Hakkımızda</span>
       </a>
-
-      <!-- Fiyatlar ve Hizmetlerimiz -->
+       <!-- Hizmetlerimiz -->
+      <a href="/services.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
+      <span class="ml-2">Hizmetlerimiz</span>
+      </a>
+      <!--Fiyatlar -->
       <a href="/pricing.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
         
         <span class="ml-2">Fiyatlar</span>
       </a>
-
-      <!-- Hizmetlerimiz -->
-      <a href="/services.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
-      <span class="ml-2">Hizmetlerimiz</span>
-      </a>
     </div>
 
-    <!-- Sağ: Giriş Yap ve Hesap Oluştur -->
-    <div class="flex items-center space-x-8">
-      <a href="/login.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
-        <i class="fas fa-sign-in-alt text-lg"></i> Giriş Yap
-      </a>
       
-      <a href="/register.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
-        <i class="fas fa-user-plus text-lg"></i> Hesap Oluştur
-      </a>
-    </div>
+
+     
+
+   <!-- Sağ: Giriş Yap ve Hesap Oluştur -->
+<div class="flex items-center space-x-8">
+  <a href="/login.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
+    <i class="fas fa-sign-in-alt text-lg mr-2"></i> Giriş Yap
+  </a>
+  
+  <a href="/register.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
+    <i class="fas fa-user-plus text-lg mr-2"></i> Hesap Oluştur
+  </a>
+</div>
+
   </div>
 </div>
 
