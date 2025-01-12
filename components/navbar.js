@@ -4,8 +4,11 @@ const NavbarHtml = `
   <div class="bg-blue-900 py-2 w-full">
     <div class="flex justify-between items-center px-6 text-white text-sm">
       <!-- Mesaj Metni -->
-      <span class="text-lg font-bold tracking-wide">
+      <span class="md:text-lg sm:text-md font-bold tracking-wide hidden sm:block md:block lg:block xl:block">
         Mobil uygulamamızı şimdi indirin %20 indirim kazanın
+      </span>
+      <span class="text-sm font-bold tracking-wide sm:hidden md:hidden lg:hidden xl:hidden">
+        info@kobicrm.net
       </span>
       <div class="flex items-center space-x-4">
         <a href="#" class="hover:text-blue-700 dark:hover:text-blue-400">English</a>
@@ -30,40 +33,40 @@ const NavbarHtml = `
 
 
 <!-- Navbar -->
-<div class="bg-gray-100 dark:bg-gray-800 w-full shadow-sm">
-  <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+<div class="bg-gray-100 dark:bg-gray-800 w-full shadow-sm justify-center flex">
+  <div class="container mx-auto sm:mx-6 px-2 sm:px-6 py-3 flex justify-between text-sm sm:text-sm md:text-base lg:text-lg">
     <!-- Sol: Anasayfa ve Diğer Bağlantılar -->
-    <div class="flex items-center space-x-6">
+    <div class="flex items-center space-x-6 sm:space-x-2 md:space-x-4 lg:space-x-6">
       <!-- Anasayfa -->
       <a href="/" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
         <i class="fa fa-home text-lg"></i>
       </a>
 
       <!-- Hakkımızda -->
-      <a href="/about.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
+      <a href="/about.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300 hidden sm:block">
        <span class="ml-2">Hakkımızda</span>
       </a>
 
       <!-- Fiyatlar ve Hizmetlerimiz -->
-      <a href="/pricing.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
+      <a href="/pricing.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300 hidden sm:block">
         
         <span class="ml-2">Fiyatlar</span>
       </a>
 
       <!-- Hizmetlerimiz -->
-      <a href="/services.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
+      <a href="/services.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300 hidden sm:block">
       <span class="ml-2">Hizmetlerimiz</span>
       </a>
     </div>
 
     <!-- Sağ: Giriş Yap ve Hesap Oluştur -->
-    <div class="flex items-center space-x-8">
+    <div class="flex items-center space-x-8 sm:space-x-6 md:space-x-6 lg:space-x-8">
       <a href="/login.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
-        <i class="fas fa-sign-in-alt text-lg"></i> Giriş Yap
+        <i class="fas fa-sign-in-alt text-lg me-2"></i> Giriş Yap
       </a>
       
       <a href="/register.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
-        <i class="fas fa-user-plus text-lg"></i> Hesap Oluştur
+        <i class="fas fa-user-plus text-lg me-2"></i> Hesap Oluştur
       </a>
     </div>
   </div>
@@ -73,3 +76,4 @@ const NavbarHtml = `
 
 
 `;
+
