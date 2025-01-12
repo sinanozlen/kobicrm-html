@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol!</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fontawesome Pro-->
+    <link rel="stylesheet" href="/css/fontawesome.css">
+
+    <!-- Head Component -->
+    <script type="module">
+        import { createHead } from './components/head.js';
+        createHead();
+    </script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <script src="components/navbar.js"></script> <!-- Navbar JS -->
+    <script>
+        // Navbar'ı yükle
+        document.getElementById('navbar-container').innerHTML = `
+            <!-- Navbar İçeriği -->
+            ${NavbarHtml}
+        `;
+    </script>
+
+<ol class="flex items-center whitespace-nowrap">
+    <li class="inline-flex items-center">
+      <a class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-500 dark:hover:text-blue-500 dark:focus:text-blue-500" href="/">
+        Anasayfa
+      </a>
+      <svg class="shrink-0 mx-2 size-4 text-gray-400 dark:text-neutral-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m9 18 6-6-6-6"></path>
+      </svg>
+    </li>
+   
+    <li class="inline-flex items-center text-sm font-semibold text-gray-800 truncate dark:text-neutral-200" aria-current="page">
+      Hizmetlerimiz
+    </li>
+  </ol>
+<!-- Hizmetler Sayfası -->
+<div class="bg-gradient-to-b from-blue-50 to-gray-100 py-12">
+    <div class="container mx-auto px-6">
+      <!-- Başlık -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Hizmetlerimiz</h1>
+        <p class="text-gray-600 text-base">KobiCRM olarak iş süreçlerinizi kolaylaştıracak profesyonel hizmetler sunuyoruz.</p>
+      </div>
+  
+      <!-- Hizmet Kartları -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Hizmet 1 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="flex items-center p-4">
+            <div class="bg-blue-500 text-white p-3 rounded-full">
+              <i class="fa fa-users fa-lg"></i>
+            </div>
+            <h2 class="text-lg font-semibold text-gray-800 ml-4">Müşteri Yönetimi</h2>
+          </div>
+          <p class="text-gray-600 px-4 pb-4">
+            Müşterilerinizle etkili bir şekilde iletişim kurun ve ilişkilerinizi geliştirin.
+          </p>
+        </div>
+  
+        <!-- Hizmet 2 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="flex items-center p-4">
+            <div class="bg-green-500 text-white p-3 rounded-full">
+              <i class="fa fa-chart-line fa-lg"></i>
+            </div>
+            <h2 class="text-lg font-semibold text-gray-800 ml-4">Satış Takibi</h2>
+          </div>
+          <p class="text-gray-600 px-4 pb-4">
+            Satış süreçlerinizi izleyin ve hedeflerinize kolayca ulaşın.
+          </p>
+        </div>
+  
+        <!-- Hizmet 3 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="flex items-center p-4">
+            <div class="bg-yellow-500 text-white p-3 rounded-full">
+              <i class="fa fa-chart-pie fa-lg"></i>
+            </div>
+            <h2 class="text-lg font-semibold text-gray-800 ml-4">Raporlama ve Analiz</h2>
+          </div>
+          <p class="text-gray-600 px-4 pb-4">
+            İş performansınızı izleyin ve detaylı raporlarla analiz edin.
+          </p>
+        </div>
+  
+        <!-- Hizmet 4 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="flex items-center p-4">
+            <div class="bg-red-500 text-white p-3 rounded-full">
+              <i class="fa fa-tasks fa-lg"></i>
+            </div>
+            <h2 class="text-lg font-semibold text-gray-800 ml-4">Görev ve Takvim Yönetimi</h2>
+          </div>
+          <p class="text-gray-600 px-4 pb-4">
+            Ekibinizin görevlerini ve takvimini kolayca yönetin.
+          </p>
+        </div>
+  
+        <!-- Hizmet 5 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="flex items-center p-4">
+            <div class="bg-indigo-500 text-white p-3 rounded-full">
+              <i class="fa fa-file-alt fa-lg"></i>
+            </div>
+            <h2 class="text-lg font-semibold text-gray-800 ml-4">Doküman Yönetimi</h2>
+          </div>
+          <p class="text-gray-600 px-4 pb-4">
+            Tüm iş dokümanlarınızı güvenli bir şekilde saklayın ve yönetin.
+          </p>
+        </div>
+  
+        <!-- Hizmet 6 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="flex items-center p-4">
+            <div class="bg-purple-500 text-white p-3 rounded-full">
+              <i class="fa fa-sync-alt fa-lg"></i>
+            </div>
+            <h2 class="text-lg font-semibold text-gray-800 ml-4">Entegrasyon</h2>
+          </div>
+          <p class="text-gray-600 px-4 pb-4">
+            Mevcut sistemlerinizle kolayca entegre olun ve iş akışınızı hızlandırın.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+           
+
+  <section class="py-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-14 text-center">
+            <span
+                class="py-1 px-4 bg-indigo-100 rounded-full text-xs font-medium text-indigo-600 text-center">Özellikler</span>
+            <h2 class="text-4xl text-center font-bold text-gray-900 py-5">
+                Devrim Niteliğinde Özellikler
+            </h2>
+            <p class="text-lg font-normal text-gray-500 max-w-md md:max-w-2xl mx-auto">
+                Gelişmiş özellikler sunar: zaman takibi, üçüncü parti uygulamalarla entegrasyon (takvim/Google Drive), alt görevler oluşturma ve daha fazlası.
+            </p>
+        </div>
+
+        <div
+            class="flex justify-center items-center gap-x-5 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
+            
+            <!-- Özellik 1 -->
+            <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
+                <div class="bg-indigo-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-indigo-600">
+                    <i class="fa fa-eye text-indigo-600 text-3xl group-hover:text-white transition-all duration-500"></i>
+                </div>
+                <h4 class="text-lg font-medium text-gray-900 mb-3">
+                    Proje Görünümü
+                </h4>
+                <p class="text-sm font-normal text-gray-500">
+                    Çalışmalarınızı istediğiniz gibi planlayın ve organize edin. Görevlerinizi hızla düzenleyin.
+                </p>
+            </div>
+
+            <!-- Özellik 2 -->
+            <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
+                <div class="bg-pink-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-pink-600">
+                    <i class="fa fa-sync-alt text-pink-600 text-3xl group-hover:text-white transition-all duration-500"></i>
+                </div>
+                <h4 class="text-lg font-medium text-gray-900 mb-3">
+                    Uygulama Entegrasyonları
+                </h4>
+                <p class="text-sm font-normal text-gray-500">
+                    Tüm araçlarınızı ve verilerinizi bir araya getirin. Yüzlerce farklı uygulamayla entegrasyon sağlayın.
+                </p>
+            </div>
+
+            <!-- Özellik 3 -->
+            <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
+                <div class="bg-teal-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-teal-600">
+                    <i class="fa fa-chart-bar text-teal-600 text-3xl group-hover:text-white transition-all duration-500"></i>
+                </div>
+                <h4 class="text-lg font-medium text-gray-900 mb-3">
+                    Veri Raporlama
+                </h4>
+                <p class="text-sm font-normal text-gray-500">
+                    Ekiplerinizin ilerlemesini anlık olarak izleyin ve iş alışkanlıklarını takip edin.
+                </p>
+            </div>
+
+            <!-- Özellik 4 -->
+            <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
+                <div class="bg-orange-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-orange-600">
+                    <i class="fa fa-cogs text-orange-600 text-3xl group-hover:text-white transition-all duration-500"></i>
+                </div>
+                <h4 class="text-lg font-medium text-gray-900 mb-3">
+                    İş Akışı Yönetimi
+                </h4>
+                <p class="text-sm font-normal text-gray-500">
+                    Otomatik süreçlerle ekiplerinizi koordine edin ve iletişimi artırın.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+                
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <!-- Başlık -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-gray-900 mb-4">KobiCRM ile işinizi kolaylaştıran çözümler</h2>
+        <p class="text-lg text-gray-600">
+          İşletmenizin her adımında destek sunan, güçlü ve yenilikçi çözümler.
+        </p>
+      </div>
+  
+      <!-- Hizmet Tablosu -->
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white shadow-lg rounded-lg">
+          <thead>
+            <tr class="bg-indigo-100">
+              <th class="py-4 px-6 text-left text-indigo-700 font-semibold text-lg">Hizmet</th>
+              <th class="py-4 px-6 text-left text-indigo-700 font-semibold text-lg">Açıklama</th>
+              <th class="py-4 px-6 text-left text-indigo-700 font-semibold text-lg"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Satır 1 -->
+            <tr class="border-b hover:bg-gray-50 transition">
+              <td class="py-4 px-6 text-gray-900 font-medium">Müşteri Yönetimi</td>
+              <td class="py-4 px-6 text-gray-600">
+                Müşterilerinizle güçlü bağlar kurarak işlerinizi bir adım öteye taşıyın.
+              </td>
+              <td class="py-4 px-6">
+                <div class="bg-blue-500 text-white p-3 rounded-md inline-block">
+                  <i class="fa fa-users fa-lg"></i>
+                </div>
+              </td>
+            </tr>
+  
+            <!-- Satır 2 -->
+            <tr class="border-b hover:bg-gray-50 transition">
+              <td class="py-4 px-6 text-gray-900 font-medium">Satış Takibi</td>
+              <td class="py-4 px-6 text-gray-600">
+                Satış süreçlerinizi düzenleyerek daha verimli hale getirin.
+              </td>
+              <td class="py-4 px-6">
+                <div class="bg-green-500 text-white p-3 rounded-md inline-block">
+                  <i class="fa fa-chart-line fa-lg"></i>
+                </div>
+              </td>
+            </tr>
+  
+            <!-- Satır 3 -->
+            <tr class="border-b hover:bg-gray-50 transition">
+              <td class="py-4 px-6 text-gray-900 font-medium">Raporlama ve Analiz</td>
+              <td class="py-4 px-6 text-gray-600">
+                Performansınızı izleyin ve stratejik kararlar alın.
+              </td>
+              <td class="py-4 px-6">
+                <div class="bg-yellow-500 text-white p-3 rounded-md inline-block">
+                  <i class="fa fa-chart-pie fa-lg"></i>
+                </div>
+              </td>
+            </tr>
+  
+            <!-- Satır 4 -->
+            <tr class="hover:bg-gray-50 transition">
+              <td class="py-4 px-6 text-gray-900 font-medium">Görev Yönetimi</td>
+              <td class="py-4 px-6 text-gray-600">
+                Ekiplerinizi daha etkili bir şekilde organize edin.
+              </td>
+              <td class="py-4 px-6">
+                <div class="bg-red-500 text-white p-3 rounded-md inline-block">
+                  <i class="fa fa-calendar-alt fa-lg"></i>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+    <div id="footer-container"></div>
+    <script src="components/footer.js"></script>
+    <script>
+        document.getElementById('footer-container').innerHTML = FooterHtml;
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+
+
+</html>
