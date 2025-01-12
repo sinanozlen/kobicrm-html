@@ -30,7 +30,7 @@ const FooterHtml = `
          <div class="container mx-auto flex flex-wrap justify-between items-start space-y-6 md:space-y-0">
             <!-- Sol Kısım - KobiCRM ve Sosyal Medya -->
             <div class="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
-               <p class="text-2xl font-bold text-white">KOBİCRM</p>
+               <p class="text-md font-bold text-white">kobicrm</p>
                <ul class="flex space-x-4">
                   <li><a href="#" class="text-white hover:text-gray-400 text-xl"><i class="fab fa-facebook"></i></a></li>
                   <li><a href="#" class="text-white hover:text-gray-400 text-xl"><i class="fab fa-instagram"></i></a></li>
@@ -38,9 +38,8 @@ const FooterHtml = `
                   <li><a href="#" class="text-white hover:text-gray-400 text-xl"><i class="fab fa-twitter"></i></a></li>
                </ul>
             </div>
-
-            <!-- Sağ Kısım - Menü -->
-            <div class="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-sm lg:text-base justify-center items-center text-center">
+<!-- Sağ Kısım - Menü -->
+<div class="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-sm lg:text-base justify-center lg:justify-start items-center text-center">
    <ul class="space-y-2">
       <li><a href="#" class="text-gray-400 hover:text-white">Hizmetlerimiz</a></li>
       <li><a href="./pricing.html" class="text-gray-400 hover:text-white">Fiyatlar</a></li>
@@ -57,6 +56,8 @@ const FooterHtml = `
       <li><a href="./contact.html" class="text-gray-400 hover:text-white">İletişim</a></li>
    </ul>
 </div>
+
+
 
          </div>
       </div>

@@ -46,37 +46,12 @@ const NavbarHtml = `
       <a href="/about.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300 hidden sm:block">
        <span class="ml-2">Hakkımızda</span>
       </a>
-<<<<<<< HEAD
-
-      <!-- Fiyatlar ve Hizmetlerimiz -->
-      <a href="/pricing.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300 hidden sm:block">
-        
-        <span class="ml-2">Fiyatlar</span>
-      </a>
-
-      <!-- Hizmetlerimiz -->
+       <!-- Hizmetlerimiz -->
       <a href="/services.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300 hidden sm:block">
       <span class="ml-2">Hizmetlerimiz</span>
       </a>
-    </div>
-
-    <!-- Sağ: Giriş Yap ve Hesap Oluştur -->
-    <div class="flex items-center space-x-8 sm:space-x-6 md:space-x-6 lg:space-x-8">
-      <a href="/login.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
-        <i class="fas fa-sign-in-alt text-lg me-2"></i> Giriş Yap
-      </a>
-      
-      <a href="/register.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
-        <i class="fas fa-user-plus text-lg me-2"></i> Hesap Oluştur
-      </a>
-    </div>
-=======
-       <!-- Hizmetlerimiz -->
-      <a href="/services.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
-      <span class="ml-2">Hizmetlerimiz</span>
-      </a>
       <!--Fiyatlar -->
-      <a href="/pricing.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300">
+      <a href="/pricing.html" class="flex items-center text-gray-900 dark:text-white font-medium hover:text-blue-700 dark:hover:text-blue-400 transition duration-300 hidden sm:block">
         
         <span class="ml-2">Fiyatlar</span>
       </a>
@@ -97,7 +72,6 @@ const NavbarHtml = `
   </a>
 </div>
 
->>>>>>> d8b4f6a61864c113cce726303742b56237996fe4
   </div>
 </div>
 
