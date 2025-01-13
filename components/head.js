@@ -36,3 +36,12 @@ export function createHead() {
      e.stopPropagation();
  });
  
+
+  // Dinamik Breadcrumb Oluşturma
+  const breadcrumb = document.getElementById("breadcrumb");
+  
+  // URL Parçalarını Al
+  const path = window.location.pathname.split("/").filter(Boolean);
+  let breadcrumbHTML = `<ol class="flex items-center whitespace-nowrap">`;
+  
+  

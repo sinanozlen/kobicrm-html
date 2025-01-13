@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fontawesome Pro-->
+    <link rel="stylesheet" href="/css/fontawesome.css">
+
+    <!-- Head Component -->
+    <script type="module">
+        import { createHead } from './components/head.js';
+        createHead();
+    </script>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <!-- Title -->
+    <title>Gizlilik Politikası</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <script src="components/navbar.js"></script> <!-- Navbar JS -->
+    <script>
+        // Navbar'ı yükle
+        document.getElementById('navbar-container').innerHTML = `
+            <!-- Navbar İçeriği -->
+            ${NavbarHtml}
+        `;
+    </script>
+
+    <!-- Breadcrumb -->
+<div class="container mx-auto px-1 mt-4">
+    <nav id="breadcrumb" class="bg-dark py-3 px-4 rounded-md shadow-sm flex items-center gap-2">
+      <a href="/" class="text-sm dark:text-gray-300 hover:text-blue-600">Anasayfa</a>
+      <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <path d="M9 18l6-6-6-6"></path>
+      </svg>
+      <span class="text-sm font-semibold text-dark">Gizlilik Politikası</span>
+    </nav>
+  </div>
+ <!-- Breadcrumb -->
+ <div class="font-[sans-serif]">
+    <div class="text-center bg-gradient-to-r from-blue-800 to-blue-400 min-h-[90px] sm:p-6 p-4">
+        <h4 class="sm:text-3xl text-2xl font-bold text-white">Gizlilik Politikası</h4>
+    </div>
+    <br><br>
+    <div class="container mx-auto mt-12 p-8 bg-dark rounded-lg shadow-2xl">
+        
+        <h2 class="text-3xl font-bold text-blue-300 mb-4">Bilgi Güvenliği Yönetim Sistemi Politikamız</h2>
+        <ul class="list-disc pl-6 space-y-2">
+            <li>Bilgi kaynakları, tesisler ve cihazlar gibi KobiCRM açısından büyük önem taşıyan varlıklardır. Bilgi varlıklarını ve kaynaklarını kullanan veya bilgi sağlayan herhangi bir kişi, bilgi varlıklarını korumakla yükümlüdür.</li>
+            <li>Ortak bilgi varlıklarını kullanan tüm çalışanların, gereken duyarlılığı göstermesi ve diğer meslektaşlarını, kurum çalışanlarını ve kurumsal değerleri gözeterek hareket etmesi beklenir.</li>
+            <li>Kurumsal değerlerin gereği olarak gizliliğe önem verilir, her türlü kişisel bilgi en yüksek güvenlik standartlarına sahip sistemlerle korunur. Bilginin saklı istemedikçe, yetki verilmedikçe veya yasal gereklilikler oluşmadıkça bilgi paylaşılmaz.</li>
+            <li>KobiCRM için tüm bu bilgi varlıkları ve kaynaklar içerisinde en kritik olanı, özenle korunması, gizliliğinin sağlanması, ihtiyaç duyulduğu anda erişilmesi gereken bilgi varlıkları, BT Ekipmanları ve bu ekipmanları barındıran sistem odası veya veri merkezleridir.</li>
+            <li>Bilgi varlıkları ve kaynaklar farklı konumlarda veya ortamlarda bulunabilir. Hangi konumda veya ortamda olursa olsun müşteri iletişim gereksinimleri ve kurumsal değerler bu varlıkların ve kaynakların kullanımını belirler.</li>
+            <li>Bilgi güvenliği, sadece bilginin gizliliğinin değil, bütünlüğünün ve erişilebilirliğinin de sağlanması ile mümkündür. Bilginin gizlilik gerekliliği; sadece yetkilendirme dahilinde gereken bilgi varlıklarına erişim verilmesi anlamına gelir. Bilginin bütünlüğü; tüm bilgi varlıklarının tamlığını ve doğruluğunu sağlamayı gerektirir. Bilginin erişilebilirliği; bilgi varlıklarının ihtiyaç duyulduğunda ulaşılabilir ve kullanılabilir olması anlamına gelir.</li>
+            <li>Bilginin kullanımı, yerleşimi ve korunması ile ilgili ihtiyaçların karmaşıklığı ve çokluğu, kapsamlı ve geniş bilgi güvenliği süreçlerinin ve politikalarının tanımlanmasını zorunlu kılmaktadır. Bu nedenle belirlenen süreçler doğrultusunda bilgi güvenliği riskleri, bilgi varlığından sorumlu olan kişiler tarafından değerlendirilir, risklerin önceliği belirlenir ve gereken önlemler alınır.</li>
+            <li>Sistem odası ve veri merkezleri güvenliğinin sağlanması öncelikli olarak ele alınır. Varlık envanterinin ve bu envanterin olası risklerinin önceden belirlenerek iç ve dış müşterilerin güven içinde ve kesintisiz hizmet almaları için çalışılır.</li>
+            <li>Karar ve eylemlerde, güvenilir nesnel bilgiler ile teknolojinin kullanılmasına önem ve öncelik verilir. Hareketler sezgilere, duygulara ya da doğru görünenlere göre değil; bilimsel ve teknolojik gerçeklerin ortaya koyduğu objektif esaslara göre düzenlenir. Bunu sağlamak için bilgi dünyadaki en ileri kaynaklardan transfer edilir, benimsenir ve mesleki uygulamalar bu doğrultuda yapılır. Kaynaklar verimli kullanılarak teknolojiye yatırım yapılır, gelişim bu doğrultuda sürdürülür.</li>
+            <li>Bu nedenle bilgi güvenliği yönetim sisteminin planlama, uygulama, izleme ve iyileştirme adımları TS ISO/IEC 27001 Bilgi Güvenliği Yönetim Sistemi standardına ve bu standardı destekleyen standartlara uygun olarak yürütülür.</li>
+        </ul><br>
+
+        <h2 class="text-3xl font-bold text-blue-300 mb-4">Bilgilerin Toplanması ve Kullanımı</h2>
+        <ul class="list-disc pl-6 space-y-2">
+            <li>KobiCRM, bu sitede toplanan bilgilerin tek sahibidir. KobiCRM.com sitesinin temel amacı CRM yazılımını tanıtması ve ticari arz ve taleplerin toplanması olduğundan, ziyaretçiler site üzerinden gönderilen bilgilerin sadece bu amaca yönelik değerlendirileceği kabul etmiş sayılırlar.</li>
+            <li>KobiCRM, kanuni yaptırımlarla gelen talep veya üçüncü şahısların doğru haklar doğrultusunda kaynak oldukları kararlara riayet edeceğini savunarak bu kişi ve kurumlarla işbirliği yapma hakkını saklı tutar. Ancak böyle bir işbirliği durumunda KobiCRM’ın, kanun tarım kendi inisiyatifiyle olmak suretiyle talep edilen bilgileri iyi niyetle talep edildiği ve gerçekten bu kişi ve kurumlara faydalı olacağına inanması gerekir.</li>
+        </ul>
+    </div>
+<br><br>
+
+    <div id="footer-container"></div>
+    <script src="components/footer.js"></script>
+    <script>
+        document.getElementById('footer-container').innerHTML = FooterHtml;
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

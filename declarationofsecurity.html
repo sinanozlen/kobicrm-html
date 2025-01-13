@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fontawesome Pro-->
+    <link rel="stylesheet" href="/css/fontawesome.css">
+
+    <!-- Head Component -->
+    <script type="module">
+        import { createHead } from './components/head.js';
+        createHead();
+    </script>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <!-- Title -->
+    <title>Güvenlik Bildirgesi</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <script src="components/navbar.js"></script> <!-- Navbar JS -->
+    <script>
+        // Navbar'ı yükle
+        document.getElementById('navbar-container').innerHTML = `
+            <!-- Navbar İçeriği -->
+            ${NavbarHtml}
+        `;
+    </script>
+
+    <!-- Breadcrumb -->
+<div class="container mx-auto px-1 mt-4">
+    <nav id="breadcrumb" class="bg-dark py-3 px-4 rounded-md shadow-sm flex items-center gap-2">
+      <a href="/" class="text-sm dark:text-gray-300 hover:text-blue-600">Anasayfa</a>
+      <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <path d="M9 18l6-6-6-6"></path>
+      </svg>
+      <span class="text-sm font-semibold text-dark">Güvenlik Bildirgesi</span>
+    </nav>
+  </div>
+ <!-- Breadcrumb -->
+
+ <div class="font-[sans-serif]">
+    <div class="text-center bg-gradient-to-r from-blue-800 to-blue-400 min-h-[90px] sm:p-6 p-4">
+        <h4 class="sm:text-3xl text-2xl font-bold text-white">Güvenlik Bildirgesi</h4>
+    </div>
+    <br><br>
+      
+    
+
+<main class="container mx-auto p-8 rounded-lg shadow-lg">
+    <!-- Veri Güvenliği -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-bold text-blue-300 mb-4 border-b border-gray-700 pb-2">Veri Güvenliği</h2>
+        <p class="text-gray-300 mb-4">
+            Kobi CRM altyapısında günümüzün en gelişmiş güvenlik teknolojileri kullanılmaktadır. Sistem içerisinde gerçekleşen tüm veri alışverişleri 128Bit SSL güvenlik sertifikası aracılığıyla şifrelenmektedir. Kullanıcı kimlik denetimi ve veri şifreleme teknolojileri sayesinde bilgileriniz her zaman güvendedir ve sadece şirketiniz çalışanları tarafından ulaşılabilir. Bilgileriniz başka hiçbir firmanın ulaşımına açık değildir.
+        </p>
+    </section>
+
+    <!-- Kullanıcı Kimlik Denetimi -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-bold text-blue-300 mb-4 border-b border-gray-700 pb-2">Kullanıcı Kimlik Denetimi</h2>
+        <p class="text-gray-300 mb-4">
+            Kobi CRM şirketinizdeki sistemi kullanacak olan tüm personelinize sisteme giriş esnasında kullanılmak üzere özel kullanıcı adı ve şifre sağlamaktadır. Kobi CRM kullanıcı girişi esnasında kullanıcının bazı sık kullanılan bilgilerini şifreli bir şekilde "cookie" oturumu oluşturarak kaydeder. "Cookie" oturumunda sadece genel kullanıcı ve oturum bilgileri kaydedilir, kullanıcı adı ve şifre asla kaydedilmemektedir.
+        </p>
+    </section>
+
+    <!-- Sunucu Güvenliği -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-bold text-blue-300 mb-4 border-b border-gray-700 pb-2">Sunucu Güvenliği</h2>
+        <p class="text-gray-300 mb-4">
+            Kobi CRM herhangi bir virüs olanağı bulunmayan unix mimarisi kullanan sunucular üzerinden hizmet vermektedir. Kullanılan güvenlik duvarı ve diğer gelişmiş güvenlik teknolojileri sayesinde sisteme yapılacak izinsiz giriş ve saldırılara imkan verilmemektedir.
+        </p>
+    </section>
+
+    <!-- Kobi Teknoloji Erişimi -->
+    <section>
+        <h2 class="text-3xl font-bold text-blue-300 mb-4 border-b border-gray-700 pb-2">Kobi Teknoloji Erişimi</h2>
+        <p class="text-gray-300">
+            Kobi Teknoloji müşteri bilgilerini asla incelemez, paylaşmaz ve dağıtmaz. Bazı münferit müşteri kayıtları sadece teknik problemler, destek talepleri, şüpheli durumlar gibi hallerde ulaşılabilir veya incelenebilir. Bu durum Kobi CRM Kullanım Sözleşmesi ile koruma altına alınmıştır.
+        </p>
+    </section>
+</main>
+ 
+
+    <br><br>
+    <div id="footer-container"></div>
+    <script src="components/footer.js"></script>
+    <script>
+        document.getElementById('footer-container').innerHTML = FooterHtml;
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

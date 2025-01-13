@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fontawesome Pro-->
+    <link rel="stylesheet" href="/css/fontawesome.css">
+
+    <!-- Head Component -->
+    <script type="module">
+        import { createHead } from './components/head.js';
+        createHead();
+    </script>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <!-- Title -->
+    <title>Sıkça Sorulan Sorular</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <script src="components/navbar.js"></script> <!-- Navbar JS -->
+    <script>
+        // Navbar'ı yükle
+        document.getElementById('navbar-container').innerHTML = `
+            <!-- Navbar İçeriği -->
+            ${NavbarHtml}
+        `;
+    </script>
+
+    <!-- Breadcrumb -->
+<div class="container mx-auto px-1 mt-4">
+    <nav id="breadcrumb" class="bg-dark py-3 px-4 rounded-md shadow-sm flex items-center gap-2">
+      <a href="/" class="text-sm dark:text-gray-300 hover:text-blue-600">Anasayfa</a>
+      <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <path d="M9 18l6-6-6-6"></path>
+      </svg>
+      <span class="text-sm font-semibold text-dark">Sıkça Sorulan Sorular</span>
+    </nav>
+  </div>
+ <!-- Breadcrumb -->
+
+ <div class="font-[sans-serif]">
+    <div class="text-center bg-gradient-to-r from-blue-800 to-blue-400 min-h-[90px] sm:p-6 p-4">
+        <h4 class="sm:text-3xl text-2xl font-bold text-white">Sıkça Sorulan Sorular</h4>
+    </div>
+    
+    <br><br>
+
+<!-- Main Content Section -->
+<div class="container mx-auto mt-8 p-6 bg-dark shadow-md rounded-lg">
+    <!-- Başlıklar -->
+    
+
+    <!-- Soru ve Cevaplar -->
+    <section>
+        <h2 class="text-3xl font-bold text-blue-300 mb-4">Lisans, Ücretlendirme ve Kurulum</h2>
+        <div class="space-y-6">
+            <div>
+                <h3 class="text-lg font-semibold">1. Lisans ücretleri kullanıcı sayısına göre değişiyor mu?</h3>
+                <p>Kullanıcı sayısı arttıkça fiyatlarımızda özel indirimler uygulayabilmekteyiz.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">2. Minimum kullanıcı lisansı kısıtlaması var mı?</h3>
+                <p>Standart pakette herhangi bir minimum kullanıcı sayısı belirlenmemiştir ve tek bir kullanıcı ile dahi kullanmaya başlayabilirsiniz. Profesyonel ve daha üst sürümlerde ise minium kullanıcı lisansı alımı zorunludur. Minumum kullanıcı lisansı adetlerini görebilmek için Fiyatlar ve Sürümler sayfamızı inceleyebilirsiniz.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">3. Maksimum kullanıcı sayısı sınırı var mıdır?</h3>
+                <p>Tüm sürümlerimizde sınırsız sayıda kullanıcı lisansını satın alabilir ve kullanabilirsiniz.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">4. KobiCRM yazılımı için bilgisayarıma ek program yüklemem gerekiyor mu?</h3>
+                <p>KobiCRM web tabanlı bir yazılımdır. İnternete bağlı olduğunuz her yerden internet tarayıcınız ile CRM yazılımınıza ulaşabilirsiniz. Bunun için ek bir yazılım yüklemenize gerek yoktur.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">5. Program paket olarak mı satılıyor?</h3>
+                <p>KobiCRM, “SaaS” (software as a service) hizmet olarak yazılım konsepti ile sunulmaktadır. Tercih ettiğiniz KobiCRM sürümüne göre aylık ya da yıllık periyotlar ile ödeme gerçekleştirebilirsiniz.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">6. Kullanmayacağımız modüller kaldırılabiliyor mu?</h3>
+                <p>Modüller sürümler için çeşitlilik gösterebilmekle beraber pasif hale getirilebilmektedir. Pasif hale getirilen modüller sürüm fiyatına etki etmemektedir.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">7. Kendimize ait domain (örn: crm.xfirma.com) adresinden CRM yazılımıma giriş yapabilir miyim?</h3>
+                <p>Kendi domaininize ait bir subdomain üzerinden sistemi kullanmanız mümkün. Sadece subdomain adresinin DNS (sunucu adresi) adresini firmamızın DNS adreslerine yönlendirmeniz yeterli olacaktır.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">8. Toplu SMS gönderebilir miyim? Fiyatları nedir?</h3>
+                <p>SMS gönderimleri operatörler üzerinden gerçekleşmekte olup SMS fiyatlarına Turkcell Toplu Mesajlaşma Çözümleri veya Vodafone Toplu SMS Tarifesi sayfalarından ulaşabilirsiniz.</p>
+            </div>
+        </div>
+<br>
+        <!-- Diğer Başlıklar -->
+        <h2 class="text-3xl font-bold text-blue-300 mb-4">Veri Güvenliği ve Yedekleme</h2>
+        <div class="space-y-6">
+            <div>
+                <h3 class="text-lg font-semibold">1. Verilerim nerede barındırılacak?</h3>
+                <p>Kobi CRM verileri üst düzey güvenlik sağlanan veri merkezinde, güvenlik ve yönetimi tamamen Kobi Teknoloji tarafından sağlanan ve Kobi Teknoloji'ye ait sunucular üzerinde barındırılmaktadır. Güvenlik katmanları ile verileriniz sizden başka hiçkimsenin erişemeyeceği şekilde korunmaktadır.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">2. Arıza durumunda verilerimin kaybolma veya silinme riski var mıdır?</h3>
+                <p>Verileriniz düzenli olarak yedeklenmektedir. Bu yedekler şifrelenmiş şekilde Kobi Teknoloji'ye ait Türkiye'de 2 lokasyonda saklanmaktadır.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">3. KobiCRM yazılımıma internet üzerinden sadece firmamdaki bilgisayarlardan ulaşabilir miyim? Kısıtlama getirilebiliyor mu?</h3>
+                <p>Giriş için IP bazlı kısıtlama getirebilmekteyiz. İnternet sağlayıcı firmanızdan statik IP hizmeti ya da VPN hizmeti alıyorsanız bu hizmetimizden ücretsiz olarak yararlanabilirsiniz.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">4. SSL kullanılıyor mu?</h3>
+                <p>KobiCRM uygulaması SSL koruması ile erişim sunar. Uygulamalarımıza erişebileceğiniz *.Kobicrm.com şeklindeki adreslerin tümünden SSL bağlantısı ile çalışabilirsiniz. Eğer kendi domain adresiniz üzerinden kullanıyorsanız; (Örneğin; crm.sirketim.com) SSL, subdomain ve firmaya özel giriş ekran tasarımı “kurumsal tasarım paketi” adı altında toplanmış 3 özelliktir. Yıllık ücreti 50$ + KDV olarak belirlenmiştir.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<br><br>
+
+    <div id="footer-container"></div>
+    <script src="components/footer.js"></script>
+    <script>
+        document.getElementById('footer-container').innerHTML = FooterHtml;
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

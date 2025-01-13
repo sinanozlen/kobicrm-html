@@ -41,17 +41,17 @@ const FooterHtml = `
 <!-- Sağ Kısım - Menü -->
 <div class="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-sm lg:text-base justify-center lg:justify-start items-center text-center">
    <ul class="space-y-2">
-      <li><a href="#" class="text-gray-400 hover:text-white">Hizmetlerimiz</a></li>
+      <li><a href="./services.html" class="text-gray-400 hover:text-white">Hizmetlerimiz</a></li>
       <li><a href="./pricing.html" class="text-gray-400 hover:text-white">Fiyatlar</a></li>
-      <li><a href="#" class="text-gray-400 hover:text-white">Entegrasyon & API</a></li>
+      <li><a href="./declarationofsecurity.html" class="text-gray-400 hover:text-white">Güvenlik Bildirgesi</a></li>
    </ul>
    <ul class="space-y-2">
-      <li><a href="#" class="text-gray-400 hover:text-white">Kullanım Şartları</a></li>
-      <li><a href="#" class="text-gray-400 hover:text-white">Gizlilik Politikası</a></li>
-      <li><a href="#" class="text-gray-400 hover:text-white">Çerez Politikası</a></li>
+      <li><a href="./serviceagreementandtermsofuse.html" class="text-gray-400 hover:text-white">Hizmet Sözleşmesi ve Kullanım Şartları</a></li>
+      <li><a href="./privacypolicy.html" class="text-gray-400 hover:text-white">Gizlilik Politikası</a></li>
+      <li><a href="./faq.html" class="text-gray-400 hover:text-white">SSS</a></li>
    </ul>
    <ul class="space-y-2">
-      <li><a href="#" class="text-gray-400 hover:text-white">Yardım Merkezi</a></li>
+      <li><a href="./helpcenter.html" class="text-gray-400 hover:text-white">Yardım Merkezi</a></li>
       <li><a href="./about.html" class="text-gray-400 hover:text-white">Hakkımızda</a></li>
       <li><a href="./contact.html" class="text-gray-400 hover:text-white">İletişim</a></li>
    </ul>
