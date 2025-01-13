@@ -35,3 +35,4 @@ export function createHead() {
  userMenu.addEventListener('click', (e) => {
      e.stopPropagation();
  });
+ 

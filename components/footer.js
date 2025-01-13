@@ -1,4 +1,4 @@
-const FooterHtml = `
+const FooterHtml = ` 
    <footer class="bg-gray-950 text-white py-6">
       <div class="container mx-auto flex flex-wrap justify-between items-center space-y-8 md:space-y-0">
          <!-- Sol Kısım - QR Kod ve Uygulama İndirme -->
@@ -30,7 +30,7 @@ const FooterHtml = `
          <div class="container mx-auto flex flex-wrap justify-between items-start space-y-6 md:space-y-0">
             <!-- Sol Kısım - KobiCRM ve Sosyal Medya -->
             <div class="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
-               <p class="text-md font-bold text-white">kobicrm</p>
+               <p class="text-3xl font-bold text-white">kobicrm</p>
                <ul class="flex space-x-4">
                   <li><a href="#" class="text-white hover:text-gray-400 text-xl"><i class="fab fa-facebook"></i></a></li>
                   <li><a href="#" class="text-white hover:text-gray-400 text-xl"><i class="fab fa-instagram"></i></a></li>

@@ -11,10 +11,10 @@ const NavbarHtml = `
         info@kobicrm.net
       </span>
       <div class="flex items-center space-x-4">
-        <a href="#" class="hover:text-blue-700 dark:hover:text-blue-400">English</a>
+        <a href="#" class="hover:underline dark">English</a>
         <!-- Dikey Çizgi -->
         <span class="border-l border-white h-4 mx-2"></span>
-        <a href="/login.html" class="hover:text-blue-700 dark:hover:text-blue-400">Giriş Yap</a>
+        <a href="/login.html" class="hover:underline dark">Giriş Yap</a>
       </div>
     </div>
   </div>
