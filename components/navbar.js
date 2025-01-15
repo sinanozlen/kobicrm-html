@@ -22,13 +22,93 @@ const NavbarHtml = `
 
 
 <!-- Logo Bölümü -->
-<div class="bg-white w-full shadow-sm py-8">
+<div class="bg-white w-full shadow-sm py-8 flex">
   <div class="container mx-auto flex justify-left items-left">
     <!-- Logo -->
     <a href="/" class="text-left">
       <img src="./img/kobicrm-logo.png" alt="KobiCRM Logo" class="h-12 w-auto">
     </a>
   </div>
+<!-- Hamburger Menü -->
+<div class="inset-0 flex justify-end mr-4 mt-1 sm:hidden">
+  <button id="hamburger-menu" class="absolute text-gray-600 hover:text-gray-800 p-2 rounded-full">
+    <svg
+      class="w-8 h-8"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"
+      ></path>
+    </svg>
+  </button>
+  <div
+    id="sidebar"
+    class=" indent-3  fixed top-0 right-0 w-screen h-screen bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="flex items-center justify-between p-4 border-b bg-blue-900 text-white">
+      <strong class="text-lg font-semibold">KOBİCRM'e Hoş Geldiniz!</strong>
+      <button id="close-menu" class="text-gray-600 hover:text-gray-800 p-2 rounded-full">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <div class="p-4">
+      <ul class="space-y-6">
+      <li class="flex items-center space-x-3 group">
+          <i class="fa fa-home text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
+          <a href="#" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
+            Home
+          </a>
+        </li>
+        <li class="flex items-center space-x-3 group">
+          <i class="fa fa-info-circle text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
+          <a href="#" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
+            Hakkımızda
+          </a>
+        </li>
+        <li class="flex items-center space-x-3 group">
+          <i class="fa fa-user-tie text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
+          <a href="#" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
+            Hizmetlerimiz
+          </a>
+        </li>
+        <li class="flex items-center space-x-3 group">
+          <i class="fa fa-lira-sign text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
+          <a href="#" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
+            Fiyatlar
+          </a>
+        </li>
+        <li class="flex items-center space-x-3 group">
+          <i class="fa fa-question-circle text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
+          <a href="#" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
+            Yardım Merkezi
+          </a>
+        </li>
+        <li class="flex items-center space-x-3 group">
+          <i class="fa fa-link text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
+          <a href="#" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
+            İletişim Linkleri
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 </div>
 
 
@@ -79,4 +159,21 @@ const NavbarHtml = `
 
 
 `;
+
+
+
+//  Hamburger Menü Script Başlangıç 
+
+document.addEventListener("click", (e) => {
+  const sidebar = document.getElementById("sidebar");
+  if (e.target.closest("#hamburger-menu")) {
+    sidebar.classList.toggle("translate-x-full");
+  }
+  if (e.target.closest("#close-menu")) {
+    sidebar.classList.add("translate-x-full");
+  }
+});
+
+//  Hamburger Menü Script Bitiş 
+
 
