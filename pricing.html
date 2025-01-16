@@ -56,17 +56,19 @@
   </nav>
 </div>
   
-<!-- Başlık -->
-<header class="py-12">
+<header class="py-12 bg-gray-100 dark:bg-gray-900">
   <div class="container mx-auto text-center">
-    <h1 class="text-5xl font-semibold text-primaryText-light dark:text-primaryText-dark drop-shadow-md">
+    <!-- Başlık -->
+    <h1 class="text-5xl font-bold text-gray-800 dark:text-white">
       Fiyatlar
     </h1>
-    <p class="mt-4 text-lg font-medium text-primaryText-light dark:text-primaryText-dark drop-shadow-md">
+    <!-- Açıklama -->
+    <p class="mt-4 text-lg font-medium text-gray-600 dark:text-gray-400">
       CRM Programımız Sektörde En Uygun Fiyatlarla Hizmet Sunarken Üstün Hizmet Garantisi Verir.
     </p>
   </div>
 </header>
+
 
   <!-- Pricing Table -->
   <section class="py-6 leading-7 text-primaryText-light dark:text-primaryText-dark sm:py-12 md:py-16">
@@ -207,85 +209,106 @@
     </div>
 </div>
 
+<br><br><br>
+
 <!-- CRM Özellikleri -->
-<section class="pt-12">
+<section class="py-16 bg-gray-100 dark:bg-gray-900">
   <div class="container mx-auto px-6 lg:px-12">
     <!-- Başlık -->
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 dark:text-blue-400">Hemen Bağlan, Kullanmayı Başla!</h2>
-      <p class="text-lg text-black-600 mt-4 dark:text-black-300">
-        CRM yazılımının hazır, modüler ve bütünleşik yapısıyla sınıfının en profesyonel CRM çözümlerinin konforunu
-        yaşayın.
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white">
+        Hemen Bağlan, Kullanmayı Başla!
+      </h2>
+      <p class="text-lg text-gray-600 dark:text-gray-400 mt-4">
+        CRM yazılımımız, profesyonel çözümleriyle iş süreçlerinizi daha verimli hale getirir.
       </p>
     </div>
-    <!-- Özellik Listesi -->
-    <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-center">
-      <div class="flex items-center justify-left">
-        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
-        <p class="text-black-700 text-lg dark:text-black-300">Kullanımı kolay</p>
+    <!-- Özellik Kartları -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 text-center hover:scale-105 transition-transform">
+        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-cogs text-2xl"></i>
+        </div>
+        <h3 class="mt-8 text-xl font-semibold text-gray-900 dark:text-white">Kullanımı Kolay</h3>
+        <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
+          Basit ve kullanıcı dostu arayüz.
+        </p>
       </div>
-      <div class="flex items-left justify-left">
-        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
-        <p class="text-black-700 text-lg dark:text-black-300">Görsel arayüzler</p>
+      <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 text-center hover:scale-105 transition-transform">
+        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-desktop text-2xl"></i>
+        </div>
+        <h3 class="mt-8 text-xl font-semibold text-gray-900 dark:text-white">Görsel Arayüzler</h3>
+        <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
+          Şık ve modern tasarım.
+        </p>
       </div>
-      <div class="flex items-center justify-left">
-        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
-        <p class="text-black-700 text-lg dark:text-black-300">Kullanıcıya özel menüler</p>
+      <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 text-center hover:scale-105 transition-transform">
+        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-purple-500 text-white rounded-full w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-user-cog text-2xl"></i>
+        </div>
+        <h3 class="mt-8 text-xl font-semibold text-gray-900 dark:text-white">Özelleştirilebilir</h3>
+        <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
+          İş ihtiyaçlarınıza göre ayarlayın.
+        </p>
       </div>
-      <div class="flex items-center justify-left">
-        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
-        <p class="text-black-700 text-lg dark:text-black-300">Web ve mobil tabanlı</p>
+      <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 text-center hover:scale-105 transition-transform">
+        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-teal-500 text-white rounded-full w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-mobile-alt text-2xl"></i>
+        </div>
+        <h3 class="mt-8 text-xl font-semibold text-gray-900 dark:text-white">Mobil Uyumlu</h3>
+        <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
+          Tüm cihazlarla uyumlu çalışma.
+        </p>
       </div>
-      <div class="flex items-center justify-left">
-        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
-        <p class="text-black-700 text-lg dark:text-black-300">Esnek ve özelleştirilebilir</p>
+      <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 text-center hover:scale-105 transition-transform">
+        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-white rounded-full w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-chart-line text-2xl"></i>
+        </div>
+        <h3 class="mt-8 text-xl font-semibold text-gray-900 dark:text-white">Özel Raporlar</h3>
+        <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
+          Detaylı analiz ve raporlama.
+        </p>
       </div>
-      <div class="flex items-center justify-left">
-        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
-        <p class="text-black-700 text-lg dark:text-black-300">Büyümek için ölçeklenebilir</p>
-      </div>
-      <div class="flex items-center justify-left">
-        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
-        <p class="text-black-700 text-lg dark:text-black-300">Güvenilir ve sağlam</p>
-      </div>
-      <div class="flex items-center justify-left">
-        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
-        <p class="text-black-700 text-lg dark:text-black-300">Özel dashboard ve raporlar</p>
-      </div>
-      <div class="flex items-center justify-left">
-        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
-        <p class="text-black-700 text-lg dark:text-black-300">Çoklu dil desteği</p>
-      </div>
-      <div class="flex items-center justify-left">
-        <i class="fas fa-check text-blue-600 dark:text-blue-400 text-xl mr-4"></i>
-        <p class="text-black-700 text-lg dark:text-black-300">Tüm cihazlara uyumlu</p>
+      <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 text-center hover:scale-105 transition-transform">
+        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-red-500 text-white rounded-full w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-lock text-2xl"></i>
+        </div>
+        <h3 class="mt-8 text-xl font-semibold text-gray-900 dark:text-white">Güvenlik</h3>
+        <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
+          Verileriniz güvende.
+        </p>
       </div>
     </div>
   </div>
 </section>
+
 <!-- Demo Talebi -->
-<section id="demo" class="py-16">
+<section id="demo" class="py-16 bg-gray-100 dark:bg-gray-900">
   <div class="container mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 dark:text-blue-400 mb-6">CRM Uygulamamızı Denemek İster Misiniz?</h2>
-    <p class="text-black-700 text-lg mb-6 dark:text-black-300">
+    <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-8">
+      CRM Uygulamamızı Denemek İster Misiniz?
+    </h2>
+    <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">
       Demo talep ederek iş süreçlerinizi dönüştürmek için bir adım atın. CRM ile işinizi büyütmek şimdi daha kolay.
     </p>
     <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0">
       <!-- İkon Alanı -->
-      <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg">
-        <i class="fas fa-chart-line text-blue-800 dark:text-blue-400 text-3xl"></i>
+      <div class="bg-gradient-to-r from-blue-600 to-teal-500 rounded-full w-24 h-24 flex items-center justify-center shadow-lg hover:shadow-2xl transition-shadow">
+        <i class="fas fa-chart-line text-white text-4xl"></i>
       </div>
       <!-- Buton ve Açıklama -->
       <div class="ml-0 md:ml-6 text-center md:text-left">
         <button
-          class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition-transform transform hover:scale-105">
+          class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg hover:from-blue-600 hover:to-indigo-700 transition-transform transform hover:scale-105">
           Demo Talep Et
         </button>
-        <p class="mt-4 text-sm text-blue-600 dark:text-blue-400">Hemen kayıt olun, CRM uygulamamızı ücretsiz deneyin.</p>
+        <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">Hemen kayıt olun, CRM uygulamamızı ücretsiz deneyin.</p>
       </div>
     </div>
   </div>
 </section>
+
 
   <!-- Footer -->
 
