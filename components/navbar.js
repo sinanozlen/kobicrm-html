@@ -71,25 +71,25 @@ const NavbarHtml = `
       <ul class="space-y-6">
       <li class="flex items-center space-x-3 group">
           <i class="fa fa-home text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
-          <a href="#" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
+          <a href="/" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
             Home
           </a>
         </li>
         <li class="flex items-center space-x-3 group">
           <i class="fa fa-info-circle text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
-          <a href="#" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
+          <a href="/about.html" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
             Hakkımızda
           </a>
         </li>
         <li class="flex items-center space-x-3 group">
           <i class="fa fa-user-tie text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
-          <a href="#" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
+          <a href="/services.html" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
             Hizmetlerimiz
           </a>
         </li>
         <li class="flex items-center space-x-3 group">
           <i class="fa fa-lira-sign text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
-          <a href="#" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
+          <a href="/pricing.html" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
             Fiyatlar
           </a>
         </li>
@@ -101,8 +101,8 @@ const NavbarHtml = `
         </li>
         <li class="flex items-center space-x-3 group">
           <i class="fa fa-link text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
-          <a href="#" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
-            İletişim Linkleri
+          <a href="/contact.html" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
+            İletişim
           </a>
         </li>
       </ul>
