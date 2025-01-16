@@ -48,7 +48,7 @@ const NavbarHtml = `
   </button>
   <div
     id="sidebar"
-    class=" indent-3  fixed top-0 right-0 w-screen h-screen bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out">
+    class="z-50 indent-3  fixed top-0 right-0 w-screen h-screen bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out">
     <div class="flex items-center justify-between p-4 border-b bg-blue-900 text-white">
       <strong class="text-lg font-semibold">KOBİCRM'e Hoş Geldiniz!</strong>
       <button id="close-menu" class="text-gray-600 hover:text-gray-800 p-2 rounded-full">
