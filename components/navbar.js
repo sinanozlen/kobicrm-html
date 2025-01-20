@@ -30,8 +30,8 @@ const NavbarHtml = `
     </a>
   </div>
 <!-- Hamburger Menü -->
-<div class="inset-0 flex justify-end mr-4 mt-1 sm:hidden">
-  <button id="hamburger-menu" class="absolute text-gray-600 hover:text-gray-800 p-2 rounded-full">
+<div class="inset-0 flex justify-end mr-4 mt-1 z-50 sm:hidden"> 
+  <button id="hamburger-menu" class="absolute text-gray-600 hover:text-gray-800 p-2 rounded-full" aria-label="Açılır Menü">
     <svg
       class="w-8 h-8"
       fill="none"
@@ -48,10 +48,10 @@ const NavbarHtml = `
   </button>
   <div
     id="sidebar"
-    class="z-50 indent-3  fixed top-0 right-0 w-screen h-screen bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out">
+    class="indent-3 dark:bg-gray-900  fixed top-0 right-0 w-screen h-screen bg-white shadow-lg transform translate-x-full transition-transform duration-300" aria-hidden="true">
     <div class="flex items-center justify-between p-4 border-b bg-blue-900 text-white">
-      <strong class="text-lg font-semibold">KOBİCRM'e Hoş Geldiniz!</strong>
-      <button id="close-menu" class="text-gray-600 hover:text-gray-800 p-2 rounded-full">
+      <strong class="pl-2 text-lg font-bold">KOBİCRM'e Hoş Geldiniz!</strong>
+<button id="close-menu" class="text-white hover:text-gray-800 p-2 rounded-full transition-transform transform hover:rotate-90 hover:scale-110 duration-300" aria-label="Menüyü Kapat">
         <svg
           class="w-6 h-6"
           fill="none"
@@ -61,52 +61,54 @@ const NavbarHtml = `
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
-            stroke-width="2"
+            stroke-width="3"
             d="M6 18L18 6M6 6l12 12"
           ></path>
         </svg>
       </button>
     </div>
-    <div class="p-4">
-      <ul class="space-y-6">
-      <li class="flex items-center space-x-3 group">
-          <i class="fa fa-home text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
-          <a href="/" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
-            Home
-          </a>
-        </li>
-        <li class="flex items-center space-x-3 group">
-          <i class="fa fa-info-circle text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
-          <a href="/about.html" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
-            Hakkımızda
-          </a>
-        </li>
-        <li class="flex items-center space-x-3 group">
-          <i class="fa fa-user-tie text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
-          <a href="/services.html" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
-            Hizmetlerimiz
-          </a>
-        </li>
-        <li class="flex items-center space-x-3 group">
-          <i class="fa fa-lira-sign text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
-          <a href="/pricing.html" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
-            Fiyatlar
-          </a>
-        </li>
-        <li class="flex items-center space-x-3 group">
-          <i class="fa fa-question-circle text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
-          <a href="#" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
-            Yardım Merkezi
-          </a>
-        </li>
-        <li class="flex items-center space-x-3 group">
-          <i class="fa fa-link text-lg text-blue-800 group-hover:scale-110 transition-transform"></i>
-          <a href="/contact.html" class="text-gray-700 px-3 py-1 relative after:absolute after:bottom-0 after:left-5 after:right-0  after:h-[1px]  after:bg-blue-900 after:duration-300 hover:after:w-full after:transform after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">
-            İletişim
-          </a>
-        </li>
-      </ul>
-    </div>
+  <div class="dark:bg-gray-900 py-4">
+  <ul class="space-y-6">
+    <li class="flex items-center space-x-3 group hover:bg-gray-100 dark:hover:bg-gray-800 hover:font-semibold text-lg pl-4">
+      <a href="/" class="w-full text-gray-700 dark:text-gray-300 px-3 py-1 flex items-center space-x-3">
+        <i class="fa fa-home text-2xl  text-blue-800 dark:text-white   transition-transform transform group-hover:scale-110"></i>
+        <span class="group-hover:underline">Home</span>
+      </a>
+    </li>
+    <li class="flex items-center space-x-3 group hover:bg-gray-100 dark:hover:bg-gray-800  hover:font-semibold text-lg pl-4">
+      <a href="/about.html" class="w-full text-gray-700 dark:text-gray-300 px-3 py-1 flex items-center space-x-3">
+        <i class="fa fa-info-circle text-2xl text-blue-800 dark:text-white transition-transform transform group-hover:scale-110"></i>
+        <span class="group-hover:underline">Hakkımızda</span>
+      </a>
+    </li>
+    <li class="flex items-center space-x-3 group hover:bg-gray-100 dark:hover:bg-gray-800  hover:font-semibold text-lg pl-4">
+      <a href="/services.html" class="w-full text-gray-700 dark:text-gray-300 px-3 py-1 flex items-center space-x-3">
+        <i class="fa fa-user-tie text-2xl text-blue-800 dark:text-white transition-transform transform group-hover:scale-110"></i>
+        <span class="group-hover:underline">Hizmetlerimiz</span>
+      </a>
+    </li>
+    <li class="flex items-center space-x-3 group hover:bg-gray-100 dark:hover:bg-gray-800  hover:font-semibold text-lg pl-4">
+      <a href="/pricing.html" class="w-full text-gray-700 dark:text-gray-300 px-3 py-1 flex items-center space-x-3">
+        <i class="fa fa-lira-sign text-2xl text-blue-800 dark:text-white transition-transform transform group-hover:scale-110"></i>
+        <span class="group-hover:underline">Fiyatlar</span>
+      </a>
+    </li>
+    <li class="flex items-center space-x-3 group hover:bg-gray-100 dark:hover:bg-gray-800  hover:font-semibold text-lg pl-4">
+      <a href="/helpcenter.html" class="w-full text-gray-700 dark:text-gray-300 px-3 py-1 flex items-center space-x-3">
+        <i class="fa fa-question-circle text-2xl text-blue-800 dark:text-white transition-transform transform group-hover:scale-110"></i>
+        <span class="group-hover:underline">Yardım Merkezi</span>
+      </a>
+    </li>
+    <li class="flex items-center space-x-3 group hover:bg-gray-100 dark:hover:bg-gray-800  hover:font-semibold text-lg pl-4">
+      <a href="/contact.html" class="w-full text-gray-700 dark:text-gray-300 px-3 py-1 flex items-center space-x-3">
+        <i class="fa fa-link text-2xl text-blue-800 dark:text-white transition-transform transform group-hover:scale-110"></i>
+        <span class="group-hover:underline">İletişim</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
   </div>
 </div>
 </div>
